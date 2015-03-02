@@ -14,5 +14,4 @@ and
 http://govwiki.us/
 
 To change this text, please edit README.md
-
 https://github.com/govwiki/govwiki.us/edit/gh-pages/README.md
