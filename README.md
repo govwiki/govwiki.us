@@ -12,3 +12,5 @@ Site: http://govwiki.github.io/govwiki.us/
 and
 
 http://govwiki.us/
+
+To change this text, please edit README.md
