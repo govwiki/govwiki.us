@@ -49,6 +49,9 @@ startSuggestion = (govs) ->
     $('#details').html s
     return
 
+  #$('.typeahead').typeahead()
+  #$('.typeahead').typeahead('destroy')
+
   $('.typeahead').attr 'placeholder', 'GOVERNMENT NAME'
   ta = $('.typeahead').typeahead({
     hint: true
