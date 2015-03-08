@@ -9,11 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    <title>Static Top Navbar Example for Bootstrap</title>
+    <title>govwiki.us</title>
     <!-- Bootstrap core CSS-->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="http://getbootstrap.com/examples/navbar-static-top/navbar-static-top.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="./js_files/ie-emulation-modes-warning.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
     <!--if lt IE 9
@@ -25,48 +27,63 @@
   </head>  
   <body>
     <!-- Static navbar-->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://getbootstrap.com/examples/navbar-static-top/#" class="navbar-brand">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="http://getbootstrap.com/examples/navbar-static-top/#">Home</a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar-static-top/#about">About</a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar-static-top/#contact">Contact</a></li>
-            <li class="dropdown"><a href="http://getbootstrap.com/examples/navbar-static-top/#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Dropdown <span class="caret"></span></a>
-              <ul role="menu" class="dropdown-menu">
-                <li><a href="http://getbootstrap.com/examples/navbar-static-top/#">Action</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar-static-top/#">Another action</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar-static-top/#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="http://getbootstrap.com/examples/navbar-static-top/#">Separated link</a></li>
-                <li><a href="http://getbootstrap.com/examples/navbar-static-top/#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://getbootstrap.com/examples/navbar/">Default</a></li>
-            <li class="active"><a href="./js_files/js.html">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/">Fixed top</a></li>
-          </ul>
-        </div>
-        <!-- /.nav-collapse-->
-      </div>
-    </nav>
+    <!--nav.navbar.navbar-default.navbar-static-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='http://getbootstrap.com/examples/navbar-static-top/#') Govwiki.us
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href='http://getbootstrap.com/examples/navbar-static-top/#') Home
+          li
+            a(href='http://getbootstrap.com/examples/navbar-static-top/#about') About
+          li
+            a(href='http://getbootstrap.com/examples/navbar-static-top/#contact') Contact
+          li.dropdown
+            a.dropdown-toggle(href='http://getbootstrap.com/examples/navbar-static-top/#', data-toggle='dropdown', role='button', aria-expanded='false')
+              | Dropdown 
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li
+                a(href='http://getbootstrap.com/examples/navbar-static-top/#') Action
+              li
+                a(href='http://getbootstrap.com/examples/navbar-static-top/#') Another action
+              li
+                a(href='http://getbootstrap.com/examples/navbar-static-top/#') Something else here
+              li.divider
+              li.dropdown-header Nav header
+              li
+                a(href='http://getbootstrap.com/examples/navbar-static-top/#') Separated link
+              li
+                a(href='http://getbootstrap.com/examples/navbar-static-top/#') One more separated link
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='http://getbootstrap.com/examples/navbar/') Default
+          li.active
+            a(href='./js_files/js.html')
+              | Static top 
+              span.sr-only (current)
+          li
+            a(href='http://getbootstrap.com/examples/navbar-fixed-top/') Fixed top
+      // /.nav-collapse
+    -->
     <div class="container">
       <!-- Main component for a primary marketing message or call to action-->
+      <h1>GOVWIKI.US</h1>
+      <p>
+        California local government civic profile system for CPC.  
+        The application will be based on the California Credit Scoring System originally 
+        developed by Public Sector Credit Solutions and now maintained by CivicPartner LLC.
+      </p>
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>
-          This example is a quick exercise to illustrate how the default, 
-          static and fixed to top navbar work. It includes the responsive CSS and HTML, 
-          so it also adapts to your viewport and device.
-        </p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p><a href="http://getbootstrap.com/components/#navbar" role="button" class="btn btn-lg btn-primary">View navbar docs &raquo;</a></p>
+        <input id="myinput" placeholder="wait..." style="background-color:white" class="typeahead form-control">
+        <div id="details"></div><br><br>
+        <p><a href="https://github.com/govwiki/govwiki.us" role="button" class="btn btn-lg btn-primary">Github project</a></p>
       </div>
     </div>
     <!-- /container-->
@@ -79,5 +96,9 @@
     <script src="./js_files/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
     <script src="./js_files/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.min.js"></script>
+    <script src="./js/b.js"></script>
   </body>
 </html>
