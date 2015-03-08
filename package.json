@@ -1,0 +1,50 @@
+{
+  "name": "govwiki-site",
+  "version": "0.0.1",
+  "description": "California local government civic profile system for CPC",
+  "main": "index.html",
+  "author": "vadim ivlev",
+  "license": "MIT",
+
+
+  "scripts": {
+    "push": "git add -A . && git commit -am 'v' && git push",
+    "jade": "jade jade -P -o .",
+    "jadew": "jade jade -P -w -o .",
+    "coffee": "cat coffee/*.coffee > b.coffee/b.coffee && coffee -cm -o js b.coffee/b.coffee",
+    "coffeew": "watch 'npm run coffee' coffee",
+    "watch": "npm run jadew & npm run coffeew",
+    "serve": "http-server",
+    "serve2": "node server.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/govwiki/govwiki.us.git"
+  },
+
+
+  "keywords": [
+    "government",
+    "wiki",
+    "govwiki",
+    "california",
+    "ivlev",
+    "joffe"
+  ],
+
+
+  "dependencies": {
+    "connect": "^3.3.4",
+    "http-server": "^0.7.5",
+    "jade": "^1.9.2",
+    "serve-static": "^1.9.1",
+    "watch": "^0.14.0"
+  },
+  "bugs": {
+    "url": "https://github.com/govwiki/govwiki.us/issues"
+  },
+
+
+  "homepage": "https://govwiki.us"
+}
