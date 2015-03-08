@@ -21,12 +21,12 @@
     };
   };
 
-  suggestionTemplate = Handlebars.compile('<p><span class="minwidth">{{gov_name}}</span> <span class="smaller">{{state}} &nbsp;{{zip}}</span></p>');
+  suggestionTemplate = Handlebars.compile("<p><span class=\"minwidth\">{{gov_name}}</span> \n<span class=\"smaller\">{{state}} &nbsp;{{gov_type}}</span>\n</p>");
 
   ta = void 0;
 
-  startSuggestion = function() {
-    var link, makeFieldHtml, makeRecordHtml;
+  startSuggestion = function(govs) {
+    var getRecord, link, makeFieldHtml, makeRecordHtml;
     link = function(v) {
       if (('' + v).indexOf('http://') === -1) {
         return v;
@@ -63,8 +63,23 @@
         suggestion: suggestionTemplate
       }
     });
+    getRecord = function(data) {
+      var id;
+      id = data["inc_id"];
+      return $.ajax({
+        url: "https://api.mongolab.com/api/1/databases/govwiki/collections/govs/?q={inc_id:" + id + "}&f={_id:0}&l=1&apiKey=0Y5X_Qk2uOJRdHJWJKSRWk6l6JqVTS2y",
+        dataType: 'json',
+        cache: true,
+        success: function(data) {
+          if (data.length) {
+            makeRecordHtml(data[0]);
+          }
+        }
+      });
+    };
     ta.on('typeahead:selected', function(evt, data, name) {
       makeRecordHtml(data);
+      getRecord(data);
     });
   };
 
@@ -72,14 +87,14 @@
     url: 'js/fieldnames.js',
     dataType: 'script',
     cache: true,
-    success: function() {
-      console.log('field names loaded');
+    success: function(data) {
+      console.log("field names loaded:" + data);
     }
   });
 
   $.ajax({
-    url: 'data/govs.js',
-    dataType: 'script',
+    url: 'data/h_types.json',
+    dataType: 'json',
     cache: true,
     success: startSuggestion
   });

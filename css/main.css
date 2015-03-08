@@ -1,6 +1,5 @@
 /*
 #myinput {
-    width:496px;
 }
 */
 .smaller {
@@ -25,7 +24,7 @@
     /*display:inline;*/
 }
 .f-nam {
-    min-width:235px;
+    min-width:250px;
     display:inline-block;
     color:#aaa;
     text-align:left;
@@ -34,7 +33,7 @@
 }
 
 .f-val {
-    min-width:400px;
+    min-width:400 px;
     display:inline-block;
     color:black;
     text-align:left;

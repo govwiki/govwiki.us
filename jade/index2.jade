@@ -11,10 +11,11 @@ html(lang='en')
     link(rel='icon', href='http://getbootstrap.com/favicon.ico')
     title govwiki.us
     // Bootstrap core CSS
-    link(href='http://getbootstrap.com/dist/css/bootstrap.min.css', rel='stylesheet')
+    //link(href='http://getbootstrap.com/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='http://maxcdn.bootstrapcdn.com/bootswatch/3.3.2/paper/bootstrap.min.css', rel='stylesheet')
     // Custom styles for this template
-    link(href='http://getbootstrap.com/examples/navbar-static-top/navbar-static-top.css', rel='stylesheet')
-  
+    //link(href='http://getbootstrap.com/examples/navbar-static-top/navbar-static-top.css', rel='stylesheet')
+    //link(href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material.css', rel='stylesheet')
     link(rel='stylesheet', href='css/examples.css')
     link(rel='stylesheet', href='css/main.css')
     
@@ -82,7 +83,7 @@ html(lang='en')
         | developed by Public Sector Credit Solutions and now maintained by CivicPartner LLC.
       .jumbotron
         
-        input#myinput.typeahead.form-control(placeholder='wait...', style="background-color:white")
+        input#myinput.typeahead.form-control(placeholder='wait...')
         #details
         br
         br
@@ -97,7 +98,8 @@ html(lang='en')
       ==================================================
     // Placed at the end of the document so the pages load faster
     script(src='./js_files/jquery.min.js')
-    script(src='./js_files/bootstrap.min.js')
+    //script(src='./js_files/bootstrap.min.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
     // IE10 viewport hack for Surface/desktop Windows 8 bug
     script(src='./js_files/ie10-viewport-bug-workaround.js')
     script(src='js/plugins.js')

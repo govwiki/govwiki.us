@@ -1,4 +1,5 @@
 var fieldNames ={
+    "inc_id"                         : "#"                                      ,
     "census_id"                      : "Census ID"                              ,
     "gov_name"                       : "Name"                                   ,
     "special_district_function_code" : "Special Purpose District Function Code" ,
