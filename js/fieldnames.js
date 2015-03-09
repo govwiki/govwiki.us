@@ -20,7 +20,9 @@ var fieldNames ={
     "fips_state"                     : "FIPS State Code"                        ,
     "fips_county"                    : "FIPS County Code"                       ,
     "fips_place"                     : "FIPS Place Code"                        ,
-    "county_area_name"               : "County (or equiv) Name"     ,
+    "county_area_name"               : "County (or equiv) Name"                 ,
+    "latitude"                       : "Latitude"                               ,
+    "longitude"                      : "Longitude"                              ,
     "county_area_type"               : "County Type"
 
 }

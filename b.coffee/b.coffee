@@ -1,9 +1,7 @@
 
-#govs = []
 
-#fieldNames={}
 
-substringMatcher = (strs) ->
+substringMatcher = (docs) ->
   (q, cb) ->
     matches = undefined
     substrRegex = undefined
@@ -11,15 +9,14 @@ substringMatcher = (strs) ->
     matches = []
     # regex used to determine if a string contains the substring `q`
     substrRegex = new RegExp(q, 'i')
-    # iterate through the pool of strings and for any string that
+    # iterate through the pool of docs and for any string that
     # contains the substring `q`, add it to the `matches` array
-    #var counter=0;
-    $.each strs, (i, str) ->
-      if substrRegex.test(str.gov_name)
+    $.each docs, (i, d) ->
+      if substrRegex.test(d.gov_name)
         #  the typeahead jQuery plugin expects suggestions to a
         # JavaScript object, refer to typeahead docs for more info
-        matches.push str
-        if matches.length >= 14
+        matches.push d
+        if matches.length >= 10
           return false
       return
     cb matches
@@ -49,8 +46,6 @@ startSuggestion = (govs) ->
     $('#details').html s
     return
 
-  #$('.typeahead').typeahead()
-  #$('.typeahead').typeahead('destroy')
 
   $('.typeahead').attr 'placeholder', 'GOVERNMENT NAME'
   ta = $('.typeahead').typeahead({

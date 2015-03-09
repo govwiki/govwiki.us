@@ -2,17 +2,17 @@
 (function() {
   var startSuggestion, substringMatcher, suggestionTemplate, ta;
 
-  substringMatcher = function(strs) {
+  substringMatcher = function(docs) {
     return function(q, cb) {
       var matches, substrRegex;
       matches = void 0;
       substrRegex = void 0;
       matches = [];
       substrRegex = new RegExp(q, 'i');
-      $.each(strs, function(i, str) {
-        if (substrRegex.test(str.gov_name)) {
-          matches.push(str);
-          if (matches.length >= 14) {
+      $.each(docs, function(i, d) {
+        if (substrRegex.test(d.gov_name)) {
+          matches.push(d);
+          if (matches.length >= 10) {
             return false;
           }
         }
