@@ -1,48 +1,3 @@
-###
-# file: datarenderer.coffee ----------------------------------------------------------------------
-#
-# Class to render data on html page.
-#
-# The main method : render(data), get_html(data)
-#-------------------------------------------------------------------------------------------------
-###
-
-
-class LayoutRenderer
-  # returns an array of availiable layouts
-  @list = -> ['simple']
-
-
-
-renderData = (html_container, data) ->
-  makeDocHtml = (data) ->
-    makeFieldHtml = (n, v) ->
-      link = (v) ->
-        if ('' + v).indexOf('http://') == -1 then v else '<a target="_blank" href="' + v + '">' + v + '</a>'
-
-      s = ''
-      if v
-        s = "<p><span class='f-nam'>#{fieldNames[n]}</span><span class='f-val'>#{link(v)}</span></p>"
-       s
-    
-    ss = ''
-    for n of data
-      ss += makeFieldHtml(n, data[n])
-    return ss
-
-  $(html_container).html makeDocHtml data
-
-
-
-
-$.ajax
-  url: 'js/fieldnames.js'
-  dataType: 'script'
-  cache: true
-  success: (data) ->
-    console.log "field names loaded:#{}"
-    #fieldNames = data
-    return
 class GovSelector
   
   #bloodhound = undefined
@@ -158,37 +113,6 @@ class GovSelector
     #.on 'typeahead:selected', (evt, data, name) => @on_selected(evt, data, name)
     
     return
-
-
-
-###
-file: main.coffe -- The entry -----------------------------------------------------------------------------------
-
-gov_finder = new GovFinder
-gov_details = new GovDetails
-gov_finder.on_select = gov_details.show
------------------------------------------------------------------------------------------------------------------
-###
-
-
-
-gov_selector = new GovSelector '.typeahead', 'data/h_types.json'
-
-gov_selector.on_selected = (evt, data, name) ->
-      renderData '#details', data
-      get_record "inc_id:#{data["inc_id"]}"
-      return
-
-
-get_record = (query) ->
-  $.ajax
-    url: "https://api.mongolab.com/api/1/databases/govwiki/collections/govs/?q={#{query}}&f={_id:0}&l=1&apiKey=0Y5X_Qk2uOJRdHJWJKSRWk6l6JqVTS2y"
-    dataType: 'json'
-    cache: true
-    success: (data) ->
-      #console.log data
-      if data.length then renderData '#details',  data[0]
-      return
 
 
 

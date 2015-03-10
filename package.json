@@ -14,8 +14,8 @@
     "coffee": "cat coffee/*.coffee > b.coffee/b.coffee && coffee -cm -o js b.coffee/b.coffee",
     "coffeew": "watch 'npm run coffee' coffee",
     "watch": "npm run jadew & npm run coffeew",
-    "serve": "http-server",
-    "serve2": "node server.js"
+    "start": "http-server",
+    "serve": "node server.js"
   },
 
   "repository": {
