@@ -1,7 +1,6 @@
 var fieldNames ={
-    "inc_id"                         : "#"                                      ,
-    "census_id"                      : "Census ID"                              ,
     "gov_name"                       : "Name"                                   ,
+    "census_id"                      : "Census ID"                              ,
     "special_district_function_code" : "Special Purpose District Function Code" ,
     "gov_type"                       : "Government Type"                        ,
     "census_contact"                 : "Census Contact"                         ,
@@ -21,8 +20,9 @@ var fieldNames ={
     "fips_county"                    : "FIPS County Code"                       ,
     "fips_place"                     : "FIPS Place Code"                        ,
     "county_area_name"               : "County (or equiv) Name"                 ,
+    "county_area_type"               : "County Type"                            ,
     "latitude"                       : "Latitude"                               ,
     "longitude"                      : "Longitude"                              ,
-    "county_area_type"               : "County Type"
+    "inc_id"                         : "#"                                      
 
 }
