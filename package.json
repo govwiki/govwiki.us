@@ -5,25 +5,23 @@
   "main": "index.html",
   "author": "vadim ivlev",
   "license": "MIT",
-
-
   "scripts": {
     "push": "git add -A . && git commit -am 'v' && git push",
     "jade": "jade jade -P -o .",
     "jadew": "jade jade -P -w -o .",
-    "coffee": "cat coffee/*.coffee > b.coffee/b.coffee && coffee -cm -o js b.coffee/b.coffee",
-    "coffeew": "watch 'npm run coffee' coffee",
+    "old--coffee": "cat coffee/*.coffee > b.coffee/b.coffee && coffee -cm -o js b.coffee/b.coffee",
+    "old--coffeew": "watch 'npm run coffee' coffee",
+    "coffee": "browserify -d -t coffeeify coffee/main.coffee -o static/bundle.js",
+    "coffeew": "watchify  -d -t coffeeify coffee/main.coffee -o static/bundle.js",
     "watch": "npm run jadew & npm run coffeew",
-    "start": "http-server",
+    "dev": "http-server -s -o -a localhost & npm run jadew & npm run coffeew & echo 'Launch browser and start editing files' ",
+    "start": "http-server -s -o -a localhost",
     "serve": "node server.js"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/govwiki/govwiki.us.git"
   },
-
-
   "keywords": [
     "government",
     "wiki",
@@ -32,9 +30,8 @@
     "ivlev",
     "joffe"
   ],
-
-
   "dependencies": {
+    "coffeeify": "^1.0.0",
     "connect": "^3.3.4",
     "http-server": "^0.7.5",
     "jade": "^1.9.2",
@@ -44,7 +41,5 @@
   "bugs": {
     "url": "https://github.com/govwiki/govwiki.us/issues"
   },
-
-
   "homepage": "https://govwiki.us"
 }

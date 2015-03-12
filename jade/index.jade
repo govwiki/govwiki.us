@@ -72,7 +72,9 @@ html(lang='en')
     
     .jumbotron(style="padding:30px;")
       .container
-        input#myinput.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
+        //input#input0.gov.text-uppercase.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
+        input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
+
 
     .container
       blockquote 
@@ -101,4 +103,5 @@ html(lang='en')
     script(src='bower_components/typeahead.js/dist/typeahead.bundle.min.js')
     //script(src='js/vendor/bootstrap3-typeahead.min.js')
     script(src='bower_components/handlebars/handlebars.min.js')
-    script(src='js/b.js')
+    //script(src='js/b.js')
+    script(src='static/bundle.js')

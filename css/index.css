@@ -70,15 +70,21 @@
 #myinput {
 }
 */
-.smaller {
-    font-size:90%;
-    color:#aaa;
-    font-family:monospace;
+.sugg-box {
+  border-bottom: 0px solid #EEE;
 }
 
-.minwidth {
+.sugg-small {
+    font-size:70%;
+    color:#888;
+    text-transform: capitalize;
+    /*font-family:monospace;*/
+}
+
+.sugg-main {
     min-width:370px;
     display:inline-block;
+    text-transform: uppercase;
 }
 
 #details  {

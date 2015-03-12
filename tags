@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	node_modules/connect/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
+BIN	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
+BROWSERIFY	node_modules/connect/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
+BROWSERIFY	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
+GovSelector	coffee/main.coffee	/^GovSelector = require('.\/govselector.coffee')$/;"	v
+Handlebars	bower_components/handlebars/lib/handlebars/source.rb	/^module Handlebars$/;"	m
+NODE	node_modules/connect/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
+NODE	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
+NPM	node_modules/connect/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
+NPM	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
+QueryMather	coffee/querymatcher.coffee	/^QueryMather = (docs) ->$/;"	f
+Source	bower_components/handlebars/lib/handlebars/source.rb	/^  module Source$/;"	m	class:Handlebars
+THIS_DIR	node_modules/connect/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
+THIS_DIR	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
+THIS_MAKEFILE_PATH	node_modules/connect/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+THIS_MAKEFILE_PATH	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+base	coffee/jquery.govselector.coffee	/^    base = this$/;"	v
+base.el	coffee/jquery.govselector.coffee	/^    base.el = el$/;"	v
+base.init	coffee/jquery.govselector.coffee	/^    base.init = ->$/;"	f
+benchmark	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
+benchmark	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
+blur	coffee/jquery.govselector.coffee	/^    blur = (event) ->$/;"	f
+bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.bundled_path$/;"	F	class:Handlebars.Source
+delay	coffee/jquery.govselector.coffee	/^    delay = do ->$/;"	f
+exports	node_modules/coffeeify/example/baz.coffee	/^module.exports = (n) -> n * 111$/;"	f
+full_trim	coffee/querymatcher.coffee	/^full_trim = (s) ->$/;"	f
+get_record	coffee/main.coffee	/^get_record = (query) ->$/;"	f
+get_words	coffee/querymatcher.coffee	/^get_words = (str) ->$/;"	f
+get_words_regs	coffee/querymatcher.coffee	/^get_words_regs = (str) ->$/;"	f
+gov_finder.on_select	coffee/main.coffee	/^gov_finder.on_select = gov_details.show$/;"	v
+gov_selector.on_selected	coffee/main.coffee	/^gov_selector.on_selected = (evt, data, name) ->$/;"	f
+link	coffee/datarenderer.coffee	/^      link = (v) ->$/;"	f
+makeDocHtml	coffee/datarenderer.coffee	/^  makeDocHtml = (data) ->$/;"	f
+makeFieldHtml	coffee/datarenderer.coffee	/^    makeFieldHtml = (n, v) ->$/;"	f
+matches	coffee/querymatcher.coffee	/^    matches = []$/;"	v
+module.exports	coffee/govselector.coffee	/^module.exports=GovSelector$/;"	v
+module.exports	coffee/querymatcher.coffee	/^module.exports = QueryMather$/;"	v
+next	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
+next	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
+onkeyup	coffee/jquery.govselector.coffee	/^    onkeyup = (event) ->$/;"	f
+query_matcher	coffee/govselector.coffee	/^query_matcher = require('.\/querymatcher.coffee')$/;"	v
+regs	coffee/querymatcher.coffee	/^  regs = words.map (w)-> new RegExp("#{w}",'ig')$/;"	f
+renderData	coffee/datarenderer.coffee	/^renderData = (html_container, data) ->$/;"	f
+run	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
+run	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
+runAcorn	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
+runAcorn	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
+runEsprima	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
+runEsprima	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
+runTraceur	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
+runTraceur	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
+runtime_bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.runtime_bundled_path$/;"	F	class:Handlebars.Source
+s	coffee/datarenderer.coffee	/^      s = ''$/;"	v
+select_text	coffee/querymatcher.coffee	/^select_text = (clones,words,regs) ->$/;"	f
+showOutput	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
+showOutput	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
+ss	coffee/datarenderer.coffee	/^    ss = ''$/;"	v
+ss	coffee/querymatcher.coffee	/^  ss=s.trim(''+s)$/;"	v
+ss	coffee/querymatcher.coffee	/^  ss=ss.replace(\/ +\/g,' ')$/;"	v
+strip	coffee/querymatcher.coffee	/^strip = (s) ->$/;"	f
+strongify	coffee/querymatcher.coffee	/^strongify = (s, words, regs) ->$/;"	f
+test_string	coffee/querymatcher.coffee	/^    test_string =(s, regs) ->$/;"	f
+thisIsWrong	node_modules/coffeeify/example/error.coffee	/^thisIsWrong = , 'waaa'$/;"	v
+timer	coffee/jquery.govselector.coffee	/^        timer = setTimeout(callback, ms)$/;"	v
+timer	coffee/jquery.govselector.coffee	/^      timer = 0$/;"	v
+words	coffee/querymatcher.coffee	/^  words = get_words str$/;"	v

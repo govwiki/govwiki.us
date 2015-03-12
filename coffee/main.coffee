@@ -1,20 +1,23 @@
 ###
 file: main.coffe -- The entry -----------------------------------------------------------------------------------
-
+  :
 gov_finder = new GovFinder
 gov_details = new GovDetails
 gov_finder.on_select = gov_details.show
 -----------------------------------------------------------------------------------------------------------------
 ###
 
+GovSelector = require('./govselector.coffee')
+renderData = require('./datarenderer.coffee')
+require('./jquery.govselector.coffee')
 
 
-gov_selector = new GovSelector '.typeahead', 'data/h_types.json'
+gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
 
 gov_selector.on_selected = (evt, data, name) ->
-      renderData '#details', data
-      get_record "inc_id:#{data["inc_id"]}"
-      return
+    renderData '#details', data
+    get_record "inc_id:#{data["inc_id"]}"
+    return
 
 
 get_record = (query) ->
@@ -27,5 +30,5 @@ get_record = (query) ->
       if data.length then renderData '#details',  data[0]
       return
 
-
+#$('.gov').govselector()
 

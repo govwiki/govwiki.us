@@ -35,6 +35,7 @@ renderData = (html_container, data) ->
 
 
 
+
 $.ajax
   url: 'js/fieldnames.js'
   dataType: 'script'
@@ -43,3 +44,8 @@ $.ajax
     console.log "field names loaded:#{}"
     #fieldNames = data
     return
+
+
+
+
+module.exports = renderData
