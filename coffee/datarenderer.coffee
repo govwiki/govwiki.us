@@ -1,19 +1,4 @@
-###
-# file: datarenderer.coffee ----------------------------------------------------------------------
-#
 # Class to render data on html page.
-#
-# The main method : render(data), get_html(data)
-#-------------------------------------------------------------------------------------------------
-###
-
-
-class LayoutRenderer
-  # returns an array of availiable layouts
-  @list = -> ['simple']
-
-
-
 renderData = (html_container, data) ->
   makeDocHtml = (data) ->
     makeFieldHtml = (n, v) ->
@@ -31,21 +16,6 @@ renderData = (html_container, data) ->
     return ss
 
   $(html_container).html makeDocHtml data
-
-
-
-
-
-$.ajax
-  url: 'js/fieldnames.js'
-  dataType: 'script'
-  cache: true
-  success: (data) ->
-    console.log "field names loaded:#{}"
-    #fieldNames = data
-    return
-
-
 
 
 module.exports = renderData

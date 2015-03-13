@@ -25,4 +25,30 @@ var fieldNames ={
     "longitude"                      : "Longitude"                              ,
     "inc_id"                         : "#"                                      
 
-}
+};
+
+var layout0 = [
+    "gov_name"                       ,
+    "census_id"                      ,
+    "special_district_function_code" ,
+    "gov_type"                       ,
+    "census_contact"                 ,
+    "address1"                       ,
+    "address2"                       ,
+    "city"                           ,
+    "state"                          ,
+    "zip"                            ,
+    "web_site"                       ,
+    "population"                     ,
+    "population_as_of_year"          ,
+    "enrollment"                     ,
+    "enrollment_as_of_year"          ,
+    "fips_state"                     ,
+    "fips_county"                    ,
+    "fips_place"                     ,
+    "county_area_name"               ,
+    "county_area_type"               ,
+    "latitude"                       ,
+    "longitude"                      ,
+    "inc_id"                                                               
+];

@@ -7,17 +7,21 @@ gov_finder.on_select = gov_details.show
 -----------------------------------------------------------------------------------------------------------------
 ###
 
-GovSelector = require('./govselector.coffee')
-renderData = require('./datarenderer.coffee')
-require('./jquery.govselector.coffee')
-
+GovSelector = require './govselector.coffee'
+#renderData  = require './datarenderer.coffee'
+_jqgs       = require './jquery.govselector.coffee'
+Templates      = require './templates.coffee'
 
 gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
+templates = new Templates
+
+
 
 gov_selector.on_selected = (evt, data, name) ->
-    renderData '#details', data
-    get_record "inc_id:#{data["inc_id"]}"
-    return
+  #renderData '#details', data
+  $('#details').html templates.get_html(0, data)
+  get_record "inc_id:#{data["inc_id"]}"
+  return
 
 
 get_record = (query) ->
@@ -26,8 +30,8 @@ get_record = (query) ->
     dataType: 'json'
     cache: true
     success: (data) ->
-      #console.log data
-      if data.length then renderData '#details',  data[0]
+      #if data.length then renderData '#details',  data[0]
+      if data.length then $('#details').html templates.get_html(0, data[0])
       return
 
 #$('.gov').govselector()
