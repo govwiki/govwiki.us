@@ -27,6 +27,7 @@ var fieldNames ={
 
 };
 
+/*
 var layout0 = [
     "gov_name"                       ,
     "census_id"                      ,
@@ -52,3 +53,4 @@ var layout0 = [
     "longitude"                      ,
     "inc_id"                                                               
 ];
+*/

@@ -52,50 +52,87 @@ class Template
 
 
 
-class Templates
   
+  
+make_simple_template =(fields)->
+  
+  Handlebars.registerHelper 'n', (n) -> '{{'+n+'}}'
+  Handlebars.registerHelper 'fn', (n) -> fieldNames[n]
+  
+  txt ="""
+  {{#each this}}
+  {{#if this}} <p><span class='f-nam'>{{#fn this}}{{/fn}}</span><span class='f-val'>{{#n this}}{{/n}}</span></p>{{/if}}
+  {{/each}}
+  """
+  
+  tt =  Handlebars.compile txt
+  return tt(fields)
+
+
+
+make_simple_template2=(fields)->
+  makeFieldHtml = (n) ->
+    link = (n) ->
+      ss=''
+      if n != "web_site"
+        ss="{{{"+n+"}}}"
+      else
+        ss='<a target="_blank" href="{{' + n + '}}">{{{' + n + '}}}</a>'
+      return ss
+
+    s = '{{#if '+n+'}}\n'
+    s += "<p><span class='f-nam'>#{fieldNames[n]}</span><span class='f-val'>#{link(n)}</span></p>\n"
+    s += '{{/if}}\n'
+    return s
+  
+  ss = ''
+  for f in fields
+    ss += makeFieldHtml(f)
+  return ss
+  
+
+render_tabs = (layout,data) ->
+  #render header
+  h = '<div role="tabpanel">'
+
+  #render tabs
+  h +='<ul class="nav nav-tabs" role="tablist">'
+  
+  for tab in tab_layout
+
+    h +="""
+      <li role="presentation" class="active">
+        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+        #{tab}
+        </a>
+      </li>
+    """
+
+  h += '</ul>'
+
+  #render tabs content
+  h +="""
+  """
+  
+  #render footer
+  h +='</div>'
+  return h
+
+
+
+
+
+
+class Templates
   @list = undefined
 
 
   constructor:() ->
     @list = []
+    txt = make_simple_template(layout0)
     txt0 = make_simple_template2(layout0)
     @add "simple",null, txt0
-    #console.log txt0
-
-
-  make_simple_template =(fields)->
-    txt ="""
-    {{#each fields}}
-    <p><span class='f-nam'>{{this}}</span><span class='f-val'>vvv</span></p>\n
-    {{/each}}
-    """
-    tt =  Handlebars.compile txt
-    return tt(fields)
-
-
-
-  make_simple_template2=(fields)->
-    makeFieldHtml = (n) ->
-      link = (n) ->
-        ss=''
-        if n != "web_site"
-          ss="{{{"+n+"}}}"
-        else
-          ss='<a target="_blank" href="{{' + n + '}}">{{{' + n + '}}}</a>'
-        return ss
-
-      s = '{{#if '+n+'}}\n'
-      s += "<p><span class='f-nam'>#{fieldNames[n]}</span><span class='f-val'>#{link(n)}</span></p>\n"
-      s += '{{/if}}\n'
-      return s
-    
-    ss = ''
-    for f in fields
-      ss += makeFieldHtml(f)
-    return ss
-    
-
+    console.log txt
 
 
   add:(name, url, text) ->

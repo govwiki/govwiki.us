@@ -10,10 +10,12 @@ gov_finder.on_select = gov_details.show
 GovSelector = require './govselector.coffee'
 #renderData  = require './datarenderer.coffee'
 _jqgs       = require './jquery.govselector.coffee'
-Templates      = require './templates.coffee'
+#Templates      = require './templates.coffee'
+Templates2      = require './templates2.coffee'
 
 gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
-templates = new Templates
+#templates = new Templates
+templates = new Templates2
 
 
 
