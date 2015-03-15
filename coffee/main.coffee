@@ -12,6 +12,7 @@ GovSelector = require './govselector.coffee'
 _jqgs       = require './jquery.govselector.coffee'
 #Templates      = require './templates.coffee'
 Templates2      = require './templates2.coffee'
+govmap      = require './govmap.coffee'
 
 gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
 #templates = new Templates
@@ -43,7 +44,12 @@ get_record = (query) ->
       if data.length
         $('#details').html templates.get_html(0, data[0])
         activate_tab()
+        $('#maparea').css('visibility','visible')
+        govmap.geocode data[0]
       return
 
 #$('.gov').govselector()
+window.geocode_addr = (input_selector)->
+  govmap.gocode_addr $(input_selector).val()
 
+$('#maparea').css('visibility','hidden')
