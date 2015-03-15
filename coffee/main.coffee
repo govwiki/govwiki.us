@@ -17,11 +17,18 @@ gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
 #templates = new Templates
 templates = new Templates2
 
+active_tab=""
 
+window.remember_tab =(name)->
+  active_tab = name
+
+activate_tab =() ->
+  $("#fieldTabs a[href='##{active_tab}']").tab('show')
 
 gov_selector.on_selected = (evt, data, name) ->
   #renderData '#details', data
   $('#details').html templates.get_html(0, data)
+  activate_tab()
   get_record "inc_id:#{data["inc_id"]}"
   return
 
@@ -33,7 +40,9 @@ get_record = (query) ->
     cache: true
     success: (data) ->
       #if data.length then renderData '#details',  data[0]
-      if data.length then $('#details').html templates.get_html(0, data[0])
+      if data.length
+        $('#details').html templates.get_html(0, data[0])
+        activate_tab()
       return
 
 #$('.gov').govselector()

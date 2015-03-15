@@ -45,6 +45,8 @@ tab_layout0 =[
 ###
 
 
+
+
 render_field_value =(n,data) ->
   v=data[n]
   if n == "web_site"
@@ -75,12 +77,12 @@ render_tabs = (layout,data) ->
   h = '<div role="tabpanel" style="font-size:150%;">'
 
   #render tabs
-  h +='<ul class="nav nav-tabs" role="tablist">'
+  h +='<ul id="fieldTabs" class="nav nav-tabs" role="tablist">'
   
   for tab,i in layout
     active = if i>0 then '' else 'active'
     h +="""
-      <li role="presentation" class="#{active}">
+      <li role="presentation" class="#{active}" onclick="remember_tab('#{under(tab.name)}')">
         <a href="##{under(tab.name)}" aria-controls="home" role="tab" data-toggle="tab">
         #{tab.name}
         </a>
