@@ -8,23 +8,23 @@ gov_finder.on_select = gov_details.show
 ###
 
 GovSelector = require './govselector.coffee'
-#renderData  = require './datarenderer.coffee'
 _jqgs       = require './jquery.govselector.coffee'
-#Templates      = require './templates.coffee'
 Templates2      = require './templates2.coffee'
 govmap      = require './govmap.coffee'
 
-gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
-#templates = new Templates
-templates = new Templates2
 
+
+gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
+templates = new Templates2
 active_tab=""
 
-window.remember_tab =(name)->
-  active_tab = name
+window.remember_tab =(name)-> active_tab = name
+
+window.geocode_addr = (input_selector)-> govmap.gocode_addr $(input_selector).val()
 
 activate_tab =() ->
   $("#fieldTabs a[href='##{active_tab}']").tab('show')
+
 
 gov_selector.on_selected = (evt, data, name) ->
   #renderData '#details', data
@@ -48,8 +48,11 @@ get_record = (query) ->
         govmap.geocode data[0]
       return
 
-#$('.gov').govselector()
-window.geocode_addr = (input_selector)->
-  govmap.gocode_addr $(input_selector).val()
+
+
+
 
 $('#maparea').css('visibility','hidden')
+
+
+templates.load_template "tabs", "config/tablayout.json"

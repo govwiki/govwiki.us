@@ -1,39 +1,3 @@
-tab_layout0 =[
-  {name:'General', fields:[
-    "gov_name"
-    "census_id"
-    "special_district_function_code"
-    "gov_type"
-    "county_area_name"
-    "county_area_type"
-    "web_site"
-  ]}
-  {name:'Address', fields:[
-    "census_contact"
-    "address1"
-    "address2"
-    "city"
-    "state"
-    "zip"
-  ]}
-  {name:'Stat', fields:[
-    "population"
-    "population_as_of_year"
-    "enrollment"
-    "enrollment_as_of_year"
-    "fips_state"
-    "fips_county"
-    "fips_place"
-  ]}
-  {name:'Location', fields:[
-    "latitude"
-    "longitude"
-  ]}
-  {name:'Other', fields:[
-    "inc_id"
-  ]}
-]
-
 
 ###
 # file: templates2.coffee ----------------------------------------------------------------------
@@ -46,6 +10,24 @@ tab_layout0 =[
 
 
 
+# LOAD FIELD NAMES 
+fieldNames = {}
+
+load_field_names = (url) ->
+  $.ajax
+    url: url
+    dataType: 'json'
+    cache: true
+    success: (fieldnames_json) =>
+      fieldNames = fieldnames_json
+      return
+    error:(e)->
+      console.log e
+
+
+load_field_names("config/fieldnames.json")
+
+
 
 render_field_value =(n,data) ->
   v=data[n]
@@ -56,25 +38,41 @@ render_field_value =(n,data) ->
   
   
 
+render_field_name = (fName) ->
+  if fieldNames[fName]?
+    return fieldNames[fName]
+
+  s = fName.replace(/_/g," ")
+  s = s.charAt(0).toUpperCase() + s.substring(1)
+  return s
+
+
 render_field = (fName,data)->
   return ''  unless fValue = data[fName]
   """
   <div>
-      <span class='f-nam'>#{fieldNames[fName]}</span>
+      <span class='f-nam'>#{render_field_name fName}</span>
       <span class='f-val'>#{render_field_value(fName,data)}</span>
   </div>
   """
+
+
+
   
 render_fields =( fields, data) ->
   ( render_field(f, data) for f in fields).join('')
 
 
+
+
+  
 under = (s) -> s.replace(/ /g, '_')
 
 
-render_tabs = (layout,data) ->
+render_tabs = (initial_layout, data) ->
+  layout = add_other_tab_to_layout initial_layout, data
   #render header
-  h = '<div role="tabpanel" style="font-size:150%;">'
+  h = '<div role="tabpanel" >'
 
   #render tabs
   h +='<ul id="fieldTabs" class="nav nav-tabs" role="tablist">'
@@ -107,20 +105,68 @@ render_tabs = (layout,data) ->
   return h
 
 
+get_layout_fields = (la) ->
+  f = {}
+  for t in la
+    for field in t.fields
+      f[field] = 1
+  return f
+
+get_record_fields = (r) ->
+  f = {}
+  for field_name of r
+    f[field_name] = 1
+  return f
+
+get_unmentioned_fields = (la, r) ->
+  layout_fields = get_layout_fields la
+  record_fields = get_record_fields r
+  unmentioned_fields = []
+  
+  #for f of record_fields
+  #  if not layout_fields[f]
+  #    unmentioned_fields.push f
+  
+  unmentioned_fields.push(f) for f of record_fields when not layout_fields[f]
+
+  return unmentioned_fields
+
+
+add_other_tab_to_layout = (layout=[], data) ->
+  #clone the layout
+  l = $.extend true, [], layout
+  t =
+    name: "Other"
+    fields: get_unmentioned_fields l, data
+
+  l.push t
+  return l
 
 
 
 
 class Templates2
-  @list = undefined
 
+  @list = undefined
 
   constructor:() ->
     @list = []
+
+  add_template: (layout_name, layout_json) ->
     @list.push
-      name:"tabs"
+      name:layout_name
       render:(dat) ->
-        render_tabs(tab_layout0, dat)
+        render_tabs(layout_json, dat)
+
+
+  load_template:(template_name, url) ->
+    $.ajax
+      url: url
+      dataType: 'json'
+      cache: true
+      success: (template_json) =>
+        @add_template(template_name, template_json)
+        return
 
 
   get_names: ->
@@ -130,10 +176,15 @@ class Templates2
     for t,i in @list
       if t.name is name
         return i
-    return -1
+     return -1
 
   get_html: (ind, data) ->
-    return if (ind is -1) then  "" else @list[ind].render(data)
+    if (ind is -1) then return  ""
+    
+    if @list[ind]
+      return @list[ind].render(data)
+    else
+      return ""
 
 
 

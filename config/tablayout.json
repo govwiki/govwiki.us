@@ -1,0 +1,18 @@
+[
+  {
+    "name": "General",
+    "fields": ["gov_name", "census_id", "special_district_function_code", "gov_type", "county_area_name", "county_area_type", "web_site"]
+  }, 
+  {
+    "name": "Address",
+    "fields": ["census_contact", "address1", "address2", "city", "state", "zip"]
+  }, 
+  {
+    "name": "Stat",
+    "fields": ["population", "population_as_of_year", "enrollment", "enrollment_as_of_year", "fips_state", "fips_county", "fips_place"]
+  }, 
+  {
+    "name": "Location",
+    "fields": ["latitude", "longitude"]
+  } 
+]

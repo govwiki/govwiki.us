@@ -1,4 +1,4 @@
-var fieldNames ={
+{
     "gov_name"                       : "Name"                                   ,
     "census_id"                      : "Census ID"                              ,
     "special_district_function_code" : "Special Purpose District Function Code" ,
@@ -11,10 +11,8 @@ var fieldNames ={
     "zip"                            : "Zip Code"                               ,
     "web_site"                       : "Web Site Address"                       ,
     "population"                     : "Population"                             ,
-    //No label; place value in parenthesis next to Population"                  ,
     "population_as_of_year"          : ""                                       ,
     "enrollment"                     : "Enrollment"                             ,
-    //No label; place value in parenthesis next to Enrollment"                  ,
     "enrollment_as_of_year"          : ""                                       ,
     "fips_state"                     : "FIPS State Code"                        ,
     "fips_county"                    : "FIPS County Code"                       ,
@@ -22,35 +20,6 @@ var fieldNames ={
     "county_area_name"               : "County (or equiv) Name"                 ,
     "county_area_type"               : "County Type"                            ,
     "latitude"                       : "Latitude"                               ,
-    "longitude"                      : "Longitude"                              ,
-    "inc_id"                         : "#"                                      
+    "longitude"                      : "Longitude" 
 
-};
-
-/*
-var layout0 = [
-    "gov_name"                       ,
-    "census_id"                      ,
-    "special_district_function_code" ,
-    "gov_type"                       ,
-    "census_contact"                 ,
-    "address1"                       ,
-    "address2"                       ,
-    "city"                           ,
-    "state"                          ,
-    "zip"                            ,
-    "web_site"                       ,
-    "population"                     ,
-    "population_as_of_year"          ,
-    "enrollment"                     ,
-    "enrollment_as_of_year"          ,
-    "fips_state"                     ,
-    "fips_county"                    ,
-    "fips_place"                     ,
-    "county_area_name"               ,
-    "county_area_type"               ,
-    "latitude"                       ,
-    "longitude"                      ,
-    "inc_id"                                                               
-];
-*/
+}
