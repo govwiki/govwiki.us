@@ -20,7 +20,7 @@ QueryMather = (docs, num_items=5) ->
 
     for d in docs
       if matches.length >= num_items then break
-      if test_string(d.gov_name, regs) then matches.push $.extend({}, d)
+      if test_string("#{d.gov_name} #{d.state} #{d.gov_type} #{d.inc_id}", regs) then matches.push $.extend({}, d)
     
     select_text matches, words, regs
     cb matches
@@ -31,6 +31,8 @@ QueryMather = (docs, num_items=5) ->
 select_text = (clones,words,regs) ->
   for d in clones
     d.gov_name=strongify(d.gov_name, words, regs)
+    d.state=strongify(d.state, words, regs)
+    d.gov_type=strongify(d.gov_type, words, regs)
   
   return clones
 
