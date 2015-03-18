@@ -71,20 +71,46 @@
 }
 */
 .sugg-box {
+  position: relative;
   border-bottom: 0px solid #EEE;
+  /*min-height: 60px;*/
+  overflow: hidden;
 }
 
-.sugg-small {
-    font-size:70%;
-    color:#888;
-    text-transform: capitalize;
-    /*font-family:monospace;*/
+
+.sugg-state {
+  /*width: 70px;*/
+  top:0px;
+  left:0px;
+  margin-right:20px;
+  float: left;
+  z-index:0;
+  /*position: absolute;*/
+  font-size: 18px;
+  color: #DDD;
+  color:#59e;
+  font-weight:bold;
 }
 
-.sugg-main {
-    min-width:370px;
-    display:inline-block;
+.sugg-name {
+    /*min-width:370px;*/
+    /*margin-left: 80px;*/
+    /*margin-top:15px; */
+    font-size: 20px;
+    display:inline;
     text-transform: uppercase;
+}
+
+.sugg-type {
+    font-size:70%;
+    color:#59e;
+    /*text-transform: capitalize;*/
+    float: right;
+    /*position: absolute;*/
+    top:36px;
+    right:0px;
+    line-height:100%;
+    /*width: 70px;*/
 }
 
 #details  {
@@ -115,4 +141,17 @@
     text-transform: uppercase;
 }
 
+.search-form input {
+  height: 40px;
+}
 
+.search-form select {
+  height: 40px;
+}
+
+.search-form .info {
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-right:20px;
+  padding-left:20px;
+}

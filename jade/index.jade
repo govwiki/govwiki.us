@@ -74,7 +74,13 @@ html(lang='en')
 
     .container
       //input#input0.gov.text-uppercase.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
-      input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
+      form.form-inline.search-form
+        input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
+        #filter-container.pull-right
+          span.info you can filter by
+          span.state-container
+          span.info and/or
+          span.gov-type-container
 
 
           

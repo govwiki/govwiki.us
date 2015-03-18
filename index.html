@@ -72,7 +72,10 @@
     </nav>
     <div class="container">
       <!--input#input0.gov.text-uppercase.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')-->
-      <input id="myinput" type="text" placeholder="Loading the list of 91,000 US governments..." class="text-uppercase typeahead form-control">
+      <form class="form-inline search-form">
+        <input id="myinput" type="text" placeholder="Loading the list of 91,000 US governments..." style="width:412px;" class="text-uppercase typeahead form-control">
+        <div id="filter-container" class="pull-right"><span class="info">you can filter by</span><span class="state-container"></span><span class="info">and/or</span><span class="gov-type-container"></span></div>
+      </form>
     </div>
     <div style="margin-top:50px;" class="container">
       <div style="margin-bottom:70px; border:0px solid silver;" class="row">

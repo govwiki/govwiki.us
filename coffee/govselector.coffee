@@ -1,3 +1,4 @@
+
 query_matcher = require('./querymatcher.coffee')
 
 class GovSelector
@@ -18,12 +19,16 @@ class GovSelector
 
   suggestionTemplate : Handlebars.compile("""
     <div class="sugg-box">
-    <p><span class="sugg-main">{{{gov_name}}}</span> 
-    <span class="sugg-small">{{{state}}} &nbsp;{{{gov_type}}}</span>
-    </p>
+      <div class="sugg-state">{{{state}}}</div>
+      <div class="sugg-name">{{{gov_name}}}</div>
+      <div class="sugg-type">{{{gov_type}}}</div>
     </div>""")
 
-  entered_value:""
+
+
+  entered_value = ""
+
+  
 
   startSuggestion : (govs) =>
     
@@ -57,5 +62,6 @@ class GovSelector
 
 
 module.exports=GovSelector
+
 
 

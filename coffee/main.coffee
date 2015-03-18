@@ -12,6 +12,13 @@ _jqgs       = require './jquery.govselector.coffee'
 Templates2      = require './templates2.coffee'
 govmap      = require './govmap.coffee'
 
+window.GOVWIKI =
+  state_filter : ''
+  gov_type_filter : ''
+
+
+
+
 
 
 gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
@@ -40,13 +47,14 @@ get_record = (query) ->
     dataType: 'json'
     cache: true
     success: (data) ->
-      #if data.length then renderData '#details',  data[0]
       if data.length
         $('#details').html templates.get_html(0, data[0])
         activate_tab()
         $('#maparea').css('visibility','visible')
         govmap.geocode data[0]
       return
+    error:(e) ->
+      console.log e
 
 
 
@@ -56,3 +64,44 @@ $('#maparea').css('visibility','hidden')
 
 
 templates.load_template "tabs", "config/tablayout.json"
+
+
+build_selector = (container, text, url, where_to_store_value ) ->
+  $.ajax
+    url: url
+    dataType: 'json'
+    cache: true
+    success: (data) =>
+      #a=$.extend true [],data
+      build_select_element container, text, data.sort(), where_to_store_value
+      return
+    error:(e) ->
+      console.log e
+
+
+build_select_element = (container, text, arr, where_to_store_value ) ->
+  s  = "<select class='form-control'><option value=''>#{text}</option>"
+  s += "<option value='#{v}'>#{v}</option>" for v in arr
+  s += "</select>"
+  select = $(s)
+  $(container).append(select)
+  select.change (e) ->
+    el = $(e.target)
+    window.GOVWIKI[where_to_store_value] = el.val()
+
+
+build_selector('.state-container'
+  , 'State..'
+  , 'data/state.json'
+  , 'state_filter')
+
+build_selector('.gov-type-container'
+  , 'type of government..'
+  , 'data/gov_type.json'
+  , 'gov_type_filter')
+
+
+
+
+
+
