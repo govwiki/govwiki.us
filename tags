@@ -8,45 +8,83 @@ BIN	node_modules/connect/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_
 BIN	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
 BROWSERIFY	node_modules/connect/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
 BROWSERIFY	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
-GovSelector	coffee/main.coffee	/^GovSelector = require('.\/govselector.coffee')$/;"	v
+GovSelector	coffee/main.coffee	/^GovSelector = require '.\/govselector.coffee'$/;"	v
 Handlebars	bower_components/handlebars/lib/handlebars/source.rb	/^module Handlebars$/;"	m
 NODE	node_modules/connect/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
 NODE	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
 NPM	node_modules/connect/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
 NPM	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
-QueryMather	coffee/querymatcher.coffee	/^QueryMather = (docs) ->$/;"	f
+QueryMather	coffee/querymatcher.coffee	/^QueryMather = (docs, num_items=5) ->$/;"	f
 Source	bower_components/handlebars/lib/handlebars/source.rb	/^  module Source$/;"	m	class:Handlebars
 THIS_DIR	node_modules/connect/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
 THIS_DIR	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
 THIS_MAKEFILE_PATH	node_modules/connect/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
 THIS_MAKEFILE_PATH	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+Templates2	coffee/main.coffee	/^Templates2      = require '.\/templates2.coffee'$/;"	v
+activate_tab	coffee/main.coffee	/^activate_tab =() ->$/;"	f
+active_tab	coffee/main.coffee	/^active_tab=""$/;"	v
+add_other_tab_to_layout	coffee/templates2.coffee	/^add_other_tab_to_layout = (layout=[], data) ->$/;"	f
+addr	coffee/govmap.coffee	/^  addr = "#{clear(data.address1)} #{clear(data.address2)}, #{data.city}, #{data.state} #{data.zip}, USA"$/;"	v
 base	coffee/jquery.govselector.coffee	/^    base = this$/;"	v
 base.el	coffee/jquery.govselector.coffee	/^    base.el = el$/;"	v
 base.init	coffee/jquery.govselector.coffee	/^    base.init = ->$/;"	f
 benchmark	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
 benchmark	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
 blur	coffee/jquery.govselector.coffee	/^    blur = (event) ->$/;"	f
+build_select_element	coffee/main.coffee	/^build_select_element = (container, text, arr, where_to_store_value ) ->$/;"	f
+build_selector	coffee/main.coffee	/^build_selector = (container, text, url, where_to_store_value ) ->$/;"	f
 bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.bundled_path$/;"	F	class:Handlebars.Source
+clear	coffee/govmap.coffee	/^clear=(s)->$/;"	f
+count	coffee/govselector.coffee	/^    count =0$/;"	v
 delay	coffee/jquery.govselector.coffee	/^    delay = do ->$/;"	f
+el	coffee/main.coffee	/^    el = $(e.target)$/;"	v
+entered_value	coffee/govselector.coffee	/^  entered_value = ""$/;"	v
+execJasmine	bower_components/gmaps/test/index.html	/^      function execJasmine() {$/;"	f
 exports	node_modules/coffeeify/example/baz.coffee	/^module.exports = (n) -> n * 111$/;"	f
+f	coffee/templates2.coffee	/^  f = {}$/;"	v
+fieldNames	coffee/templates2.coffee	/^fieldNames = {}$/;"	v
 full_trim	coffee/querymatcher.coffee	/^full_trim = (s) ->$/;"	f
+geocode	coffee/govmap.coffee	/^geocode = (data) ->$/;"	f
+geocode_addr	coffee/govmap.coffee	/^geocode_addr = (addr,data) ->$/;"	f
+get_layout_fields	coffee/templates2.coffee	/^get_layout_fields = (la) ->$/;"	f
 get_record	coffee/main.coffee	/^get_record = (query) ->$/;"	f
+get_record_fields	coffee/templates2.coffee	/^get_record_fields = (r) ->$/;"	f
+get_unmentioned_fields	coffee/templates2.coffee	/^get_unmentioned_fields = (la, r) ->$/;"	f
 get_words	coffee/querymatcher.coffee	/^get_words = (str) ->$/;"	f
 get_words_regs	coffee/querymatcher.coffee	/^get_words_regs = (str) ->$/;"	f
 gov_finder.on_select	coffee/main.coffee	/^gov_finder.on_select = gov_details.show$/;"	v
 gov_selector.on_selected	coffee/main.coffee	/^gov_selector.on_selected = (evt, data, name) ->$/;"	f
-link	coffee/datarenderer.coffee	/^      link = (v) ->$/;"	f
-makeDocHtml	coffee/datarenderer.coffee	/^  makeDocHtml = (data) ->$/;"	f
-makeFieldHtml	coffee/datarenderer.coffee	/^    makeFieldHtml = (n, v) ->$/;"	f
+govmap	coffee/main.coffee	/^govmap      = require '.\/govmap.coffee'$/;"	v
+govs_array	coffee/govselector.coffee	/^  govs_array = []$/;"	v
+layout_fields	coffee/templates2.coffee	/^  layout_fields = get_layout_fields la$/;"	v
+link	old/datarenderer.coffee	/^      link = (v) ->$/;"	f
+link	old/templates.coffee	/^    link = (n) ->$/;"	f
+load_field_names	coffee/templates2.coffee	/^load_field_names = (url) ->$/;"	f
+load_template	old/templates.coffee	/^  load_template = (url)=>$/;"	f
+makeDocHtml	old/datarenderer.coffee	/^  makeDocHtml = (data) ->$/;"	f
+makeFieldHtml	old/datarenderer.coffee	/^    makeFieldHtml = (n, v) ->$/;"	f
+makeFieldHtml	old/templates.coffee	/^  makeFieldHtml = (n) ->$/;"	f
+make_simple_template	old/templates.coffee	/^make_simple_template =(fields)->$/;"	f
+make_simple_template2	old/templates.coffee	/^make_simple_template2=(fields)->$/;"	f
 matches	coffee/querymatcher.coffee	/^    matches = []$/;"	v
+module.exports	coffee/govmap.coffee	/^module.exports =$/;"	v
 module.exports	coffee/govselector.coffee	/^module.exports=GovSelector$/;"	v
 module.exports	coffee/querymatcher.coffee	/^module.exports = QueryMather$/;"	v
+module.exports	coffee/templates2.coffee	/^module.exports = Templates2$/;"	v
+module.exports	old/templates.coffee	/^module.exports = Templates$/;"	v
 next	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
 next	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
 onkeyup	coffee/jquery.govselector.coffee	/^    onkeyup = (event) ->$/;"	f
 query_matcher	coffee/govselector.coffee	/^query_matcher = require('.\/querymatcher.coffee')$/;"	v
+record_fields	coffee/templates2.coffee	/^  record_fields = get_record_fields r$/;"	v
 regs	coffee/querymatcher.coffee	/^  regs = words.map (w)-> new RegExp("#{w}",'ig')$/;"	f
-renderData	coffee/datarenderer.coffee	/^renderData = (html_container, data) ->$/;"	f
+renderData	old/datarenderer.coffee	/^renderData = (html_container, data) ->$/;"	f
+render_field	coffee/templates2.coffee	/^render_field = (fName,data)->$/;"	f
+render_field_name	coffee/templates2.coffee	/^render_field_name = (fName) ->$/;"	f
+render_field_value	coffee/templates2.coffee	/^render_field_value =(n,data) ->$/;"	f
+render_fields	coffee/templates2.coffee	/^render_fields =( fields, data) ->$/;"	f
+render_tabs	coffee/templates2.coffee	/^render_tabs = (initial_layout, data) ->$/;"	f
+render_tabs	old/templates.coffee	/^render_tabs = (layout,data) ->$/;"	f
 run	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
 run	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
 runAcorn	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
@@ -56,17 +94,30 @@ runEsprima	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.htm
 runTraceur	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
 runTraceur	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
 runtime_bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.runtime_bundled_path$/;"	F	class:Handlebars.Source
-s	coffee/datarenderer.coffee	/^      s = ''$/;"	v
+s	coffee/templates2.coffee	/^  s = fName.replace(\/_\/g," ")$/;"	v
+s	old/datarenderer.coffee	/^      s = ''$/;"	v
+select	coffee/main.coffee	/^  select = $(s)$/;"	v
 select_text	coffee/querymatcher.coffee	/^select_text = (clones,words,regs) ->$/;"	f
 showOutput	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
 showOutput	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
-ss	coffee/datarenderer.coffee	/^    ss = ''$/;"	v
 ss	coffee/querymatcher.coffee	/^  ss=s.trim(''+s)$/;"	v
 ss	coffee/querymatcher.coffee	/^  ss=ss.replace(\/ +\/g,' ')$/;"	v
+ss	old/datarenderer.coffee	/^    ss = ''$/;"	v
+ss	old/templates.coffee	/^      ss=''$/;"	v
+ss	old/templates.coffee	/^  ss = ''$/;"	v
 strip	coffee/querymatcher.coffee	/^strip = (s) ->$/;"	f
 strongify	coffee/querymatcher.coffee	/^strongify = (s, words, regs) ->$/;"	f
+t	coffee/templates2.coffee	/^  t =$/;"	v
 test_string	coffee/querymatcher.coffee	/^    test_string =(s, regs) ->$/;"	f
 thisIsWrong	node_modules/coffeeify/example/error.coffee	/^thisIsWrong = , 'waaa'$/;"	v
 timer	coffee/jquery.govselector.coffee	/^        timer = setTimeout(callback, ms)$/;"	v
 timer	coffee/jquery.govselector.coffee	/^      timer = 0$/;"	v
+txt	old/templates.coffee	/^    txt = make_simple_template(layout0)$/;"	v
+txt	old/templates.coffee	/^  txt ="""$/;"	v
+txt0	old/templates.coffee	/^    txt0 = make_simple_template2(layout0)$/;"	v
+under	coffee/templates2.coffee	/^under = (s) -> s.replace(\/ \/g, '_')$/;"	f
+unmentioned_fields	coffee/templates2.coffee	/^  unmentioned_fields = []$/;"	v
+window.GOVWIKI	coffee/main.coffee	/^window.GOVWIKI =$/;"	v
+window.geocode_addr	coffee/main.coffee	/^window.geocode_addr = (input_selector)-> govmap.gocode_addr $(input_selector).val()$/;"	f
+window.remember_tab	coffee/main.coffee	/^window.remember_tab =(name)-> active_tab = name$/;"	f
 words	coffee/querymatcher.coffee	/^  words = get_words str$/;"	v

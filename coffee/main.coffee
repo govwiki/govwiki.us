@@ -88,6 +88,7 @@ build_select_element = (container, text, arr, where_to_store_value ) ->
   select.change (e) ->
     el = $(e.target)
     window.GOVWIKI[where_to_store_value] = el.val()
+    $('.gov-counter').text gov_selector.count_govs()
 
 
 build_selector('.state-container'

@@ -74,7 +74,7 @@
       <!--input#input0.gov.text-uppercase.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')-->
       <form class="form-inline search-form">
         <input id="myinput" type="text" placeholder="Loading the list of 91,000 US governments..." style="width:412px;" class="text-uppercase typeahead form-control">
-        <div id="filter-container" class="pull-right"><span class="info">you can filter by</span><span class="state-container"></span><span class="info">and/or</span><span class="gov-type-container"></span></div>
+        <div id="filter-container" class="pull-right"><span data-toggle="tooltip" data-placement="bottom" title="Number of governments" class="gov-counter"></span><span class="info">you can filter by</span><span class="state-container"></span><span class="info">and/or</span><span class="gov-type-container"></span></div>
       </form>
     </div>
     <div style="margin-top:50px;" class="container">
@@ -83,13 +83,13 @@
           <div id="details" style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;"></div>
         </div>
         <div id="maparea" style="border:0px solid silver;" class="col-lg-6">
-          <div class="input-group"><span style="padding:0; margin:0" class="input-group-addon"> <strong>FIND:</strong></span>
+          <div style="display:none" class="input-group"><span style="padding:0; margin:0" class="input-group-addon"> <strong>FIND:</strong></span>
             <input id="govaddress" class="form-control input-sm">
             <div class="input-group-btn">
               <button onclick="geocode_addr('#govaddress')" class="glyphicon glyphicon-search btn btn-default input-sm"></button>
             </div>
           </div>
-          <div class="govmap-found"> </div>
+          <div style="display:none" class="govmap-found"> </div>
           <div id="govmap" style="height:400px;border:0px solid silver;"></div>
         </div>
       </div>

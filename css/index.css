@@ -88,7 +88,7 @@
   /*position: absolute;*/
   font-size: 18px;
   color: #DDD;
-  color:#59e;
+  color:#337ab7; /*#59e;*/
   font-weight:bold;
 }
 
@@ -103,7 +103,7 @@
 
 .sugg-type {
     font-size:70%;
-    color:#59e;
+    color:#337ab7; /*#59e;*/
     /*text-transform: capitalize;*/
     float: right;
     /*position: absolute;*/
@@ -129,7 +129,9 @@
     color:#aaa;
     text-align:left;
     margin-right:5px;
-    border-bottom: 1px dotted silver;
+    text-transform:capitalize;
+    text-align:left;
+    border-bottom: 0px dotted silver;
 }
 
 .f-val {
@@ -147,6 +149,7 @@
 
 .search-form select {
   height: 40px;
+  color:#337ab7;
 }
 
 .search-form .info {
@@ -154,4 +157,10 @@
   opacity: 0.5;
   padding-right:20px;
   padding-left:20px;
+}
+
+.gov-counter {
+  color: #337ab7;
+  /*font-weight:bold;*/
+  font-size:110%;
 }

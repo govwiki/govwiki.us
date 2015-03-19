@@ -77,6 +77,7 @@ html(lang='en')
       form.form-inline.search-form
         input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
         #filter-container.pull-right
+          span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
           span.info you can filter by
           span.state-container
           span.info and/or
@@ -89,13 +90,13 @@ html(lang='en')
         .col-lg-6(style="margin-top:0; border:0px solid silver;")
           #details(style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;")
         #maparea.col-lg-6(style="border:0px solid silver;")
-          .input-group
+          .input-group(style="display:none")
             span.input-group-addon(style="padding:0; margin:0") 
               strong FIND:
             input#govaddress.form-control.input-sm
             .input-group-btn
               button.glyphicon.glyphicon-search.btn.btn-default.input-sm(onclick="geocode_addr('#govaddress')")
-          .govmap-found  
+          .govmap-found(style="display:none")  
           #govmap(style="height:400px;border:0px solid silver;")
 
 
