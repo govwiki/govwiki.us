@@ -7,15 +7,16 @@
   "license": "MIT",
   "scripts": {
     "push": "git add -A . && git commit -am 'v' && git push",
+    "stylus": "stylus css/index.styl",
+    "stylusw": "stylus -w css/index.styl",
     "jade": "jade jade -P -o .",
     "jadew": "jade jade -P -w -o .",
-    "old--coffee": "cat coffee/*.coffee > b.coffee/b.coffee && coffee -cm -o js b.coffee/b.coffee",
-    "old--coffeew": "watch 'npm run coffee' coffee",
     "coffee": "browserify -d -t coffeeify coffee/main.coffee -o static/bundle.js",
     "coffeew": "watchify  -d -t coffeeify coffee/main.coffee -o static/bundle.js",
-    "watch": "npm run jadew & npm run coffeew",
-    "dev": "http-server -s -o -a localhost & npm run jadew & npm run coffeew & echo 'Launch browser and start editing files' ",
-    "start": "http-server -s -o -a localhost",
+    "watch": "npm run jadew & npm run coffeew & npm run stylusw &",
+    "live-reload": "live-reload  index.html css static --port=9090 --delay=500",
+    "dev": "npm run live-reload & npm run start & npm run watch & echo 'Launch browser and start editing files' ",
+    "start": "http-server --cors -s -o",
     "serve": "node server.js"
   },
   "repository": {
@@ -35,8 +36,10 @@
     "connect": "^3.3.4",
     "http-server": "^0.7.5",
     "jade": "^1.9.2",
+    "live-reload": "^1.1.0",
     "serve-static": "^1.9.1",
-    "watch": "^0.14.0"
+    "stylus": "^0.50.0",
+    "watchify": "^3.1.0"
   },
   "bugs": {
     "url": "https://github.com/govwiki/govwiki.us/issues"

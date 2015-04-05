@@ -102,7 +102,16 @@ build_selector('.gov-type-container'
   , 'gov_type_filter')
 
 
+# add live reload to the site. For development only.
+livereload = (port) ->
+  url=window.location.origin.replace /:[^:]*$/, ""
+  $.getScript url + ":" + port, =>
+    $('body').append """
+    <div style='position:absolute;z-index:1000;
+    width:100%; top:0;color:red; text-align: center; 
+    padding:1px;font-size:10px;line-height:1'>live</div>
+    """
 
 
-
+livereload "9090"
 

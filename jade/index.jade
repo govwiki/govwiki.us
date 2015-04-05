@@ -73,15 +73,26 @@ html(lang='en')
 
 
     .container
-      //input#input0.gov.text-uppercase.form-control(type='text', placeholder='Loading the list of 91,000 US governments...')
-      form.form-inline.search-form
-        input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
-        #filter-container.pull-right
-          span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
-          span.info you can filter by
-          span.state-container
-          span.info and/or
-          span.gov-type-container
+      //.row
+        form.form-inline.search-form
+          input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
+          #filter-container.pull-right
+            span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
+            span.info you can filter by
+            span.state-container
+            span.info and/or
+            span.gov-type-container
+              
+      .row.search-form
+        .col-sm-6
+          input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
+        .col-sm-6.text-right
+          form.form-inline
+            span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
+            span.info filter by
+            span.state-container(style="margin-right:20px;")
+            span.gov-type-container
+
 
 
           
