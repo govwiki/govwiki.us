@@ -80,7 +80,7 @@ build_selector = (container, text, url, where_to_store_value ) ->
 
 
 build_select_element = (container, text, arr, where_to_store_value ) ->
-  s  = "<select class='form-control'><option value=''>#{text}</option>"
+  s  = "<select class='form-control' style='max-width:160px;'><option value=''>#{text}</option>"
   s += "<option value='#{v}'>#{v}</option>" for v in arr
   s += "</select>"
   select = $(s)
@@ -102,6 +102,17 @@ build_selector('.gov-type-container'
   , 'gov_type_filter')
 
 
+adjust_typeahead_width =() ->
+  $(window).resize ->
+    inp = $('#myinput')
+    par = $('#typeahed-container')
+    console.log "#{inp.width()} : #{par.width()}"
+    inp.width par.width()
+
+adjust_typeahead_width()
+
+  
+
 # add live reload to the site. For development only.
 livereload = (port) ->
   url=window.location.origin.replace /:[^:]*$/, ""
@@ -114,4 +125,6 @@ livereload = (port) ->
 
 
 livereload "9090"
+
+
 

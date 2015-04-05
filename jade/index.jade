@@ -84,9 +84,9 @@ html(lang='en')
             span.gov-type-container
               
       .row.search-form
-        .col-sm-6
+        #typeahed-container.col-sm-6
           input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
-        .col-sm-6.text-right
+        .col-sm-6.text-right.text-nowrap
           form.form-inline
             span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
             span.info filter by
