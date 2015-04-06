@@ -20,13 +20,10 @@
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     |       
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-    
-    
     -->
   </head>
   <body>
-    <!-- Static navbar-->
-    <nav style="margin-bottom:0" class="navbar navbar-default navbar-static-top">
+    <nav style="margin-bottom:0" class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Govwiki.us</a>
@@ -64,24 +61,10 @@
             -->
           </ul>
         </div>
-        <!-- /.nav-collapse-->
       </div>
-      <!--.container(style="margin-bottom:20px;")-->
-      
-      
     </nav>
-    <div class="container">
-      <!--.row
-      form.form-inline.search-form
-        input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
-        #filter-container.pull-right
-          span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
-          span.info you can filter by
-          span.state-container
-          span.info and/or
-          span.gov-type-container
-            
-      -->
+    <!-- Search & Filters -->
+    <div style="margin-bottom:50px;" class="container">
       <div class="row search-form">
         <div id="typeahed-container" class="col-sm-6">
           <input id="myinput" type="text" placeholder="Loading the list of 91,000 US governments..." style="width:412px" class="text-uppercase typeahead form-control">
@@ -91,22 +74,37 @@
         </div>
       </div>
     </div>
-    <div style="margin-top:50px;" class="container">
-      <div style="margin-bottom:70px; border:0px solid silver;" class="row">
-        <div style="margin-top:0; border:0px solid silver;" class="col-lg-6">
-          <div id="details" style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;"></div>
-        </div>
-        <div id="maparea" style="border:0px solid silver;" class="col-lg-6">
-          <div style="display:none" class="input-group"><span style="padding:0; margin:0" class="input-group-addon"> <strong>FIND:</strong></span>
-            <input id="govaddress" class="form-control input-sm">
-            <div class="input-group-btn">
-              <button onclick="geocode_addr('#govaddress')" class="glyphicon glyphicon-search btn btn-default input-sm"></button>
-            </div>
+    <!-- MAP      -->
+    <div style="margin-bottom:50px;display:none;" class="container">
+      <div class="row">
+        <div style="border:0px solid silver;" class="col-lg-12">
+          <div id="maparea">
+            <div id="govmap" style="height:400px;border:0px solid silver;"></div>
+            <!-- Controls to show results of geocoding-->
+            <!--div
+            .input-group
+              span.input-group-addon
+                strong FIND:
+              input#govaddress.form-control.input-sm
+              .input-group-btn
+                button.glyphicon.glyphicon-search.btn.btn-default.input-sm(onclick="geocode_addr('#govaddress')")
+            .govmap-found
+            
+            
+            -->
           </div>
-          <div style="display:none" class="govmap-found"> </div>
-          <div id="govmap" style="height:400px;border:0px solid silver;"></div>
         </div>
       </div>
+    </div>
+    <!-- DATA-->
+    <div style="margin-bottom:50px;" class="container">
+      <div class="row">
+        <div style="margin-top:0; border:0px solid silver;" class="col-lg-12">
+          <div id="details" style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;"></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom:50px;" class="container">
       <p>
         California local government civic profile system for CPC.  
         The application will be based on the California Credit Scoring System originally 
@@ -114,11 +112,6 @@
       </p>
       <p><a href="https://github.com/govwiki/govwiki.us" role="button" class="btn btn-lg btn-primary">Github project</a></p>
     </div>
-    <!-- /container-->
-    <!--
-    Bootstrap core JavaScript
-    ==================================================
-    -->
     <!-- Scripts -- Placed at the end of the document so the pages load faster-->
     <script src="js_files/jquery.min.js"></script>
     <!--script(src='./js_files/bootstrap.min.js')-->

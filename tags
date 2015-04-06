@@ -4,80 +4,926 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+AR.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^AR.host ?= ar$/;"	m
+AR.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^AR.target ?= $(AR)$/;"	m
+ARTIFACTS	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^ARTIFACTS=\\$/;"	m
+ARTIFACTS	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^ARTIFACTS=\\$/;"	m
+ASCII	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
+AsyncClose_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE static void AsyncClose_(uv_handle_t* handle) {$/;"	f	class:NanAsyncProgressWorker
+BASE64	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
 BIN	node_modules/connect/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
 BIN	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
+BIN	node_modules/stylus/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
+BIN	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^BIN := $(THIS_DIR)\/node_modules\/.bin$/;"	m
+BINARY	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
 BROWSERIFY	node_modules/connect/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
 BROWSERIFY	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
+BROWSERIFY	node_modules/stylus/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
+BROWSERIFY	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/browserify-sign/node_modules/elliptic/Makefile	/^BROWSERIFY ?= .\/node_modules\/.bin\/browserify$/;"	m
+BROWSERIFY	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/create-ecdh/node_modules/elliptic/Makefile	/^BROWSERIFY ?= .\/node_modules\/.bin\/browserify$/;"	m
+BROWSERIFY	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^BROWSERIFY ?= $(NODE) $(BIN)\/browserify$/;"	m
+BUFFER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
+BUILDTYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^BUILDTYPE ?= Release$/;"	m
+CC.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CC.host ?= gcc$/;"	m
+CC.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CC.target ?= $(CC)$/;"	m
+CFLAGS.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CFLAGS.host ?=$/;"	m
+CFLAGS.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CFLAGS.target ?= $(CFLAGS)$/;"	m
+CFLAGS_CC_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_CC_Debug := \\$/;"	m
+CFLAGS_CC_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_CC_Release := \\$/;"	m
+CFLAGS_C_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_C_Debug := \\$/;"	m
+CFLAGS_C_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_C_Release := \\$/;"	m
+CFLAGS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_Debug := \\$/;"	m
+CFLAGS_OBJCC_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_OBJCC_Debug :=$/;"	m
+CFLAGS_OBJCC_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_OBJCC_Release :=$/;"	m
+CFLAGS_OBJC_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_OBJC_Debug :=$/;"	m
+CFLAGS_OBJC_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_OBJC_Release :=$/;"	m
+CFLAGS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^CFLAGS_Release := \\$/;"	m
+COFFEE	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^COFFEE:=.\/node_modules\/.bin\/coffee$/;"	m
+COFFEE	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs/Makefile	/^COFFEE:=.\/node_modules\/.bin\/coffee$/;"	m
+COFFEE	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^COFFEE:=.\/node_modules\/.bin\/coffee$/;"	m
+COFFEE	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-windows/Makefile	/^COFFEE:=.\/node_modules\/.bin\/coffee$/;"	m
+CXX.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CXX.host ?= g++$/;"	m
+CXX.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CXX.target ?= $(CXX)$/;"	m
+CXXFLAGS.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CXXFLAGS.host ?=$/;"	m
+CXXFLAGS.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^CXXFLAGS.target ?= $(CXXFLAGS)$/;"	m
+Call	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  v8::Handle<v8::Value> Call(int argc, v8::Handle<v8::Value> argv[]) const {$/;"	f	class:NanCallback
+Callback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    typedef void (*Callback)(const _NanWeakCallbackData<T, P> &data);$/;"	t	struct:_NanWeakCallbackInfo
+Callback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    typedef void (*Callback)(const _NanWeakCallbackData<T, P>& data);$/;"	t	struct:_NanWeakCallbackInfo
+Constants	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^static v8::Local<v8::Object> Constants() {$/;"	f	file:
+CoreFoundation	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^    import CoreFoundation$/;"	i
+DEFS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^DEFS_Debug := \\$/;"	m
+DEFS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^DEFS_Release := \\$/;"	m
+DEPFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^DEPFLAGS = -MMD -MF $(depfile).raw$/;"	m
+Destroy	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual void Destroy() {$/;"	f	class:NanAsyncProgressWorker
+Destroy	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual void Destroy() {$/;"	f	class:NanAsyncWorker
+Detector	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^class Detector(object):$/;"	c
+Detector	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^class Detector(object):$/;"	c
+Dispatch	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def Dispatch(self, args):$/;"	m	class:MacTool
+Dispose	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_DEPRECATED NAN_INLINE void Dispose() const {$/;"	f	class:_NanWeakCallbackData
+Encoding	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	g	namespace:Nan
+ErrorMessage	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  const char* ErrorMessage() const {$/;"	f	class:NanAsyncWorker
+ExecCodeSignBundle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecCodeSignBundle(self, key, resource_rules, entitlements, provisioning):$/;"	m	class:MacTool
+ExecCopyBundleResource	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecCopyBundleResource(self, source, dest):$/;"	m	class:MacTool
+ExecCopyInfoPlist	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecCopyInfoPlist(self, source, dest, *keys):$/;"	m	class:MacTool
+ExecFilterLibtool	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecFilterLibtool(self, *cmd_list):$/;"	m	class:MacTool
+ExecFlock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecFlock(self, lockfile, *cmd_list):$/;"	m	class:MacTool
+ExecPackageFramework	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def ExecPackageFramework(self, framework, version):$/;"	m	class:MacTool
+Execute	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  void Execute() \/*final override*\/ {$/;"	f	class:NanAsyncProgressWorker
+ExecutionProgress	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    explicit ExecutionProgress(NanAsyncProgressWorker* that) : that_(that) {}$/;"	f	class:NanAsyncProgressWorker::ExecutionProgress
+ExecutionProgress	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  class ExecutionProgress {$/;"	c	class:NanAsyncProgressWorker
+FSEventArrayCallBacks	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^const CFArrayCallBacks FSEventArrayCallBacks = {$/;"	v
+FSEventRelease	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^void FSEventRelease(CFAllocatorRef allocator, const void * ptr) {$/;"	f
+FSEventRetain	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^const void * FSEventRetain(CFAllocatorRef allocator, const void * ptr) {$/;"	f
+FSEvents	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^  class FSEvents : public node::ObjectWrap {$/;"	c	namespace:fse	file:
+FSEvents	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^FSEvents::FSEvents(const char *path, NanCallback *handler): handler(handler) {$/;"	f	class:FSEvents
+FTH	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^  typedef v8::Handle<v8::FunctionTemplate> FTH;$/;"	t	struct:NanIntern::Factory
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Array> : FactoryBase<v8::Array> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Boolean> : FactoryBase<v8::Boolean> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::BooleanObject> : FactoryBase<v8::BooleanObject> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Date> : FactoryBase<v8::Date> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::External> : FactoryBase<v8::External> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Function> : FactoryBase<v8::Function> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::FunctionTemplate> : FactoryBase<v8::FunctionTemplate> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Int32> : IntegerFactory<v8::Int32> {};$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Integer> : IntegerFactory<v8::Integer> {};$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Number> : FactoryBase<v8::Number> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::NumberObject> : FactoryBase<v8::NumberObject> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Object> : FactoryBase<v8::Object> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::ObjectTemplate> : FactoryBase<v8::ObjectTemplate> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::RegExp> : FactoryBase<v8::RegExp> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Script> : FactoryBase<v8::Script> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Signature> : FactoryBase<v8::Signature> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::String> : FactoryBase<v8::String> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::StringObject> : FactoryBase<v8::StringObject> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::Uint32> : FactoryBase<v8::Uint32> {$/;"	s	namespace:NanIntern
+Factory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct Factory<v8::UnboundScript> : FactoryBase<v8::UnboundScript> {$/;"	s	namespace:NanIntern
+FactoryBase	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^template <typename T> struct FactoryBase { typedef v8::Local<T> return_t; };$/;"	s	namespace:NanIntern
+FreeData	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void FreeData(char *data, void *hint) {$/;"	f
+GYP_CFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(OBJS): GYP_CFLAGS := $(DEFS_$(BUILDTYPE)) $(INCS_$(BUILDTYPE))  $(CFLAGS_$(BUILDTYPE)) $(CFLAGS_C_$(BUILDTYPE))$/;"	m
+GYP_CXXFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(OBJS): GYP_CXXFLAGS := $(DEFS_$(BUILDTYPE)) $(INCS_$(BUILDTYPE))  $(CFLAGS_$(BUILDTYPE)) $(CFLAGS_CC_$(BUILDTYPE))$/;"	m
+GYP_LDFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^$(builddir)\/.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))$/;"	m
+GYP_LDFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(builddir)\/fse.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))$/;"	m
+GYP_LIBTOOLFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^$(builddir)\/.node: GYP_LIBTOOLFLAGS := $(LIBTOOLFLAGS_$(BUILDTYPE))$/;"	m
+GYP_LIBTOOLFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(builddir)\/fse.node: GYP_LIBTOOLFLAGS := $(LIBTOOLFLAGS_$(BUILDTYPE))$/;"	m
+GYP_OBJCFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(OBJS): GYP_OBJCFLAGS := $(DEFS_$(BUILDTYPE)) $(INCS_$(BUILDTYPE))  $(CFLAGS_$(BUILDTYPE)) $(CFLAGS_C_$(BUILDTYPE)) $(CFLAGS_OBJC_$(BUILDTYPE))$/;"	m
+GYP_OBJCXXFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(OBJS): GYP_OBJCXXFLAGS := $(DEFS_$(BUILDTYPE)) $(INCS_$(BUILDTYPE))  $(CFLAGS_$(BUILDTYPE)) $(CFLAGS_CC_$(BUILDTYPE)) $(CFLAGS_OBJCC_$(BUILDTYPE))$/;"	m
+GetCallbackInfo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE _NanWeakCallbackInfo<T, P>* GetCallbackInfo() const {$/;"	f	class:_NanWeakCallbackData
+GetExternalResource	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^GetExternalResource(v8::Local<v8::String> str) {$/;"	f	namespace:NanIntern
+GetFromPersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  v8::Local<v8::Object> GetFromPersistent(const char *key) const {$/;"	f	class:NanAsyncWorker
+GetFunction	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Function> GetFunction() const {$/;"	f	class:NanCallback
+GetParameter	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE P* GetParameter() const { return info_->parameter; }$/;"	f	class:_NanWeakCallbackData
+GetValue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE v8::Local<T> GetValue() const {$/;"	f	class:_NanWeakCallbackData
 GovSelector	coffee/main.coffee	/^GovSelector = require '.\/govselector.coffee'$/;"	v
+HEX	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
+HandleErrorCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual void HandleErrorCallback() {$/;"	f	class:NanAsyncWorker
+HandleOKCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual void HandleOKCallback() {$/;"	f	class:NanAsyncWorker
+HandleStreamEvents	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^void HandleStreamEvents(ConstFSEventStreamRef stream, void *ctx, size_t numEvents, void *eventPaths, const FSEventStreamEventFlags eventFlags[], const FSEventStreamEventId eventIds[]) {$/;"	f
 Handlebars	bower_components/handlebars/lib/handlebars/source.rb	/^module Handlebars$/;"	m
+INCS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^INCS_Debug := \\$/;"	m
+INCS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^INCS_Release := \\$/;"	m
+ISTANBUL	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^ISTANBUL = node_modules\/.bin\/istanbul$/;"	m
+Initialize	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^void FSEvents::Initialize(v8::Handle<v8::Object> exports) {$/;"	f	class:FSEvents
+IntegerFactory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^struct IntegerFactory : FactoryBase<T> {$/;"	s	namespace:NanIntern
+IsEmpty	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE bool IsEmpty() const {$/;"	f	class:NanCallback
+IsExternal	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^IsExternal(v8::Local<v8::String> str) {$/;"	f	namespace:NanIntern
+IsNearDeath	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE bool IsNearDeath() const {$/;"	f	class:_NanWeakCallbackData
+LDFLAGS.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^LDFLAGS.host ?=$/;"	m
+LDFLAGS.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^LDFLAGS.target ?= $(LDFLAGS)$/;"	m
+LDFLAGS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^LDFLAGS_Debug := \\$/;"	m
+LDFLAGS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^LDFLAGS_Debug := \\$/;"	m
+LDFLAGS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^LDFLAGS_Release := \\$/;"	m
+LDFLAGS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^LDFLAGS_Release := \\$/;"	m
+LIBS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^$(builddir)\/.node: LIBS := $(LIBS)$/;"	m
+LIBS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^LIBS := \\$/;"	m
+LIBS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(builddir)\/fse.node: LIBS := $(LIBS)$/;"	m
+LIBS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^LIBS := \\$/;"	m
+LIBTOOLFLAGS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^LIBTOOLFLAGS_Debug := \\$/;"	m
+LIBTOOLFLAGS_Debug	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^LIBTOOLFLAGS_Debug := \\$/;"	m
+LIBTOOLFLAGS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^LIBTOOLFLAGS_Release := \\$/;"	m
+LIBTOOLFLAGS_Release	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^LIBTOOLFLAGS_Release := \\$/;"	m
+LINK	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^LINK ?= .\/gyp-mac-tool flock $(builddir)\/linker.lock $(CXX.target)$/;"	m
+LINK.host	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^LINK.host ?= $(CXX.host)$/;"	m
+LINK.target	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^LINK.target ?= $(LINK)$/;"	m
+MAJVER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^MAJVER:=$(shell echo $(VER)|sed 's|^\\([^.]\\+[.][^.]\\+\\).*$$|\\1|' )$/;"	m
+MAJVER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^MAJVER:=$(shell echo $(VER)|sed 's|^\\([^.]\\+[.][^.]\\+\\).*$$|\\1|' )$/;"	m
+MAKEFLAGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^MAKEFLAGS=-r$/;"	m
+MIN	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^MIN = $(patsubst %.js,%.min.js,$(SRC))$/;"	m
+MacTool	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^class MacTool(object):$/;"	c
+NAN_DEPRECATED	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_DEPRECATED /;"	d
+NAN_DEPRECATED	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_DEPRECATED$/;"	d
+NAN_EXPORT	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_EXPORT(/;"	d
+NAN_GC_CALLBACK	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_GC_CALLBACK(/;"	d
+NAN_GETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_GETTER(/;"	d
+NAN_H_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_H_$/;"	d
+NAN_IMPLEMENTATION_12_INL_H_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^#define NAN_IMPLEMENTATION_12_INL_H_$/;"	d
+NAN_IMPLEMENTATION_PRE_12_INL_H_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^#define NAN_IMPLEMENTATION_PRE_12_INL_H_$/;"	d
+NAN_INDEX_DELETER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_INDEX_DELETER(/;"	d
+NAN_INDEX_ENUMERATOR	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_INDEX_ENUMERATOR(/;"	d
+NAN_INDEX_GETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_INDEX_GETTER(/;"	d
+NAN_INDEX_QUERY	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_INDEX_QUERY(/;"	d
+NAN_INDEX_SETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_INDEX_SETTER(/;"	d
+NAN_INLINE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_INLINE /;"	d
+NAN_METHOD	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_METHOD(/;"	d
+NAN_METHOD	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/methods.cc	/^NAN_METHOD(FSEvents::New) {$/;"	f
+NAN_METHOD	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/methods.cc	/^NAN_METHOD(FSEvents::Start) {$/;"	f
+NAN_METHOD	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/methods.cc	/^NAN_METHOD(FSEvents::Stop) {$/;"	f
+NAN_NEW_H_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^#define NAN_NEW_H_$/;"	d
+NAN_PROPERTY_DELETER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_PROPERTY_DELETER(/;"	d
+NAN_PROPERTY_ENUMERATOR	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_PROPERTY_ENUMERATOR(/;"	d
+NAN_PROPERTY_GETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_PROPERTY_GETTER(/;"	d
+NAN_PROPERTY_QUERY	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_PROPERTY_QUERY(/;"	d
+NAN_PROPERTY_SETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_PROPERTY_SETTER(/;"	d
+NAN_SETTER	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_SETTER(/;"	d
+NAN_STRINGIZE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_STRINGIZE(/;"	d
+NAN_STRINGIZE2	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_STRINGIZE2(/;"	d
+NAN_TEST_EXPRESSION	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAN_TEST_EXPRESSION(/;"	d
+NAN_WEAK_CALLBACK	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NAN_WEAK_CALLBACK(/;"	d
+NAUV_UVVERSION	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAUV_UVVERSION /;"	d
+NAUV_WORK_CB	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE static NAUV_WORK_CB(AsyncProgress_) {$/;"	f	class:NanAsyncProgressWorker
+NAUV_WORK_CB	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define NAUV_WORK_CB(/;"	d
 NODE	node_modules/connect/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
 NODE	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
+NODE	node_modules/stylus/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
+NODE	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^NODE ?= $(shell which node)$/;"	m
 NPM	node_modules/connect/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
 NPM	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
+NPM	node_modules/stylus/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
+NPM	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^NPM ?= $(NODE) $(shell which npm)$/;"	m
+Nan	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^namespace Nan {$/;"	n
+NanAddGCEpilogueCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanAddGCEpilogueCallback($/;"	f
+NanAddGCPrologueCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanAddGCPrologueCallback($/;"	f
+NanAdjustExternalMemory	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE int NanAdjustExternalMemory(int bc) {$/;"	f
+NanAsciiString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE explicit NanAsciiString(v8::Handle<v8::Value> from) {$/;"	f	class:NanAsciiString
+NanAsciiString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  class NanAsciiString {$/;"	c
+NanAssignPersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanAssignPersistent($/;"	f
+NanAsyncExecute	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE void NanAsyncExecute (uv_work_t* req) {$/;"	f
+NanAsyncExecuteComplete	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE void NanAsyncExecuteComplete (uv_work_t* req) {$/;"	f
+NanAsyncProgressWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  explicit NanAsyncProgressWorker(NanCallback *callback_)$/;"	f	class:NanAsyncProgressWorker
+NanAsyncProgressWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^\/* abstract *\/ class NanAsyncProgressWorker : public NanAsyncWorker {$/;"	c
+NanAsyncQueueWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE void NanAsyncQueueWorker (NanAsyncWorker* worker) {$/;"	f
+NanAsyncWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  explicit NanAsyncWorker(NanCallback *callback_)$/;"	f	class:NanAsyncWorker
+NanAsyncWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^\/* abstract *\/ class NanAsyncWorker {$/;"	c
+NanBooleanOptionValue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE bool NanBooleanOptionValue($/;"	f
+NanBoundScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef v8::Script             NanBoundScript;$/;"	t
+NanBufferUse	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Object> NanBufferUse($/;"	f
+NanCString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_DEPRECATED NAN_INLINE char* NanCString($/;"	f
+NanCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NanCallback() {$/;"	f	class:NanCallback
+NanCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  explicit NanCallback(const v8::Handle<v8::Function> &fn) {$/;"	f	class:NanCallback
+NanCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^class NanCallback {$/;"	c
+NanCompileScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<NanBoundScript> NanCompileScript($/;"	f
+NanDisposePersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanDisposePersistent($/;"	f
+NanDisposePersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  template<typename T> NAN_INLINE void NanDisposePersistent($/;"	f
+NanError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanError($/;"	f
+NanError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanError(const char* errmsg) {$/;"	f
+NanEscapableScope	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanEscapableScope(/;"	d
+NanEscapeScope	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanEscapeScope(/;"	d
+NanExport	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NanExport(v8::Handle<v8::Object> target, const char * name,$/;"	f
+NanExternalOneByteStringResource	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NanExternalOneByteStringResource;$/;"	t
+NanFalse	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Boolean> NanFalse() {$/;"	f
+NanFreeCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef void (*NanFreeCallback)(char *data, void *hint);$/;"	t
+NanFunctionCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef v8::FunctionCallback   NanFunctionCallback;$/;"	t
+NanFunctionCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef v8::InvocationCallback NanFunctionCallback;$/;"	t
+NanGetCurrentContext	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Context> NanGetCurrentContext() {$/;"	f
+NanGetHeapStatistics	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanGetHeapStatistics($/;"	f
+NanGetInternalFieldPointer	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void* NanGetInternalFieldPointer($/;"	f
+NanGetIsolateData	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE T *NanGetIsolateData($/;"	f
+NanGetPointerSafe	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^template<typename T> NAN_INLINE T NanGetPointerSafe($/;"	f
+NanHasInstance	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE bool NanHasInstance($/;"	f
+NanIntern	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^namespace NanIntern {$/;"	n
+NanIntern	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^namespace NanIntern {$/;"	n
+NanIntern	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^namespace NanIntern {$/;"	n
+NanIntern	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^namespace NanIntern {  \/\/ scnr$/;"	n
+NanIntern	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^namespace NanIntern {$/;"	n
+NanLocker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanLocker(/;"	d
+NanMakeCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanMakeCallback($/;"	f
+NanMakeWeakPersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE _NanWeakCallbackInfo<T, P>* NanMakeWeakPersistent($/;"	f
+NanMakeWeakPersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE _NanWeakCallbackInfo<T, P>* NanMakeWeakPersistent($/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^inline v8::Local<T> NanNew(v8::Handle<T> h) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^inline v8::Local<T> NanNew(v8::Persistent<T> const& p) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^inline v8::Local<T> NanNew(v8::Handle<T> h) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^inline v8::Local<T> NanNew(v8::Persistent<T> const& p) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew( NanFunctionCallback callback$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew() {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(A0 arg0) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(A0 arg0, A1 arg1) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(A0 arg0, A1 arg1, A2 arg2) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(A0 arg0, A1 arg1, A2 arg2, A3 arg3) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(NanExternalOneByteStringResource * value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(bool value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(const char * value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(const char * value, int length) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(const uint16_t * value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(const uint8_t * value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(double value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(int32_t value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(std::string const& value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(uint32_t value) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(v8::Handle<v8::String> pattern, v8::RegExp::Flags flags) {$/;"	f
+NanNew	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^NanNew(v8::String::ExternalStringResource * value) {$/;"	f
+NanNewBufferHandle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Object> NanNewBufferHandle ($/;"	f
+NanNewBufferHandle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Object> NanNewBufferHandle (uint32_t size) {$/;"	f
+NanNewContextHandle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Context> NanNewContextHandle($/;"	f
+NanNull	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Primitive> NanNull() {$/;"	f
+NanObjectWrapHandle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanObjectWrapHandle(/;"	d
+NanRangeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanRangeError($/;"	f
+NanRangeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanRangeError(const char* errmsg) {$/;"	f
+NanRawString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_DEPRECATED NAN_INLINE void* NanRawString($/;"	f
+NanRemoveGCEpilogueCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanRemoveGCEpilogueCallback($/;"	f
+NanRemoveGCPrologueCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanRemoveGCPrologueCallback($/;"	f
+NanReturnEmptyString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnEmptyString(/;"	d
+NanReturnHolder	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnHolder(/;"	d
+NanReturnNull	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnNull(/;"	d
+NanReturnThis	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnThis(/;"	d
+NanReturnUndefined	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnUndefined(/;"	d
+NanReturnValue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanReturnValue(/;"	d
+NanRunScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanRunScript($/;"	f
+NanRunScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanRunScript(v8::Handle<v8::Script> script) {$/;"	f
+NanScope	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanScope(/;"	d
+NanSetInstanceTemplate	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE void NanSetInstanceTemplate($/;"	f
+NanSetInternalFieldPointer	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanSetInternalFieldPointer($/;"	f
+NanSetIsolateData	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanSetIsolateData($/;"	f
+NanSetPointerSafe	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^template<typename T> NAN_INLINE bool NanSetPointerSafe($/;"	f
+NanSetPrototypeTemplate	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE void NanSetPrototypeTemplate($/;"	f
+NanSetTemplate	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanSetTemplate($/;"	f
+NanSymbol	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_DEPRECATED NAN_INLINE v8::Local<v8::String> NanSymbol($/;"	f
+NanTap	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  explicit NanTap(v8::Handle<v8::Value> t) : t_() {$/;"	f	struct:NanTap
+NanTap	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^struct NanTap {$/;"	s
+NanThrowError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanThrowError($/;"	f
+NanThrowError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanThrowError(const char* errmsg) {$/;"	f
+NanThrowError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanThrowError($/;"	f
+NanThrowError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanThrowError(const char* errmsg) {$/;"	f
+NanThrowError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanThrowError(v8::Handle<v8::Value> error) {$/;"	f
+NanThrowRangeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanThrowRangeError($/;"	f
+NanThrowRangeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanThrowRangeError(const char* errmsg) {$/;"	f
+NanThrowTypeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanThrowTypeError($/;"	f
+NanThrowTypeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void NanThrowTypeError(const char* errmsg) {$/;"	f
+NanTrue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Boolean> NanTrue() {$/;"	f
+NanTypeError	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Value> NanTypeError(const char* errmsg) {$/;"	f
+NanUInt32OptionValue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE uint32_t NanUInt32OptionValue($/;"	f
+NanUcs2String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE explicit NanUcs2String(v8::Handle<v8::Value> from) {$/;"	f	class:NanUcs2String
+NanUcs2String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  class NanUcs2String {$/;"	c
+NanUnboundScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef v8::Script             NanUnboundScript;$/;"	t
+NanUnboundScript	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^typedef v8::UnboundScript      NanUnboundScript;$/;"	t
+NanUndefined	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE v8::Local<v8::Primitive> NanUndefined() {$/;"	f
+NanUnlocker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define NanUnlocker(/;"	d
+NanUtf8String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE explicit NanUtf8String(v8::Handle<v8::Value> from) {$/;"	f	class:NanUtf8String
+NanUtf8String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  class NanUtf8String {$/;"	c
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Array>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Array>::New(int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Boolean>::New(bool value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::BooleanObject>::New(bool value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Date>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::External>::New(void * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Function>::New( NanFunctionCallback callback$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::FunctionTemplate>::New( NanFunctionCallback callback$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Number>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::NumberObject>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Object>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::ObjectTemplate>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::RegExp>::New($/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Script>::New( v8::Local<v8::String> source$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Script>::New( v8::Local<v8::String> source) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Signature>::New( Factory<v8::Signature>::FTH receiver$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(NanExternalOneByteStringResource * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(const char * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(const uint16_t * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(const uint8_t * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(std::string const& value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::String>::New(v8::String::ExternalStringResource * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::StringObject>::New(v8::Handle<v8::String> value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Uint32>::New(int32_t value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::Uint32>::New(uint32_t value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::UnboundScript>::New( v8::Local<v8::String> source$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^Factory<v8::UnboundScript>::New(v8::Local<v8::String> source) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^IntegerFactory<T>::New(int32_t value) {$/;"	f	class:NanIntern::IntegerFactory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_12_inl.h	/^IntegerFactory<T>::New(uint32_t value) {$/;"	f	class:NanIntern::IntegerFactory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Array>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Array>::New(int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Boolean>::New(bool value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::BooleanObject>::New(bool value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Date>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::External>::New(void * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Function>::New( NanFunctionCallback callback$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::FunctionTemplate>::New( NanFunctionCallback callback$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Number>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::NumberObject>::New(double value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Object>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::ObjectTemplate>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::RegExp>::New($/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Script>::New( v8::Local<v8::String> source$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Script>::New( v8::Local<v8::String> source) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Signature>::New( Factory<v8::Signature>::FTH receiver$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New() {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(const char * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(const uint16_t * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(const uint8_t * value, int length) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(std::string const& value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(v8::String::ExternalAsciiStringResource * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::String>::New(v8::String::ExternalStringResource * value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::StringObject>::New(v8::Handle<v8::String> value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Uint32>::New(int32_t value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^Factory<v8::Uint32>::New(uint32_t value) {$/;"	f	class:NanIntern::Factory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^IntegerFactory<T>::New(int32_t value) {$/;"	f	class:NanIntern::IntegerFactory
+New	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^IntegerFactory<T>::New(uint32_t value) {$/;"	f	class:NanIntern::IntegerFactory
+OBJS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^OBJS := \\$/;"	m
 QueryMather	coffee/querymatcher.coffee	/^QueryMather = (docs, num_items=5) ->$/;"	f
+RVER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^RVER:=$(shell cat version)$/;"	m
+RVER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs/Makefile	/^RVER:=$(shell grep "version" package.json|tr '\\t"' ' \\t'|cut -f 4)$/;"	m
+RVER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^RVER:=$(shell cat version)$/;"	m
+RVER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-windows/Makefile	/^RVER:=$(shell grep "version" package.json|tr '\\t"' ' \\t'|cut -f 4)$/;"	m
+RegExpGenerator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^class RegExpGenerator(object):$/;"	c
+RegExpGenerator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^class RegExpGenerator(object):$/;"	c
+Revive	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void _NanWeakCallbackData<T, P>::Revive() const {$/;"	f	class:_NanWeakCallbackData
+SRC	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^SRC = base64.js$/;"	m
+SaveToPersistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void SaveToPersistent($/;"	f	class:NanAsyncWorker
+Send	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    void Send(const char* data, size_t size) const {$/;"	f	class:NanAsyncProgressWorker::ExecutionProgress
+SendProgress_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  void SendProgress_(const char *data, size_t size) {$/;"	f	class:NanAsyncProgressWorker
+SetErrorMessage	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  void SetErrorMessage(const char *msg) {$/;"	f	class:NanAsyncWorker
+SetFunction	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NAN_INLINE void SetFunction(const v8::Handle<v8::Function> &fn) {$/;"	f	class:NanCallback
+Size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_DEPRECATED NAN_INLINE int Size() const {$/;"	f	class:NanAsciiString
+Size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_DEPRECATED NAN_INLINE int Size() const {$/;"	f	class:NanUcs2String
+Size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_DEPRECATED NAN_INLINE int Size() const {$/;"	f	class:NanUtf8String
 Source	bower_components/handlebars/lib/handlebars/source.rb	/^  module Source$/;"	m	class:Handlebars
+TARGET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^TARGET := $/;"	m
+TARGET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^TARGET := fse$/;"	m
 THIS_DIR	node_modules/connect/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
 THIS_DIR	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
+THIS_DIR	node_modules/stylus/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
+THIS_DIR	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^THIS_DIR:=$(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)$/;"	m
 THIS_MAKEFILE_PATH	node_modules/connect/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
 THIS_MAKEFILE_PATH	node_modules/serve-static/node_modules/send/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+THIS_MAKEFILE_PATH	node_modules/stylus/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+THIS_MAKEFILE_PATH	node_modules/watchify/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/debug/Makefile	/^THIS_MAKEFILE_PATH:=$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^$(builddir)\/.node: TOOLSET := $(TOOLSET)$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/.target.mk	/^TOOLSET := target$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^TOOLSET := target$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(OBJS): TOOLSET := $(TOOLSET)$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^$(builddir)\/fse.node: TOOLSET := $(TOOLSET)$/;"	m
+TOOLSET	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/fse.target.mk	/^TOOLSET := target$/;"	m
 Templates2	coffee/main.coffee	/^Templates2      = require '.\/templates2.coffee'$/;"	v
+To	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^To<v8::Int32>(v8::Handle<v8::Integer> i)   { return i->ToInt32(); }$/;"	f	namespace:NanIntern
+To	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^To<v8::Integer>(v8::Handle<v8::Integer> i) { return i->ToInteger(); }$/;"	f	namespace:NanIntern
+To	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^To<v8::Uint32>(v8::Handle<v8::Integer> i)  { return i->ToUint32(); }$/;"	f	namespace:NanIntern
+UCS2	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
+UGLIFY	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/browserify-sign/node_modules/elliptic/Makefile	/^UGLIFY ?= .\/node_modules\/.bin\/uglifyjs$/;"	m
+UGLIFY	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/create-ecdh/node_modules/elliptic/Makefile	/^UGLIFY ?= .\/node_modules\/.bin\/uglifyjs$/;"	m
+UGLIFYJS	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^UGLIFYJS = node_modules\/.bin\/uglifyjs$/;"	m
+UTF8	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  enum Encoding {ASCII, UTF8, BASE64, UCS2, BINARY, HEX, BUFFER};$/;"	e	enum:Nan::Encoding
+UV_VERSION_PATCH	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define UV_VERSION_PATCH /;"	d
+VER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^	echo "VER=$(VER) MAJVER=$(MAJVER)"$/;"	m
+VER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/Makefile	/^VER:=$(shell .\/VERSION-GEN)$/;"	m
+VER	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs/Makefile	/^VER:=$(shell .\/VERSION-GEN)$/;"	m
+VER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^	echo "VER=$(VER) MAJVER=$(MAJVER)"$/;"	m
+VER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/Makefile	/^VER:=$(shell .\/VERSION-GEN)$/;"	m
+VER	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-windows/Makefile	/^VER:=$(shell .\/VERSION-GEN)$/;"	m
+WorkComplete	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual void WorkComplete() {$/;"	f	class:NanAsyncWorker
+WorkProgress	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  void WorkProgress() {$/;"	f	class:NanAsyncProgressWorker
+XYZ	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^XYZ = node_modules\/.bin\/xyz --message X.Y.Z --tag X.Y.Z$/;"	m
+_CommandifyName	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _CommandifyName(self, name_string):$/;"	m	class:MacTool
+_CopyStringsFile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _CopyStringsFile(self, source, dest):$/;"	m	class:MacTool
+_CopyXIBFile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _CopyXIBFile(self, source, dest):$/;"	m	class:MacTool
+_DetectInputEncoding	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _DetectInputEncoding(self, file_name):$/;"	m	class:MacTool
+_ExpandVariables	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _ExpandVariables(self, data, substitutions):$/;"	m	class:MacTool
+_FindProvisioningProfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _FindProvisioningProfile(self, profile, bundle_identifier):$/;"	m	class:MacTool
+_GetCFBundleIdentifier	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _GetCFBundleIdentifier(self):$/;"	m	class:MacTool
+_GetSubstitutions	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _GetSubstitutions(self, bundle_identifier, app_identifier_prefix):$/;"	m	class:MacTool
+_InstallEntitlements	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _InstallEntitlements(self, entitlements, substitutions, overrides):$/;"	m	class:MacTool
+_InstallProvisioningProfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _InstallProvisioningProfile(self, profile, bundle_identifier):$/;"	m	class:MacTool
+_InstallResourceRules	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _InstallResourceRules(self, resource_rules):$/;"	m	class:MacTool
+_LoadPlistMaybeBinary	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _LoadPlistMaybeBinary(self, plist_path):$/;"	m	class:MacTool
+_LoadProvisioningProfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _LoadProvisioningProfile(self, profile_path):$/;"	m	class:MacTool
+_NAN_ERROR	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_ERROR(/;"	d
+_NAN_GETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_GETTER_ARGS /;"	d
+_NAN_GETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_GETTER_ARGS_TYPE /;"	d
+_NAN_GETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_GETTER_RETURN_TYPE /;"	d
+_NAN_INDEX_DELETER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_DELETER_ARGS /;"	d
+_NAN_INDEX_DELETER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_DELETER_ARGS_TYPE /;"	d
+_NAN_INDEX_DELETER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_DELETER_RETURN_TYPE /;"	d
+_NAN_INDEX_ENUMERATOR_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_ENUMERATOR_ARGS /;"	d
+_NAN_INDEX_ENUMERATOR_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_ENUMERATOR_ARGS_TYPE /;"	d
+_NAN_INDEX_ENUMERATOR_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_ENUMERATOR_RETURN_TYPE /;"	d
+_NAN_INDEX_GETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_GETTER_ARGS /;"	d
+_NAN_INDEX_GETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_GETTER_ARGS_TYPE /;"	d
+_NAN_INDEX_GETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_GETTER_RETURN_TYPE /;"	d
+_NAN_INDEX_QUERY_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_QUERY_ARGS /;"	d
+_NAN_INDEX_QUERY_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_QUERY_ARGS_TYPE /;"	d
+_NAN_INDEX_QUERY_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_QUERY_RETURN_TYPE /;"	d
+_NAN_INDEX_SETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_SETTER_ARGS /;"	d
+_NAN_INDEX_SETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_SETTER_ARGS_TYPE /;"	d
+_NAN_INDEX_SETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_INDEX_SETTER_RETURN_TYPE /;"	d
+_NAN_METHOD_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_METHOD_ARGS /;"	d
+_NAN_METHOD_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_METHOD_ARGS_TYPE /;"	d
+_NAN_METHOD_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_METHOD_RETURN_TYPE /;"	d
+_NAN_PROPERTY_DELETER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_DELETER_ARGS /;"	d
+_NAN_PROPERTY_DELETER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_DELETER_ARGS_TYPE /;"	d
+_NAN_PROPERTY_DELETER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_DELETER_RETURN_TYPE /;"	d
+_NAN_PROPERTY_ENUMERATOR_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_ENUMERATOR_ARGS /;"	d
+_NAN_PROPERTY_ENUMERATOR_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_ENUMERATOR_ARGS_TYPE /;"	d
+_NAN_PROPERTY_ENUMERATOR_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_ENUMERATOR_RETURN_TYPE /;"	d
+_NAN_PROPERTY_GETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_GETTER_ARGS /;"	d
+_NAN_PROPERTY_GETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_GETTER_ARGS_TYPE /;"	d
+_NAN_PROPERTY_GETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_GETTER_RETURN_TYPE /;"	d
+_NAN_PROPERTY_QUERY_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_QUERY_ARGS /;"	d
+_NAN_PROPERTY_QUERY_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_QUERY_ARGS_TYPE /;"	d
+_NAN_PROPERTY_QUERY_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_QUERY_RETURN_TYPE /;"	d
+_NAN_PROPERTY_SETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_SETTER_ARGS /;"	d
+_NAN_PROPERTY_SETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_SETTER_ARGS_TYPE /;"	d
+_NAN_PROPERTY_SETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_PROPERTY_SETTER_RETURN_TYPE /;"	d
+_NAN_SETTER_ARGS	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_SETTER_ARGS /;"	d
+_NAN_SETTER_ARGS_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_SETTER_ARGS_TYPE /;"	d
+_NAN_SETTER_RETURN_TYPE	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_SETTER_RETURN_TYPE /;"	d
+_NAN_THROW_ERROR	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^# define _NAN_THROW_ERROR(/;"	d
+_NanEnsureLocal	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE v8::Local<T> _NanEnsureLocal(v8::Handle<T> val) {$/;"	f
+_NanEnsureLocal	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE v8::Local<T> _NanEnsureLocal(v8::Local<T> val) {$/;"	f
+_NanGetExternalParts	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^static bool _NanGetExternalParts($/;"	f
+_NanRawString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^\/* NAN_DEPRECATED *\/ NAN_INLINE void* _NanRawString($/;"	f
+_NanWeakCallbackData	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE _NanWeakCallbackData(_NanWeakCallbackInfo<T, P> *info)$/;"	f	class:_NanWeakCallbackData
+_NanWeakCallbackData	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  class _NanWeakCallbackData {$/;"	c
+_NanWeakCallbackDispatcher	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  static void _NanWeakCallbackDispatcher($/;"	f
+_NanWeakCallbackInfo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE _NanWeakCallbackInfo(v8::Handle<T> handle, P* param, Callback cb)$/;"	f	struct:_NanWeakCallbackInfo
+_NanWeakCallbackInfo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  struct _NanWeakCallbackInfo {$/;"	s
+_NanWeakPersistentDispatcher	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  static void _NanWeakPersistentDispatcher($/;"	f
+_Relink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _Relink(self, dest, link):$/;"	m	class:MacTool
+_WritePkgInfo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^  def _WritePkgInfo(self, info_plist):$/;"	m	class:MacTool
+__init__	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def __init__(self, data):$/;"	m	class:Detector
+__init__	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def __init__(self, detector):$/;"	m	class:RegExpGenerator
+__init__	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def __init__(self, data):$/;"	m	class:Detector
+__init__	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def __init__(self, detector):$/;"	m	class:RegExpGenerator
+_generate_range	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _generate_range(self, r):$/;"	m	class:RegExpGenerator
+_generate_range	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _generate_range(self, r):$/;"	m	class:RegExpGenerator
+_is_non_ascii_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _is_non_ascii_identifier_part(self, ch):$/;"	m	class:Detector
+_is_non_ascii_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _is_non_ascii_identifier_part(self, ch):$/;"	m	class:Detector
+_is_non_ascii_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _is_non_ascii_identifier_start(self, ch):$/;"	m	class:Detector
+_is_non_ascii_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def _is_non_ascii_identifier_start(self, ch):$/;"	m	class:Detector
+_nan_base64_decode	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^template<typename T> static size_t _nan_base64_decode($/;"	f
+_nan_base64_decoded_size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE size_t _nan_base64_decoded_size($/;"	f
+_nan_base64_decoded_size_fast	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^NAN_INLINE size_t _nan_base64_decoded_size_fast(size_t size) {$/;"	f
+_nan_base64_encoded_size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define _nan_base64_encoded_size(/;"	d
+_nan_hex2bin	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^template<typename T> unsigned _nan_hex2bin(T c) {$/;"	f
+_nan_hex_decode	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^template<typename T> static size_t _nan_hex_decode($/;"	f
+_nan_unbase64	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define _nan_unbase64(/;"	d
+_nan_unbase64_table	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^static const int _nan_unbase64_table[] = {$/;"	v
+abs_builddir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^abs_builddir := $(abspath $(builddir))$/;"	m
+abs_obj	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^abs_obj := $(abspath $(obj))$/;"	m
+abs_srcdir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^abs_srcdir := $(abspath $(srcdir))$/;"	m
+acc	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^        acc = []$/;"	v
+acc	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^        acc = []$/;"	v
 activate_tab	coffee/main.coffee	/^activate_tab =() ->$/;"	f
 active_tab	coffee/main.coffee	/^active_tab=""$/;"	v
+addComment	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function addComment(type, value, start, end, loc) {$/;"	f
 add_other_tab_to_layout	coffee/templates2.coffee	/^add_other_tab_to_layout = (layout=[], data) ->$/;"	f
 addr	coffee/govmap.coffee	/^  addr = "#{clear(data.address1)} #{clear(data.address2)}, #{data.city}, #{data.state} #{data.zip}, USA"$/;"	v
+adjustRegexLiteral	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^        function adjustRegexLiteral(key, value) {$/;"	f
+adjustRegexLiteral	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^        function adjustRegexLiteral(key, value) {$/;"	f
+adjust_typeahead_width	coffee/main.coffee	/^adjust_typeahead_width =() ->$/;"	f
+advance	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function advance() {$/;"	f
+all_deps	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^all_deps :=$/;"	m
+analyze	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^def analyze(source):$/;"	f
+analyze	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^def analyze(source):$/;"	f
+array_flatten	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^array_flatten = (arr, acc) ->$/;"	f
+array_flatten	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^array_flatten = (arr, acc) ->$/;"	f
+assert	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/test/base64.coffee	/^assert = require 'assert'$/;"	v
+assert	node_modules/watchify/node_modules/browserify/node_modules/buffer/node_modules/is-array/test/test.html	/^      function assert(val, text) {$/;"	f
+assert	node_modules/watchify/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/test/base64.coffee	/^assert = require 'assert'$/;"	v
+assert	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function assert(condition, message) {$/;"	f
+ast	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    ast = uglify.parser.parse(data)$/;"	v
+ast	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    ast = uglify.uglify.ast_squeeze(ast)$/;"	v
+ast	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    ast = uglify.parser.parse(data)$/;"	v
+ast	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    ast = uglify.uglify.ast_squeeze(ast)$/;"	v
+async	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    uv_async_t async;$/;"	m	class:fse::FSEvents	file:
+async	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  uv_async_t *async;$/;"	m	class:NanAsyncProgressWorker
+asyncStart	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/async.cc	/^void FSEvents::asyncStart() {$/;"	f	class:FSEvents
+asyncStop	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/async.cc	/^void FSEvents::asyncStop() {$/;"	f	class:FSEvents
+asyncTrigger	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/async.cc	/^void FSEvents::asyncTrigger() {$/;"	f	class:FSEvents
+async_lock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  uv_mutex_t async_lock;$/;"	m	class:NanAsyncProgressWorker
+async_propagate	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/async.cc	/^void async_propagate(uv_async_t *async) {$/;"	f
+asyncdata_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  char *asyncdata_;$/;"	m	class:NanAsyncProgressWorker
+asyncsize_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  size_t asyncsize_;$/;"	m	class:NanAsyncProgressWorker
+bar	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/index.coffee	/^bar = require '.\/bar'$/;"	v
 base	coffee/jquery.govselector.coffee	/^    base = this$/;"	v
 base.el	coffee/jquery.govselector.coffee	/^    base.el = el$/;"	v
 base.init	coffee/jquery.govselector.coffee	/^    base.init = ->$/;"	f
+baz	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/index.coffee	/^baz = require '.\/baz'$/;"	v
 benchmark	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
 benchmark	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
+benchmark	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
+benchmark	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function benchmark(runner, locations) {$/;"	f
+bin	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/http-browserify/node_modules/Base64/Makefile	/^bin = node_modules\/.bin$/;"	m
+binaryPrecedence	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function binaryPrecedence(token, allowIn) {$/;"	f
 blur	coffee/jquery.govselector.coffee	/^    blur = (event) ->$/;"	f
+bubbleSort	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/functiontrace.html	/^function bubbleSort(list) {$/;"	f
+bubbleSort	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/rewrite.html	/^function bubbleSort    (list) {$/;"	f
+bubbleSort	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/functiontrace.html	/^function bubbleSort(list) {$/;"	f
+bubbleSort	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/rewrite.html	/^function bubbleSort    (list) {$/;"	f
+buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    char *buf;$/;"	m	class:NanAsciiString
+buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    char *buf;$/;"	m	class:NanUtf8String
+buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    uint16_t *buf;$/;"	m	class:NanUcs2String
 build_select_element	coffee/main.coffee	/^build_select_element = (container, text, arr, where_to_store_value ) ->$/;"	f
 build_selector	coffee/main.coffee	/^build_selector = (container, text, url, where_to_store_value ) ->$/;"	f
+builddir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^builddir ?= $(builddir_name)\/$(BUILDTYPE)$/;"	m
+builddir_name	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^builddir_name ?= .$/;"	m
 bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.bundled_path$/;"	F	class:Handlebars.Source
+callback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    Callback const callback;$/;"	m	struct:_NanWeakCallbackInfo
+callback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  NanCallback *callback;$/;"	m	class:NanAsyncWorker
 clear	coffee/govmap.coffee	/^clear=(s)->$/;"	f
+cmd_alink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_alink = rm -f $@ && .\/gyp-mac-tool filter-libtool libtool $(GYP_LIBTOOLFLAGS) -static -o $@ $(filter %.o,$^)$/;"	m
+cmd_cc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_cc = $(CC.$(TOOLSET)) $(GYP_CFLAGS) $(DEPFLAGS) $(CFLAGS.$(TOOLSET)) -c -o $@ $<$/;"	m
+cmd_copy	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_copy = rm -rf "$@" && cp -af "$<" "$@"$/;"	m
+cmd_cxx	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_cxx = $(CXX.$(TOOLSET)) $(GYP_CXXFLAGS) $(DEPFLAGS) $(CXXFLAGS.$(TOOLSET)) -c -o $@ $<$/;"	m
+cmd_infoplist	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_infoplist = $(CC.$(TOOLSET)) -E -P -Wno-trigraphs -x c $(INFOPLIST_DEFINES) "$<" -o "$@"$/;"	m
+cmd_link	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_link = $(LINK.$(TOOLSET)) $(GYP_LDFLAGS) $(LDFLAGS.$(TOOLSET)) -o "$@" $(LD_INPUTS) $(LIBS)$/;"	m
+cmd_mac_package_framework	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_mac_package_framework = .\/gyp-mac-tool package-framework "$@" $(4)$/;"	m
+cmd_mac_tool	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_mac_tool = .\/gyp-mac-tool $(4) $< "$@"$/;"	m
+cmd_objc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_objc = $(CC.$(TOOLSET)) $(GYP_OBJCFLAGS) $(DEPFLAGS) -c -o $@ $<$/;"	m
+cmd_objcxx	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_objcxx = $(CXX.$(TOOLSET)) $(GYP_OBJCXXFLAGS) $(DEPFLAGS) -c -o $@ $<$/;"	m
+cmd_pch_c	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_pch_c = $(CC.$(TOOLSET)) $(GYP_PCH_CFLAGS) $(DEPFLAGS) $(CXXFLAGS.$(TOOLSET)) -c -o $@ $<$/;"	m
+cmd_pch_cc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_pch_cc = $(CC.$(TOOLSET)) $(GYP_PCH_CXXFLAGS) $(DEPFLAGS) $(CXXFLAGS.$(TOOLSET)) -c -o $@ $<$/;"	m
+cmd_pch_m	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_pch_m = $(CC.$(TOOLSET)) $(GYP_PCH_OBJCFLAGS) $(DEPFLAGS) -c -o $@ $<$/;"	m
+cmd_pch_mm	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_pch_mm = $(CC.$(TOOLSET)) $(GYP_PCH_OBJCXXFLAGS) $(DEPFLAGS) -c -o $@ $<$/;"	m
+cmd_regen_makefile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_regen_makefile = cd $(srcdir); \/usr\/local\/lib\/node_modules\/npm\/node_modules\/node-gyp\/gyp\/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I\/Users\/vadimivlev\/Projects\/_projects\/govwiki.us\/node_modules\/watchify\/node_modules\/chokidar\/node_modules\/fsevents\/build\/config.gypi -I\/usr\/local\/lib\/node_modules\/npm\/node_modules\/node-gyp\/addon.gypi -I\/Users\/vadimivlev\/.node-gyp\/0.12.0\/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=\/Users\/vadimivlev\/.node-gyp\/0.12.0" "-Dmodule_root_dir=\/Users\/vadimivlev\/Projects\/_projects\/govwiki.us\/node_modules\/watchify\/node_modules\/chokidar\/node_modules\/fsevents" binding.gyp$/;"	m
+cmd_solink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_solink = $(LINK.$(TOOLSET)) -shared $(GYP_LDFLAGS) $(LDFLAGS.$(TOOLSET)) -o "$@" $(LD_INPUTS) $(LIBS)$/;"	m
+cmd_solink_module	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_solink_module = $(LINK.$(TOOLSET)) -bundle $(GYP_LDFLAGS) $(LDFLAGS.$(TOOLSET)) -o $@ $(filter-out FORCE_DO_CMD, $^) $(LIBS)$/;"	m
+cmd_touch	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^cmd_touch = touch $@$/;"	m
+collectRegex	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function collectRegex() {$/;"	f
+collectToken	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function collectToken() {$/;"	f
+command_changed	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^command_changed = $(or $(subst $(cmd_$(1)),,$(cmd_$(call replace_spaces,$@))),\\$/;"	m
+compare	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/precedence.html	/^function compare() {$/;"	f
+compare	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/precedence.html	/^function compare() {$/;"	f
+consumeSemicolon	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function consumeSemicolon() {$/;"	f
+content	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    content = []$/;"	v
+content	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    content = []$/;"	v
+convert	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^    function convert(name, node) {$/;"	f
+convert	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^    function convert(name, node) {$/;"	f
 count	coffee/govselector.coffee	/^    count =0$/;"	v
+createLocationMarker	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function createLocationMarker() {$/;"	f
+d_files	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^d_files := $(wildcard $(foreach f,$(all_deps),$(depsdir)\/$(f).d))$/;"	m
+decrypt	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^function decrypt(crypto, data, password) {$/;"	f
 delay	coffee/jquery.govselector.coffee	/^    delay = do ->$/;"	f
+depfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^depfile = $(depsdir)\/$(call replace_spaces,$@).d$/;"	m
+depsdir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^depsdir := $(builddir)\/.deps$/;"	m
+dirx	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^dirx = $(call unreplace_spaces,$(dir $(call replace_spaces,$1)))$/;"	m
+do_cmd	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^define do_cmd$/;"	m
+do_postbuilds	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^define do_postbuilds$/;"	m
 el	coffee/main.coffee	/^    el = $(e.target)$/;"	v
+elements	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    elements = data.split(\/<!--\\s*([^>]+)\\s*-->\/g)$/;"	f
+elements	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    elements = data.split(\/<!--\\s*([^>]+)\\s*-->\/g)$/;"	f
+emitEvent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/methods.cc	/^void FSEvents::emitEvent(const char *path, UInt32 flags, UInt64 id) {$/;"	f	class:FSEvents
+empty	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^empty :=$/;"	m
 entered_value	coffee/govselector.coffee	/^  entered_value = ""$/;"	v
+errmsg_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  char *errmsg_;$/;"	m	class:NanAsyncWorker
+escape_quotes	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^escape_quotes = $(subst ','\\'',$(1))$/;"	m
+escape_vars	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^escape_vars = $(subst $$,$$$$,$(1))$/;"	m
+events	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    CFMutableArrayRef events;$/;"	m	class:fse::FSEvents	file:
+exact_echo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^exact_echo = printf '%s\\n' '$(call escape_quotes,$(1))'$/;"	m
 execJasmine	bower_components/gmaps/test/index.html	/^      function execJasmine() {$/;"	f
+expect	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function expect(value) {$/;"	f
+expectKeyword	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function expectKeyword(keyword) {$/;"	f
 exports	node_modules/coffeeify/example/baz.coffee	/^module.exports = (n) -> n * 111$/;"	f
+exports	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/foo.coffee	/^module.exports = (x) -> x * 10$/;"	f
 f	coffee/templates2.coffee	/^  f = {}$/;"	v
+fcntl	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import fcntl$/;"	i
 fieldNames	coffee/templates2.coffee	/^fieldNames = {}$/;"	v
+filenames	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    filenames = parser.parse((process.ARGV || process.argv).slice(2))$/;"	v
+filenames	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    filenames = parser.parse((process.ARGV || process.argv).slice(2))$/;"	v
+filterCommentLocation	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function filterCommentLocation() {$/;"	f
+filterGroup	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function filterGroup(node) {$/;"	f
+filterTokenLocation	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function filterTokenLocation() {$/;"	f
+fixup_dep	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^define fixup_dep$/;"	m
+flags	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^  UInt32 flags;$/;"	m	struct:fse_event	file:
+fnmatch	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import fnmatch$/;"	i
+foo	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/index.coffee	/^foo = require '.\/foo.coffee'$/;"	v
+foo	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/nested/nested.coffee	/^foo = require '..\/foo.coffee'$/;"	v
+fs	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^fs = require('fs')$/;"	v
+fs	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^fs = require('fs')$/;"	v
+fse	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^namespace fse {$/;"	n	file:
+fse_event	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^struct fse_event {$/;"	s	file:
+fse_event	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^typedef struct fse_event fse_event;$/;"	t	typeref:struct:fse_event	file:
 full_trim	coffee/querymatcher.coffee	/^full_trim = (s) ->$/;"	f
+generate_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_identifier_part(self):$/;"	m	class:RegExpGenerator
+generate_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_identifier_part(self):$/;"	m	class:RegExpGenerator
+generate_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_identifier_start(self):$/;"	m	class:RegExpGenerator
+generate_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_identifier_start(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_identifier_part(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_identifier_part(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_identifier_start(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_identifier_start(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_separator_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_separator_space(self):$/;"	m	class:RegExpGenerator
+generate_non_ascii_separator_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def generate_non_ascii_separator_space(self):$/;"	m	class:RegExpGenerator
 geocode	coffee/govmap.coffee	/^geocode = (data) ->$/;"	f
 geocode_addr	coffee/govmap.coffee	/^geocode_addr = (addr,data) ->$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/index.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/EVP_BytesToKey.js.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/asn1.js.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/fixProc.js.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^        function getColumns(theadNode) {$/;"	f
+getColumns	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^        function getColumns(theadNode) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/index.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/EVP_BytesToKey.js.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/asn1.js.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/fixProc.js.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getData	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^        function getData(tbodyNode, cols) {$/;"	f
+getEscapedIdentifier	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function getEscapedIdentifier() {$/;"	f
+getIdentifier	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function getIdentifier() {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/index.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/EVP_BytesToKey.js.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/asn1.js.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/fixProc.js.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^        function getRowData(trNode, cols) {$/;"	f
+getRowData	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^        function getRowData(trNode, cols) {$/;"	f
 get_layout_fields	coffee/templates2.coffee	/^get_layout_fields = (la) ->$/;"	f
 get_record	coffee/main.coffee	/^get_record = (query) ->$/;"	f
 get_record_fields	coffee/templates2.coffee	/^get_record_fields = (r) ->$/;"	f
 get_unmentioned_fields	coffee/templates2.coffee	/^get_unmentioned_fields = (la, r) ->$/;"	f
 get_words	coffee/querymatcher.coffee	/^get_words = (str) ->$/;"	f
 get_words_regs	coffee/querymatcher.coffee	/^get_words_regs = (str) ->$/;"	f
+glob	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import glob$/;"	i
 gov_finder.on_select	coffee/main.coffee	/^gov_finder.on_select = gov_details.show$/;"	v
 gov_selector.on_selected	coffee/main.coffee	/^gov_selector.on_selected = (evt, data, name) ->$/;"	f
 govmap	coffee/main.coffee	/^govmap      = require '.\/govmap.coffee'$/;"	v
 govs_array	coffee/govselector.coffee	/^  govs_array = []$/;"	v
+handle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  v8::Persistent<v8::Object> handle;$/;"	m	class:NanCallback
+handler	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    NanCallback *handler;$/;"	m	class:fse::FSEvents	file:
+id	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^  UInt64 id;$/;"	m	struct:fse_event	file:
+info_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    _NanWeakCallbackInfo<T, P>* info_;$/;"	m	class:_NanWeakCallbackData
+inject	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/test/compare.html	/^    function inject(fname) {$/;"	f
+inject	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/test/compare.html	/^    function inject(fname) {$/;"	f
+isArray	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^    function isArray(o) {$/;"	f
+isArray	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^    function isArray(o) {$/;"	f
+isBinary	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^            function isBinary(node) {$/;"	f
+isDecimalDigit	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isDecimalDigit(ch) {$/;"	f
+isFutureReservedWord	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isFutureReservedWord(id) {$/;"	f
+isHexDigit	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isHexDigit(ch) {$/;"	f
+isIdentifierName	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isIdentifierName(token) {$/;"	f
+isIdentifierPart	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isIdentifierPart(ch) {$/;"	f
+isIdentifierStart	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isIdentifierStart(ch) {$/;"	f
+isKeyword	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isKeyword(id) {$/;"	f
+isLeftHandSide	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isLeftHandSide(expr) {$/;"	f
+isLineTerminator	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isLineTerminator(ch) {$/;"	f
+isOctalDigit	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isOctalDigit(ch) {$/;"	f
+isRestrictedWord	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isRestrictedWord(id) {$/;"	f
+isStrictModeReservedWord	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isStrictModeReservedWord(id) {$/;"	f
+isWhiteSpace	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function isWhiteSpace(ch) {$/;"	f
+is_ascii	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii(self, ch):$/;"	m	class:Detector
+is_ascii	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii(self, ch):$/;"	m	class:Detector
+is_ascii_alpha	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii_alpha(self, ch):$/;"	m	class:Detector
+is_ascii_alpha	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii_alpha(self, ch):$/;"	m	class:Detector
+is_ascii_alphanumeric	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii_alphanumeric(self, ch):$/;"	m	class:Detector
+is_ascii_alphanumeric	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_ascii_alphanumeric(self, ch):$/;"	m	class:Detector
+is_decimal_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_decimal_digit(self, ch):$/;"	m	class:Detector
+is_decimal_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_decimal_digit(self, ch):$/;"	m	class:Detector
+is_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_digit(self, ch):$/;"	m	class:Detector
+is_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_digit(self, ch):$/;"	m	class:Detector
+is_hex_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_hex_digit(self, ch):$/;"	m	class:Detector
+is_hex_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_hex_digit(self, ch):$/;"	m	class:Detector
+is_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_identifier_part(self, ch):$/;"	m	class:Detector
+is_identifier_part	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_identifier_part(self, ch):$/;"	m	class:Detector
+is_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_identifier_start(self, ch):$/;"	m	class:Detector
+is_identifier_start	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_identifier_start(self, ch):$/;"	m	class:Detector
+is_line_or_paragraph_terminator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_line_or_paragraph_terminator(self, ch):$/;"	m	class:Detector
+is_line_or_paragraph_terminator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_line_or_paragraph_terminator(self, ch):$/;"	m	class:Detector
+is_line_terminator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_line_terminator(self, ch):$/;"	m	class:Detector
+is_line_terminator	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_line_terminator(self, ch):$/;"	m	class:Detector
+is_octal_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_octal_digit(self, ch):$/;"	m	class:Detector
+is_octal_digit	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_octal_digit(self, ch):$/;"	m	class:Detector
+is_separator_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_separator_space(self, ch):$/;"	m	class:Detector
+is_separator_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_separator_space(self, ch):$/;"	m	class:Detector
+is_white_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_white_space(self, ch):$/;"	m	class:Detector
+is_white_space	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^  def is_white_space(self, ch):$/;"	m	class:Detector
+json	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import json$/;"	i
+kCallbackIndex	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  static const uint32_t kCallbackIndex = 0;$/;"	m	class:NanCallback
+kFSEventStreamCreateFlagFileEvents	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagFileEvents /;"	d	file:
+kFSEventStreamCreateFlagIgnoreSelf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagIgnoreSelf /;"	d	file:
+kFSEventStreamCreateFlagNoDefer	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagNoDefer /;"	d	file:
+kFSEventStreamCreateFlagNone	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagNone /;"	d	file:
+kFSEventStreamCreateFlagUseCFTypes	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagUseCFTypes /;"	d	file:
+kFSEventStreamCreateFlagWatchRoot	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^#define kFSEventStreamCreateFlagWatchRoot /;"	d	file:
+kFSEventStreamEventFlagEventIdsWrapped	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagEventIdsWrapped /;"	d	file:
+kFSEventStreamEventFlagHistoryDone	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagHistoryDone /;"	d	file:
+kFSEventStreamEventFlagItemChangeOwner	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemChangeOwner /;"	d	file:
+kFSEventStreamEventFlagItemCreated	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^#define kFSEventStreamEventFlagItemCreated /;"	d	file:
+kFSEventStreamEventFlagItemCreated	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemCreated /;"	d	file:
+kFSEventStreamEventFlagItemFinderInfoMod	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemFinderInfoMod /;"	d	file:
+kFSEventStreamEventFlagItemInodeMetaMod	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemInodeMetaMod /;"	d	file:
+kFSEventStreamEventFlagItemIsDir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemIsDir /;"	d	file:
+kFSEventStreamEventFlagItemIsFile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemIsFile /;"	d	file:
+kFSEventStreamEventFlagItemIsSymlink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemIsSymlink /;"	d	file:
+kFSEventStreamEventFlagItemModified	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemModified /;"	d	file:
+kFSEventStreamEventFlagItemRemoved	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemRemoved /;"	d	file:
+kFSEventStreamEventFlagItemRenamed	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemRenamed /;"	d	file:
+kFSEventStreamEventFlagItemXattrMod	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagItemXattrMod /;"	d	file:
+kFSEventStreamEventFlagKernelDropped	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagKernelDropped /;"	d	file:
+kFSEventStreamEventFlagMount	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagMount /;"	d	file:
+kFSEventStreamEventFlagMustScanSubDirs	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagMustScanSubDirs /;"	d	file:
+kFSEventStreamEventFlagNone	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagNone /;"	d	file:
+kFSEventStreamEventFlagRootChanged	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagRootChanged /;"	d	file:
+kFSEventStreamEventFlagUnmount	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagUnmount /;"	d	file:
+kFSEventStreamEventFlagUserDropped	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/constants.cc	/^#define kFSEventStreamEventFlagUserDropped /;"	d	file:
 layout_fields	coffee/templates2.coffee	/^  layout_fields = get_layout_fields la$/;"	v
+length	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE int length() const {$/;"	f	class:NanAsciiString
+length	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE int length() const {$/;"	f	class:NanUcs2String
+length	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE int length() const {$/;"	f	class:NanUtf8String
+lex	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function lex() {$/;"	f
 link	old/datarenderer.coffee	/^      link = (v) ->$/;"	f
 link	old/templates.coffee	/^    link = (n) ->$/;"	f
+livereload	coffee/main.coffee	/^livereload = (port) ->$/;"	f
 load_field_names	coffee/templates2.coffee	/^load_field_names = (url) ->$/;"	f
 load_template	old/templates.coffee	/^  load_template = (url)=>$/;"	f
+lock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::lock() {$/;"	f	class:FSEvents
+lockStarted	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    bool lockStarted;$/;"	m	class:fse::FSEvents	file:
+lockingStart	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::lockingStart() {$/;"	f	class:FSEvents
+lockingStop	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::lockingStop() {$/;"	f	class:FSEvents
+lockmutex	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    pthread_mutex_t lockmutex;$/;"	m	class:fse::FSEvents	file:
+main	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^def main(source):$/;"	f
+main	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^def main(source):$/;"	f
+main	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^main = ->$/;"	f
+main	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs/node_modules/node-uuid/benchmark/benchmark-native.c	/^int main() {$/;"	f
+main	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^main = ->$/;"	f
+main	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-windows/node_modules/node-uuid/benchmark/benchmark-native.c	/^int main() {$/;"	f
+main	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^def main(args):$/;"	f
 makeDocHtml	old/datarenderer.coffee	/^  makeDocHtml = (data) ->$/;"	f
 makeFieldHtml	old/datarenderer.coffee	/^    makeFieldHtml = (n, v) ->$/;"	f
 makeFieldHtml	old/templates.coffee	/^  makeFieldHtml = (n) ->$/;"	f
 make_simple_template	old/templates.coffee	/^make_simple_template =(fields)->$/;"	f
 make_simple_template2	old/templates.coffee	/^make_simple_template2=(fields)->$/;"	f
+match	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function match(value) {$/;"	f
+matchAssign	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function matchAssign() {$/;"	f
+matchKeyword	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function matchKeyword(keyword) {$/;"	f
 matches	coffee/querymatcher.coffee	/^    matches = []$/;"	v
+minify	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^minify = (data, minify_options)->$/;"	f
+minify	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^minify = (data, minify_options)->$/;"	f
 module.exports	coffee/govmap.coffee	/^module.exports =$/;"	v
 module.exports	coffee/govselector.coffee	/^module.exports=GovSelector$/;"	v
 module.exports	coffee/querymatcher.coffee	/^module.exports = QueryMather$/;"	v
 module.exports	coffee/templates2.coffee	/^module.exports = Templates2$/;"	v
+module.exports	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/baz.coffee	/^module.exports = 1000$/;"	v
+module.exports	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/index.coffee	/^module.exports = foo(foo bar) + baz$/;"	v
 module.exports	old/templates.coffee	/^module.exports = Templates$/;"	v
 next	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
 next	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
+next	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
+next	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^    function next() {$/;"	f
+obj	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^obj := $(builddir)\/obj$/;"	m
+ok	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  inline void ok(bool isOk, const char * msg = NULL) {$/;"	f	struct:NanTap
 onkeyup	coffee/jquery.govselector.coffee	/^    onkeyup = (event) ->$/;"	f
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE char* operator*() { return buf; }$/;"	f	class:NanAsciiString
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE char* operator*() { return buf; }$/;"	f	class:NanUtf8String
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE const char* operator*() const { return buf; }$/;"	f	class:NanAsciiString
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE const char* operator*() const { return buf; }$/;"	f	class:NanUtf8String
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE const uint16_t* operator*() const { return buf; }$/;"	f	class:NanUcs2String
+operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE uint16_t* operator*() { return buf; }$/;"	f	class:NanUcs2String
+options.beautify	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                   options.beautify = true$/;"	v
+options.beautify	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                   options.beautify = true$/;"	v
+options.comment	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                options.comment = true$/;"	v
+options.comment	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                options.comment = true$/;"	v
+options.minify	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                   options.minify = true$/;"	v
+options.minify	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^                   options.minify = true$/;"	v
+optparse	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^optparse = require('optparse')$/;"	v
+optparse	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^optparse = require('optparse')$/;"	v
+os	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import os$/;"	i
+p	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^            p = e.split(' ')$/;"	v
+p	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^            p = e.split(' ')$/;"	v
+parameter	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    P* const parameter;$/;"	m	struct:_NanWeakCallbackInfo
+parse	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^function parse(delay) {$/;"	f
+parse	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^function parse(delay) {$/;"	f
+parse	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parse(code, options) {$/;"	f
+parseArguments	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseArguments() {$/;"	f
+parseArrayInitialiser	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseArrayInitialiser() {$/;"	f
+parseAssignmentExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseAssignmentExpression() {$/;"	f
+parseBinaryExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseBinaryExpression() {$/;"	f
+parseBlock	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseBlock() {$/;"	f
+parseBreakStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseBreakStatement() {$/;"	f
+parseCatchClause	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseCatchClause() {$/;"	f
+parseComputedMember	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseComputedMember() {$/;"	f
+parseConditionalExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseConditionalExpression() {$/;"	f
+parseConstLetDeclaration	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseConstLetDeclaration(kind) {$/;"	f
+parseContinueStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseContinueStatement() {$/;"	f
+parseDebuggerStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseDebuggerStatement() {$/;"	f
+parseDoWhileStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseDoWhileStatement() {$/;"	f
+parseEmptyStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseEmptyStatement() {$/;"	f
+parseExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseExpression() {$/;"	f
+parseExpressionStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseExpressionStatement() {$/;"	f
+parseForStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseForStatement() {$/;"	f
+parseForVariableDeclaration	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseForVariableDeclaration() {$/;"	f
+parseFunctionDeclaration	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseFunctionDeclaration() {$/;"	f
+parseFunctionExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseFunctionExpression() {$/;"	f
+parseFunctionSourceElements	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseFunctionSourceElements() {$/;"	f
+parseGroupExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseGroupExpression() {$/;"	f
+parseIfStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseIfStatement() {$/;"	f
+parseKeys	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^function parseKeys(buffer, crypto) {$/;"	f
+parseLeftHandSideExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseLeftHandSideExpression() {$/;"	f
+parseLeftHandSideExpressionAllowCall	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseLeftHandSideExpressionAllowCall() {$/;"	f
+parseNewExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseNewExpression() {$/;"	f
+parseNonComputedMember	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseNonComputedMember() {$/;"	f
+parseNonComputedProperty	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseNonComputedProperty() {$/;"	f
+parseObjectInitialiser	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseObjectInitialiser() {$/;"	f
+parseObjectProperty	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseObjectProperty() {$/;"	f
+parseObjectPropertyKey	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseObjectPropertyKey() {$/;"	f
+parseParams	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseParams(firstRestricted) {$/;"	f
+parsePostfixExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parsePostfixExpression() {$/;"	f
+parsePrimaryExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parsePrimaryExpression() {$/;"	f
+parseProgram	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseProgram() {$/;"	f
+parsePropertyFunction	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parsePropertyFunction(param, first) {$/;"	f
+parseReturnStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseReturnStatement() {$/;"	f
+parseSourceElement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseSourceElement() {$/;"	f
+parseSourceElements	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseSourceElements() {$/;"	f
+parseStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseStatement() {$/;"	f
+parseStatementList	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseStatementList() {$/;"	f
+parseSwitchCase	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseSwitchCase() {$/;"	f
+parseSwitchStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseSwitchStatement() {$/;"	f
+parseThrowStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseThrowStatement() {$/;"	f
+parseTryStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseTryStatement() {$/;"	f
+parseUnaryExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseUnaryExpression() {$/;"	f
+parseVariableDeclaration	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseVariableDeclaration(kind) {$/;"	f
+parseVariableDeclarationList	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseVariableDeclarationList(kind) {$/;"	f
+parseVariableIdentifier	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseVariableIdentifier() {$/;"	f
+parseVariableStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseVariableStatement() {$/;"	f
+parseWhileStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseWhileStatement() {$/;"	f
+parseWithStatement	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function parseWithStatement() {$/;"	f
+patch	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function patch() {$/;"	f
+path	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^  CFStringRef path;$/;"	m	struct:fse_event	file:
+paths	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    CFArrayRef paths;$/;"	m	class:fse::FSEvents	file:
+peek	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function peek() {$/;"	f
+peekLineTerminator	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function peekLineTerminator() {$/;"	f
+persistent	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    v8::Persistent<T> persistent;$/;"	m	struct:_NanWeakCallbackInfo
+persistentHandle	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  v8::Persistent<v8::Object> persistentHandle;$/;"	m	class:NanAsyncWorker
+plan	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  inline void plan(int i) {$/;"	f	struct:NanTap
+plistlib	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import plistlib$/;"	i
+prereq_changed	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^prereq_changed = $(filter-out FORCE_DO_CMD,$(filter-out $|,$?))$/;"	m
 query_matcher	coffee/govselector.coffee	/^query_matcher = require('.\/querymatcher.coffee')$/;"	v
+quickParse	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^    function quickParse() { parse(1); }$/;"	f
+quickParse	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^    function quickParse() { parse(1); }$/;"	f
+quiet	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^  quiet=$/;"	m
+quiet	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^  quiet=quiet_$/;"	m
+quiet_cmd_alink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_alink = LIBTOOL-STATIC $@$/;"	m
+quiet_cmd_cc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_cc = CC($(TOOLSET)) $@$/;"	m
+quiet_cmd_copy	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_copy = COPY $@$/;"	m
+quiet_cmd_cxx	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_cxx = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_infoplist	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_infoplist = INFOPLIST $@$/;"	m
+quiet_cmd_link	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_link = LINK($(TOOLSET)) $@$/;"	m
+quiet_cmd_mac_package_framework	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_mac_package_framework = PACKAGE FRAMEWORK $@$/;"	m
+quiet_cmd_mac_tool	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_mac_tool = MACTOOL $(4) $<$/;"	m
+quiet_cmd_objc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_objc = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_objcxx	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_objcxx = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_pch_c	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_pch_c = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_pch_cc	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_pch_cc = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_pch_m	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_pch_m = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_pch_mm	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_pch_mm = CXX($(TOOLSET)) $@$/;"	m
+quiet_cmd_regen_makefile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_regen_makefile = ACTION Regenerating $@$/;"	m
+quiet_cmd_solink	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_solink = SOLINK($(TOOLSET)) $@$/;"	m
+quiet_cmd_solink_module	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_solink_module = SOLINK_MODULE($(TOOLSET)) $@$/;"	m
+quiet_cmd_touch	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^quiet_cmd_touch = TOUCH $@$/;"	m
+re	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^import re$/;"	i
+re	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^import re$/;"	i
+re	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import re$/;"	i
 record_fields	coffee/templates2.coffee	/^  record_fields = get_record_fields r$/;"	v
 regs	coffee/querymatcher.coffee	/^  regs = words.map (w)-> new RegExp("#{w}",'ig')$/;"	f
+render	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^render = (filename, depth, options) ->$/;"	f
+render	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^render = (filename, depth, options) ->$/;"	f
 renderData	old/datarenderer.coffee	/^renderData = (html_container, data) ->$/;"	f
 render_field	coffee/templates2.coffee	/^render_field = (fName,data)->$/;"	f
 render_field_name	coffee/templates2.coffee	/^render_field_name = (fName) ->$/;"	f
@@ -85,39 +931,133 @@ render_field_value	coffee/templates2.coffee	/^render_field_value =(n,data) ->$/;
 render_fields	coffee/templates2.coffee	/^render_fields =( fields, data) ->$/;"	f
 render_tabs	coffee/templates2.coffee	/^render_tabs = (initial_layout, data) ->$/;"	f
 render_tabs	old/templates.coffee	/^render_tabs = (layout,data) ->$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/index.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/EVP_BytesToKey.js.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/asn1.js.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/fixProc.js.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/index.js.html	/^        function replaceTable(node) {$/;"	f
+replaceTable	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^        function replaceTable(node) {$/;"	f
+replace_spaces	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^replace_spaces = $(subst $(space),?,$1)$/;"	m
+report	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/index.html	/^  function report(state, code, message) {$/;"	f
+report	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/index.html	/^  function report(state, code, message) {$/;"	f
+request	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  uv_work_t request;$/;"	m	class:NanAsyncWorker
+return_NanUndefined	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define return_NanUndefined(/;"	d
+return_NanValue	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^#define return_NanValue(/;"	d
+return_t	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^  typedef typename FactoryBase<T>::return_t return_t;$/;"	t	struct:NanIntern::IntegerFactory
+return_t	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_new.h	/^template <typename T> struct FactoryBase { typedef v8::Local<T> return_t; };$/;"	t	struct:NanIntern::FactoryBase
 run	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
 run	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
+run	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
+run	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function run(locations, acornOnly) {$/;"	f
 runAcorn	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
 runAcorn	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
+runAcorn	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
+runAcorn	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function runAcorn(code, locations) {$/;"	f
 runEsprima	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
 runEsprima	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
+runEsprima	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
+runEsprima	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function runEsprima(code, locations) {$/;"	f
 runTraceur	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
 runTraceur	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
+runTraceur	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
+runTraceur	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function runTraceur(code) {$/;"	f
 runtime_bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.runtime_bundled_path$/;"	F	class:Handlebars.Source
 s	coffee/templates2.coffee	/^  s = fName.replace(\/_\/g," ")$/;"	v
 s	old/datarenderer.coffee	/^      s = ''$/;"	v
+scanComment	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanComment() {$/;"	f
+scanHexEscape	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanHexEscape(prefix) {$/;"	f
+scanIdentifier	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanIdentifier() {$/;"	f
+scanNumericLiteral	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanNumericLiteral() {$/;"	f
+scanPunctuator	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanPunctuator() {$/;"	f
+scanRegExp	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanRegExp() {$/;"	f
+scanStringLiteral	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function scanStringLiteral() {$/;"	f
 select	coffee/main.coffee	/^  select = $(s)$/;"	v
 select_text	coffee/querymatcher.coffee	/^select_text = (clones,words,regs) ->$/;"	f
+setText	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/precedence.html	/^    function setText(el, str) {$/;"	f
+setText	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/precedence.html	/^    function setText(el, str) {$/;"	f
 showOutput	node_modules/jade/node_modules/constantinople/node_modules/acorn-globals/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
 showOutput	node_modules/jade/node_modules/with/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
+showOutput	node_modules/watchify/node_modules/browserify/node_modules/module-deps/node_modules/detective/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
+showOutput	node_modules/watchify/node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/bench.html	/^  function showOutput(values) {$/;"	f
+shutil	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import shutil$/;"	i
+size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    int size;$/;"	m	class:NanAsciiString
+size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    int size;$/;"	m	class:NanUcs2String
+size	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    int size;$/;"	m	class:NanUtf8String
+skipComment	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function skipComment() {$/;"	f
+space	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^space := $(empty) $(empty)$/;"	m
+srcdir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^srcdir := ..$/;"	m
 ss	coffee/querymatcher.coffee	/^  ss=s.trim(''+s)$/;"	v
 ss	coffee/querymatcher.coffee	/^  ss=ss.replace(\/ +\/g,' ')$/;"	v
 ss	old/datarenderer.coffee	/^    ss = ''$/;"	v
 ss	old/templates.coffee	/^      ss=''$/;"	v
 ss	old/templates.coffee	/^  ss = ''$/;"	v
+str	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\u0100-\\uffff]\/g, (ch) ->$/;"	f
+str	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\x00-\\x08\\x0b-\\x1f\\x7f-\\xff]\/g, (ch) ->$/;"	f
+str	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\u0100-\\uffff]\/g, (ch) ->$/;"	f
+str	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\x00-\\x08\\x0b-\\x1f\\x7f-\\xff]\/g, (ch) ->$/;"	f
+string	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^import string$/;"	i
+string	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^import string$/;"	i
+string	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import string$/;"	i
+stringify	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/precedence.html	/^    function stringify(node) {$/;"	f
+stringify	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/precedence.html	/^    function stringify(node) {$/;"	f
+stringify_unicode	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^stringify_unicode = (str) ->$/;"	f
+stringify_unicode	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^stringify_unicode = (str) ->$/;"	f
 strip	coffee/querymatcher.coffee	/^strip = (s) ->$/;"	f
 strongify	coffee/querymatcher.coffee	/^strongify = (s, words, regs) ->$/;"	f
+subprocess	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import subprocess$/;"	i
+switches	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    switches = [$/;"	v
+switches	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    switches = [$/;"	v
+sys	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/tools/generate-unicode-regex.py	/^import sys$/;"	i
+sys	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/tools/generate-unicode-regex.py	/^import sys$/;"	i
+sys	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import sys$/;"	i
 t	coffee/templates2.coffee	/^  t =$/;"	v
+t_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  v8::Persistent<v8::Object> t_;$/;"	m	struct:NanTap
+tags	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    tags =$/;"	v
+tags	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    tags =$/;"	v
+tempfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import tempfile$/;"	i
 test_string	coffee/querymatcher.coffee	/^    test_string =(s, regs) ->$/;"	f
+that_	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NanAsyncProgressWorker* const that_;$/;"	m	class:NanAsyncProgressWorker::ExecutionProgress
 thisIsWrong	node_modules/coffeeify/example/error.coffee	/^thisIsWrong = , 'waaa'$/;"	v
+thread	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    pthread_t thread;$/;"	m	class:fse::FSEvents	file:
+threadRun	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^void *FSEvents::threadRun(void *ctx) {$/;"	f	class:FSEvents
+threadStart	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^void FSEvents::threadStart() {$/;"	f	class:FSEvents
+threadStop	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/thread.cc	/^void FSEvents::threadStop() {$/;"	f	class:FSEvents
+threadloop	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    CFRunLoopRef threadloop;$/;"	m	class:fse::FSEvents	file:
+throwError	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function throwError(token, messageFormat) {$/;"	f
+throwErrorTolerant	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function throwErrorTolerant() {$/;"	f
+throwUnexpected	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function throwUnexpected(token) {$/;"	f
+tick	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/testling/test.sh	/^function tick () {$/;"	f
 timer	coffee/jquery.govselector.coffee	/^        timer = setTimeout(callback, ms)$/;"	v
 timer	coffee/jquery.govselector.coffee	/^      timer = 0$/;"	v
+trackGroupExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackGroupExpression() {$/;"	f
+trackLeftHandSideExpression	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackLeftHandSideExpression() {$/;"	f
+trackLeftHandSideExpressionAllowCall	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackLeftHandSideExpressionAllowCall() {$/;"	f
 txt	old/templates.coffee	/^    txt = make_simple_template(layout0)$/;"	v
 txt	old/templates.coffee	/^  txt ="""$/;"	v
 txt0	old/templates.coffee	/^    txt0 = make_simple_template2(layout0)$/;"	v
 under	coffee/templates2.coffee	/^under = (s) -> s.replace(\/ \/g, '_')$/;"	f
+unlock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::unlock() {$/;"	f	class:FSEvents
 unmentioned_fields	coffee/templates2.coffee	/^  unmentioned_fields = []$/;"	v
+unpatch	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function unpatch() {$/;"	f
+unreplace_spaces	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^unreplace_spaces = $(subst ?,$(space),$1)$/;"	m
+updateTree	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/detective/node_modules/esprima/demo/parse.html	/^function updateTree(syntax) {$/;"	f
+updateTree	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/node_modules/syntax-error/node_modules/esprima/demo/parse.html	/^function updateTree(syntax) {$/;"	f
+util	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/testling/test.sh	/^function util () {$/;"	f
+visit	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^            function visit(node) {$/;"	f
+widenString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^widenString(std::vector<uint16_t> *ws, const uint8_t *s, int l = -1) {$/;"	f	namespace:NanIntern
 window.GOVWIKI	coffee/main.coffee	/^window.GOVWIKI =$/;"	v
 window.geocode_addr	coffee/main.coffee	/^window.geocode_addr = (input_selector)-> govmap.gocode_addr $(input_selector).val()$/;"	f
 window.remember_tab	coffee/main.coffee	/^window.remember_tab =(name)-> active_tab = name$/;"	f
 words	coffee/querymatcher.coffee	/^  words = get_words str$/;"	v
+wrap	node_modules/watchify/node_modules/browserify/node_modules/crypto-browserify/node_modules/public-encrypt/node_modules/parse-asn1/coverage/lcov-report/parseASN1/fixProc.js.html	/^function wrap(str) {$/;"	f
+wrapTrackingFunction	node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function wrapTrackingFunction(range, loc) {$/;"	f
+~FSEvents	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^FSEvents::~FSEvents() {$/;"	f	class:FSEvents
+~NanAsciiString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE ~NanAsciiString() {$/;"	f	class:NanAsciiString
+~NanAsyncProgressWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual ~NanAsyncProgressWorker() {$/;"	f	class:NanAsyncProgressWorker
+~NanAsyncWorker	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  virtual ~NanAsyncWorker() {$/;"	f	class:NanAsyncWorker
+~NanCallback	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  ~NanCallback() {$/;"	f	class:NanCallback
+~NanTap	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  ~NanTap() { NanDisposePersistent(t_); }  \/\/ not sure if neccessary$/;"	f	struct:NanTap
+~NanUcs2String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE ~NanUcs2String() {$/;"	f	class:NanUcs2String
+~NanUtf8String	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE ~NanUtf8String() {$/;"	f	class:NanUtf8String
+~_NanWeakCallbackInfo	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE ~_NanWeakCallbackInfo() {$/;"	f	struct:_NanWeakCallbackInfo

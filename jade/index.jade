@@ -1,88 +1,12 @@
 doctype html
 html(lang='en')
   head
-    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    meta(charset='utf-9')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    link(rel='icon', href='favicon.ico')
-    title govwiki.us
-
-    // Bootstrap core CSS
-    //link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css", rel='stylesheet')
-    link(href='//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/paper/bootstrap.min.css', rel='stylesheet')
-    
-    // Custom styles for this page
-    link(rel='stylesheet', href='css/index.css')
-    
-    //script(src='js_files/ie-emulation-modes-warning.js')
-    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-    //if lt IE 9
-      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
-      |       
-      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-
-      
+    include head.jade
   body
-    // Static navbar
-    nav.navbar.navbar-default.navbar-static-top(style="margin-bottom:0")
-      .container
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#') Govwiki.us
-        #navbar.navbar-collapse.collapse
-          ul.nav.navbar-nav
-            li 
-              a(href='#') a comprehensive directory of US local governments
-            //li.active
-              a(href='#') Home
-          ul.nav.navbar-nav.navbar-right
-            //li
-              a(href='#') About
-            //li
-              a(href='#') Contact
-            //li.dropdown
-              a.dropdown-toggle(href='http://getbootstrap.com/examples/navbar-static-top/#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | Theme 
-                span.caret
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='http://getbootstrap.com/examples/navbar-static-top/#') Action
-                li
-                  a(href='http://getbootstrap.com/examples/navbar-static-top/#') Another action
-                li
-                  a(href='http://getbootstrap.com/examples/navbar-static-top/#') Something else here
-                li.divider
-                li.dropdown-header Nav header
-                li
-                  a(href='http://getbootstrap.com/examples/navbar-static-top/#') Separated link
-                li
-                  a(href='http://getbootstrap.com/examples/navbar-static-top/#') One more separated link
-            //li
-              a(href='#') Login
-        // /.nav-collapse
-      
-      //.container(style="margin-bottom:20px;")
+    include navbar.jade
 
-
-
-    .container
-      //.row
-        form.form-inline.search-form
-          input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px;")
-          #filter-container.pull-right
-            span.gov-counter(data-toggle="tooltip", data-placement="bottom", title="Number of governments")
-            span.info you can filter by
-            span.state-container
-            span.info and/or
-            span.gov-type-container
-              
+    // Search & Filters 
+    .container(style="margin-bottom:50px;")
       .row.search-form
         #typeahed-container.col-sm-6
           input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
@@ -95,25 +19,33 @@ html(lang='en')
 
 
 
-          
-    .container(style="margin-top:50px;")
-      .row(style="margin-bottom:70px; border:0px solid silver;")
-        .col-lg-6(style="margin-top:0; border:0px solid silver;")
+    // MAP      
+    .container(style="margin-bottom:50px;display:none;")
+      .row
+        .col-lg-12(style="border:0px solid silver;")
+          #maparea
+            #govmap(style="height:400px;border:0px solid silver;")
+            // Controls to show results of geocoding
+            //div
+              .input-group
+                span.input-group-addon
+                  strong FIND:
+                input#govaddress.form-control.input-sm
+                .input-group-btn
+                  button.glyphicon.glyphicon-search.btn.btn-default.input-sm(onclick="geocode_addr('#govaddress')")
+              .govmap-found
+    
+    
+    // DATA
+    .container(style="margin-bottom:50px;")
+      .row
+        .col-lg-12(style="margin-top:0; border:0px solid silver;")
           #details(style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;")
-        #maparea.col-lg-6(style="border:0px solid silver;")
-          .input-group(style="display:none")
-            span.input-group-addon(style="padding:0; margin:0") 
-              strong FIND:
-            input#govaddress.form-control.input-sm
-            .input-group-btn
-              button.glyphicon.glyphicon-search.btn.btn-default.input-sm(onclick="geocode_addr('#govaddress')")
-          .govmap-found(style="display:none")  
-          #govmap(style="height:400px;border:0px solid silver;")
 
 
 
 
-
+    .container(style="margin-bottom:50px;")
       p
         | California local government civic profile system for CPC.  
         | The application will be based on the California Credit Scoring System originally 
@@ -123,10 +55,6 @@ html(lang='en')
 
 
 
-    // /container
-    //
-      Bootstrap core JavaScript
-      ==================================================
     // Scripts -- Placed at the end of the document so the pages load faster
     script(src='js_files/jquery.min.js')
     //script(src='./js_files/bootstrap.min.js')
