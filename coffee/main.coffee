@@ -114,5 +114,3 @@ start_adjusting_typeahead_width()
 
 livereload "9090"
 
-
-
