@@ -37,11 +37,23 @@ add_marker =(rec)->
     size: 'small'
     color: 'blue'
     #icon: pinImage
-    title:  "#{rec.inc_id} #{rec.gov_name} #{rec.latitude} #{rec.longitude}"
+    title:  "#{rec.gov_name}, #{rec.gov_type} (#{rec.latitude}, #{rec.longitude})"
     infoWindow:
-      content: "#{rec.inc_id} <strong>#{rec.gov_name}</strong><br> #{rec.latitude} #{rec.longitude}"
-    #click: (e)->
-    #  alert data.gov_name
+      content: create_info_window rec
+    click: (e)->
+      #e.preventDefault()
+      window.GOVWIKI.show_record rec
+
+
+create_info_window =(r) ->
+  w = $('<div></div>')
+  .append $("<a href='#'><strong>#{r.gov_name}</strong></a>").click (e)->
+    e.preventDefault()
+    console.log r
+    window.GOVWIKI.show_record r
+
+  .append $("<div> #{r.gov_type}  #{r.city} #{r.zip} #{r.state}</div>")
+  return w[0]
 
 
 
@@ -54,6 +66,9 @@ get_records = (query, limit, onsuccess) ->
     success: onsuccess
     error:(e) ->
       console.log e
+
+
+
 
 # GEOCODING ========================================
 

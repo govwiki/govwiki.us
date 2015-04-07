@@ -56,6 +56,12 @@ get_record = (query) ->
       console.log e
 
 
+window.GOVWIKI.show_record =(rec)=>
+  $('#details').html templates.get_html(0, rec)
+  activate_tab()
+
+
+      
 ###
 window.show_rec = (rec)->
   $('#details').html templates.get_html(0, rec)
