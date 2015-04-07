@@ -32,6 +32,7 @@
     "joffe"
   ],
   "dependencies": {
+    "browserify": "^9.0.7",
     "coffee-script": "^1.9.1",
     "coffeeify": "^1.0.0",
     "connect": "^3.3.4",

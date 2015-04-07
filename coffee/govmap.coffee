@@ -23,15 +23,32 @@ on_bounds_changed =(e) ->
   sw_lng=sw.lng()
   q=""" "latitude":{"$lt":#{ne_lat},"$gt":#{sw_lat}},"longitude":{"$lt":#{ne_lng},"$gt":#{sw_lng}}"""
   get_records q, 100,  (data) ->
-    #console.log data
-    if data.length
-      console.log "length=#{data.length}"
+    console.log "length=#{data.length}"
+    console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
+    map.removeMarkers()
+    add_marker(rec) for rec in data
     return
+
+add_marker =(rec)->
+  console.log "#{rec.rand} #{rec.inc_id} #{rec.zip} #{rec.latitude} #{rec.longitude} #{rec.gov_name}"
+  map.addMarker
+    lat: rec.latitude
+    lng: rec.longitude
+    size: 'small'
+    color: 'blue'
+    #icon: pinImage
+    title:  "#{rec.inc_id} #{rec.gov_name} #{rec.latitude} #{rec.longitude}"
+    infoWindow:
+      content: "#{rec.inc_id} <strong>#{rec.gov_name}</strong><br> #{rec.latitude} #{rec.longitude}"
+    #click: (e)->
+    #  alert data.gov_name
+
+
 
 
 get_records = (query, limit, onsuccess) ->
   $.ajax
-    url: "https://api.mongolab.com/api/1/databases/govwiki/collections/govs/?q={#{query}}&f={_id:0}&l=#{limit}&apiKey=0Y5X_Qk2uOJRdHJWJKSRWk6l6JqVTS2y"
+    url: "https://api.mongolab.com/api/1/databases/govwiki/collections/govs/?q={#{query}}&f={_id:0}&l=#{limit}&s={rand:1}&apiKey=0Y5X_Qk2uOJRdHJWJKSRWk6l6JqVTS2y"
     dataType: 'json'
     cache: true
     success: onsuccess

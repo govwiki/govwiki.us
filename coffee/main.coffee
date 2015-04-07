@@ -56,8 +56,11 @@ get_record = (query) ->
       console.log e
 
 
-
-
+###
+window.show_rec = (rec)->
+  $('#details').html templates.get_html(0, rec)
+  activate_tab()
+###
 
 build_selector = (container, text, url, where_to_store_value ) ->
   $.ajax
