@@ -11,11 +11,11 @@ GovSelector = require './govselector.coffee'
 #_jqgs       = require './jquery.govselector.coffee'
 Templates2      = require './templates2.coffee'
 govmap      = require './govmap.coffee'
+#scrollto = require '../bower_components/jquery.scrollTo/jquery.scrollTo.js'
 
 window.GOVWIKI =
   state_filter : ''
   gov_type_filter : ''
-
 
 
 
@@ -38,6 +38,7 @@ gov_selector.on_selected = (evt, data, name) ->
   $('#details').html templates.get_html(0, data)
   activate_tab()
   get_record "inc_id:#{data["inc_id"]}"
+  $(window).scrollTo('#btnBackToSearch',600)
   return
 
 
@@ -59,7 +60,7 @@ get_record = (query) ->
 window.GOVWIKI.show_record =(rec)=>
   $('#details').html templates.get_html(0, rec)
   activate_tab()
-
+  $(window).scrollTo('#btnBackToSearch',600)
 
       
 ###
@@ -93,12 +94,16 @@ build_select_element = (container, text, arr, where_to_store_value ) ->
     $('.gov-counter').text gov_selector.count_govs()
 
 
+adjust_typeahead_width =() ->
+  inp = $('#myinput')
+  par = $('#typeahed-container')
+  inp.width par.width()
+
+
+
 start_adjusting_typeahead_width =() ->
   $(window).resize ->
-    inp = $('#myinput')
-    par = $('#typeahed-container')
-    #console.log "#{inp.width()} : #{par.width()}"
-    inp.width par.width()
+    adjust_typeahead_width()
 
 
 # add live reload to the site. For development only.
@@ -118,8 +123,16 @@ templates.load_template "tabs", "config/tablayout.json"
 build_selector('.state-container' , 'State..' , 'data/state.json' , 'state_filter')
 build_selector('.gov-type-container' , 'type of government..' , 'data/gov_type.json' , 'gov_type_filter')
 
-
+adjust_typeahead_width()
 start_adjusting_typeahead_width()
+
+$('#btnBackToSearch').click (e)->
+  e.preventDefault()
+  $(window).scrollTo('0px',500)
+  setTimeout ->
+    $('#myinput').focus()
+  ,500
+
 
 livereload "9090"
 

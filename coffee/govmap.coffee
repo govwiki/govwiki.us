@@ -22,27 +22,48 @@ on_bounds_changed =(e) ->
   sw_lat=sw.lat()
   sw_lng=sw.lng()
   q=""" "latitude":{"$lt":#{ne_lat},"$gt":#{sw_lat}},"longitude":{"$lt":#{ne_lng},"$gt":#{sw_lng}}"""
-  get_records q, 100,  (data) ->
+  get_records q, 200,  (data) ->
     console.log "length=#{data.length}"
     console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
     map.removeMarkers()
     add_marker(rec) for rec in data
     return
 
+
+
+get_icon =(gov_type) ->
+  
+  _circle =(color)->
+    path: google.maps.SymbolPath.CIRCLE
+    fillOpacity: 0.5
+    fillColor:color
+    strokeWeight: 1
+    strokeColor:'white'
+    #strokePosition: google.maps.StrokePosition.OUTSIDE
+    scale:6
+
+  switch gov_type
+    when 'General Purpose' then return _circle '#03C'
+    when 'Cemeteries'      then return _circle '#000'
+    when 'Hospitals'       then return _circle '#0C0'
+    else return _circle '#D20'
+
+
+
+
 add_marker =(rec)->
-  console.log "#{rec.rand} #{rec.inc_id} #{rec.zip} #{rec.latitude} #{rec.longitude} #{rec.gov_name}"
+  #console.log "#{rec.rand} #{rec.inc_id} #{rec.zip} #{rec.latitude} #{rec.longitude} #{rec.gov_name}"
   map.addMarker
     lat: rec.latitude
     lng: rec.longitude
-    size: 'small'
-    color: 'blue'
-    #icon: pinImage
+    icon: get_icon(rec.gov_type)
     title:  "#{rec.gov_name}, #{rec.gov_type} (#{rec.latitude}, #{rec.longitude})"
     infoWindow:
       content: create_info_window rec
     click: (e)->
-      #e.preventDefault()
       window.GOVWIKI.show_record rec
+  
+  return
 
 
 create_info_window =(r) ->
