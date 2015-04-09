@@ -48,7 +48,7 @@ render_field_name = (fName) ->
 
 
 render_field = (fName,data)->
-  return ''  unless fValue = data[fName]
+  #return ''  unless fValue = data[fName]
   """
   <div>
       <span class='f-nam'>#{render_field_name fName}</span>
@@ -56,13 +56,9 @@ render_field = (fName,data)->
   </div>
   """
 
-
-
   
 render_fields =( fields, data) ->
   ( render_field(f, data) for f in fields).join('')
-
-
 
 
   
@@ -122,13 +118,7 @@ get_unmentioned_fields = (la, r) ->
   layout_fields = get_layout_fields la
   record_fields = get_record_fields r
   unmentioned_fields = []
-  
-  #for f of record_fields
-  #  if not layout_fields[f]
-  #    unmentioned_fields.push f
-  
   unmentioned_fields.push(f) for f of record_fields when not layout_fields[f]
-
   return unmentioned_fields
 
 
@@ -143,6 +133,8 @@ add_other_tab_to_layout = (layout=[], data) ->
   return l
 
 
+convert_fusion_template=(fu_templ) ->
+  return fu_templ
 
 
 class Templates2
@@ -166,6 +158,16 @@ class Templates2
       cache: true
       success: (template_json) =>
         @add_template(template_name, template_json)
+        return
+
+  load_fusion_template:(template_name, url) ->
+    $.ajax
+      url: url
+      dataType: 'json'
+      cache: true
+      success: (template_json) =>
+        console.log template_json
+        #@add_template(template_name, template_json)
         return
 
 

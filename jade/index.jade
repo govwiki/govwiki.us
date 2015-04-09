@@ -10,13 +10,15 @@ html(lang='en')
       .row.search-form
         #typeahed-container.col-sm-5(style='border:0px solid red')
           input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
-          p.text-center.text-nowrap
-            |Type government name here &nbsp;&nbsp; 
-            span(style="font-size:150%; position:relative; top:-6px;")⤴  
+          p.text-center.text-nowrap.hidden-xs.hidden-sm
+            |Type government name here &nbsp;&nbsp;
+            img(src='img/FullSizeRender.gif', style='width:40px') 
+            //span(style="font-size:150%; position:relative; top:-6px;")⤴  
             |&nbsp; or find it on the map &nbsp;&nbsp;
-            span(style="font-size:150%;position: relative; top:12px;")⤵ 
+            img(src='img/FullSizeRender1.gif', style='width:40px') 
+            //span(style="font-size:150%;position: relative; top:12px;")⤵ 
         
-        .col-sm-2.text-center(style='border:0px solid red; opacity:0.5;padding:0;margin:0; line-height:1')
+        .col-sm-2.text-center.hidden-xs(style='border:0px solid red; opacity:0.5;padding:0;margin:0; line-height:1')
           .gov-counter(style="margin-top:8px; font-size:150%;font-weight:bold;")
           p governments
             
@@ -24,11 +26,12 @@ html(lang='en')
           form.form-inline
             span.state-container(style="margin-right:20px;")
             span.gov-type-container
-          p.text-center.text-nowrap
-            |flter by state &nbsp;&nbsp;
-            span(style="font-size:150%; position:relative; top:-6px;")⤴  &nbsp;&nbsp;&nbsp;&nbsp;
-            |&nbsp;by type&nbsp;&nbsp;
-            span(style="font-size:150%; position:relative; top:-6px;")⤴  
+          p.text-center.text-nowrap.hidden-xs.hidden-sm
+            img(src='img/FullSizeRender2.gif', style='width:40px') 
+            |flter by state, &nbsp;&nbsp;
+            |or by type&nbsp;&nbsp;
+            img(src='img/FullSizeRender.gif', style='width:40px') 
+            //span(style="font-size:150%; position:relative; top:-6px;")⤴  
 
 
 

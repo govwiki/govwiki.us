@@ -83,7 +83,7 @@ build_selector = (container, text, url, where_to_store_value ) ->
 
 
 build_select_element = (container, text, arr, where_to_store_value ) ->
-  s  = "<select class='form-control' style='max-width:160px;'><option value=''>#{text}</option>"
+  s  = "<select class='form-control' style='maxwidth:160px;'><option value=''>#{text}</option>"
   s += "<option value='#{v}'>#{v}</option>" for v in arr
   s += "</select>"
   select = $(s)
@@ -119,6 +119,7 @@ livereload = (port) ->
 
     
 templates.load_template "tabs", "config/tablayout.json"
+templates.load_fusion_template "tabs", "https://www.googleapis.com/fusiontables/v2/query?sql=SELECT%20*%20FROM%201z2oXQEYQ3p2OoMI8V5gKgHWB5Tz990BrQ1xc1tVo&key=AIzaSyCXDQyMDpGA2g3Qjuv4CDv7zRj-ix4IQJA"
 
 build_selector('.state-container' , 'State..' , 'data/state.json' , 'state_filter')
 build_selector('.gov-type-container' , 'type of government..' , 'data/gov_type.json' , 'gov_type_filter')
