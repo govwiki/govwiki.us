@@ -46,7 +46,7 @@ html(lang='en')
               .input-group
                 span.input-group-addon
                   strong FIND:
-                input#govaddress.form-control.input-sm
+                input#govaddress.form-control.input-sm ss
                 .input-group-btn
                   button.glyphicon.glyphicon-search.btn.btn-default.input-sm(onclick="geocode_addr('#govaddress')")
               .govmap-found
@@ -56,7 +56,8 @@ html(lang='en')
     .container(style="margin-bottom:150px;")
       p.text-center
         a#btnBackToSearch.btn.btn-default(href='', role='button') back to search
-          span(style="font-size:120%; position:relative; top:-6px;")&nbsp;⤴  
+          img(src='img/FullSizeRender.gif', style='width:40px') 
+          //span(style="font-size:120%; position:relative; top:-6px;")&nbsp;⤴  
       .row
         .col-lg-12(style="margin-top:30px; border:0px solid silver;")
           #details(style="margin-top:0; border:0px solid red;margin-bottom:60px; font-size:140%;")

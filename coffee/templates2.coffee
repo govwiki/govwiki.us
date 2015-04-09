@@ -133,14 +133,31 @@ add_other_tab_to_layout = (layout=[], data) ->
   return l
 
 
-
+# converts tab template described in google fusion table to 
+# tab template
 convert_fusion_template=(templ) ->
-  columns = templ.columns
+  # returns hash of field names and their positions in array of field names
+  get_col_hash = (columns) ->
+    col_hash ={}
+    col_hash[col_name]=i for col_name,i in templ.columns
+    return col_hash
+  
+  # returns feild value by its name, array of fields, and hash of fields
+  val = (field_name, fields, col_hush) ->
+    fields[col_hash[field_name]]
+  
+  col_hash = get_col_hash(templ.col_hash)
+  
+  tab_hash={}
+  for row,i in templ.rows
+    category = val 'General Category', row, col_hash
+    #tab_hash[category]=[] unless tab_hash[category]
+    tab_hash[category]?=[]
 
-  #for row in templ.rows
 
+    tab_hash[category].push val 'Field Name', row, col_hash
 
-  return 
+  return tab_hash
 
 
 class Templates2
@@ -172,7 +189,8 @@ class Templates2
       dataType: 'json'
       cache: true
       success: (template_json) =>
-        console.log template_json
+        t = convert_fusion_template template_json
+        console.log t
         #@add_template(template_name, template_json)
         return
 
