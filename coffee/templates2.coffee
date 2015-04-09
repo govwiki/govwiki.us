@@ -133,8 +133,14 @@ add_other_tab_to_layout = (layout=[], data) ->
   return l
 
 
-convert_fusion_template=(fu_templ) ->
-  return fu_templ
+
+convert_fusion_template=(templ) ->
+  columns = templ.columns
+
+  #for row in templ.rows
+
+
+  return 
 
 
 class Templates2
