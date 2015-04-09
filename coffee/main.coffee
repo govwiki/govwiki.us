@@ -38,7 +38,7 @@ gov_selector.on_selected = (evt, data, name) ->
   $('#details').html templates.get_html(0, data)
   activate_tab()
   get_record "inc_id:#{data["inc_id"]}"
-  $(window).scrollTo('#btnBackToSearch',600)
+  $(window).scrollTo('#pBackToSearch',600)
   return
 
 
@@ -60,7 +60,7 @@ get_record = (query) ->
 window.GOVWIKI.show_record =(rec)=>
   $('#details').html templates.get_html(0, rec)
   activate_tab()
-  $(window).scrollTo('#btnBackToSearch',600)
+  $(window).scrollTo('#pBackToSearch',600)
 
       
 ###
@@ -118,7 +118,7 @@ livereload = (port) ->
 
 
     
-templates.load_template "tabs", "config/tablayout.json"
+#templates.load_template "tabs", "config/tablayout.json"
 templates.load_fusion_template "tabs", "https://www.googleapis.com/fusiontables/v2/query?sql=SELECT%20*%20FROM%201z2oXQEYQ3p2OoMI8V5gKgHWB5Tz990BrQ1xc1tVo&key=AIzaSyCXDQyMDpGA2g3Qjuv4CDv7zRj-ix4IQJA"
 
 build_selector('.state-container' , 'State..' , 'data/state.json' , 'state_filter')

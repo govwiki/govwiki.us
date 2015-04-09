@@ -13,6 +13,7 @@
 # LOAD FIELD NAMES 
 fieldNames = {}
 
+###
 load_field_names = (url) ->
   $.ajax
     url: url
@@ -26,11 +27,14 @@ load_field_names = (url) ->
 
 
 load_field_names("config/fieldnames.json")
-
+###
 
 
 render_field_value =(n,data) ->
   v=data[n]
+  if not data[n]
+    return ''
+
   if n == "web_site"
     return "<a target='_blank' href='#{v}'>#{v}</a>"
   else
@@ -71,26 +75,28 @@ render_tabs = (initial_layout, data) ->
   h = '<div role="tabpanel" >'
 
   #render tabs
-  h +='<ul id="fieldTabs" class="nav nav-tabs" role="tablist">'
+  h +='<ul id="fieldTabs" class="nav nav-pills" role="tablist">'
   
   for tab,i in layout
     active = if i>0 then '' else 'active'
     h +="""
-      <li role="presentation" class="#{active}" onclick="remember_tab('#{under(tab.name)}')">
-        <a href="##{under(tab.name)}" aria-controls="home" role="tab" data-toggle="tab">
+      <li role="presentation" class="#{active}" style="text-transform:capitalize" onclick="remember_tab('#{under(tab.name)}')">
+        <a href="#tab#{under(tab.name)}" aria-controls="home" role="tab" data-toggle="tab">
         #{tab.name}
         </a>
       </li>
     """
 
   h += '</ul>'
-  h += '<div class="tab-content">'
+  h += '<div id="tabsContent" class="tab-content">'
 
   #render tabs content
   for tab,i in layout
     active = if i>0 then '' else 'active'
     h +="""
-    <div role="tabpanel" class="tab-pane #{active}" id="#{under(tab.name)}" style="padding-top: 40px;">
+    <div role="tabpanel" class="tab-pane #{active} one-tab" id="tab#{under(tab.name)}" style="padding-top: 20px;">
+        <h3 style="text-transform:capitalize">#{tab.name}</h3>
+        <br>
         #{render_fields tab.fields, data}
     </div>
     """
@@ -136,6 +142,8 @@ add_other_tab_to_layout = (layout=[], data) ->
 # converts tab template described in google fusion table to 
 # tab template
 convert_fusion_template=(templ) ->
+  tab_hash={}
+  tabs=[]
   # returns hash of field names and their positions in array of field names
   get_col_hash = (columns) ->
     col_hash ={}
@@ -146,18 +154,29 @@ convert_fusion_template=(templ) ->
   val = (field_name, fields, col_hush) ->
     fields[col_hash[field_name]]
   
+  # converts hash to an array template
+  hash_to_array =(hash) ->
+    a = []
+    for k of hash
+      tab = {}
+      tab.name=k
+      tab.fields=hash[k]
+      a.push tab
+    return a
+
+    
   col_hash = get_col_hash(templ.col_hash)
   
-  tab_hash={}
   for row,i in templ.rows
-    category = val 'General Category', row, col_hash
+    category = val 'general_category', row, col_hash
     #tab_hash[category]=[] unless tab_hash[category]
-    tab_hash[category]?=[]
+    fieldNames[val 'field_name', row, col_hash]=val 'description', row, col_hash
+    if category
+      tab_hash[category]?=[]
+      tab_hash[category].push val 'field_name', row, col_hash
 
-
-    tab_hash[category].push val 'Field Name', row, col_hash
-
-  return tab_hash
+  tabs = hash_to_array(tab_hash)
+  return tabs
 
 
 class Templates2
@@ -191,7 +210,7 @@ class Templates2
       success: (template_json) =>
         t = convert_fusion_template template_json
         console.log t
-        #@add_template(template_name, template_json)
+        @add_template(template_name, t)
         return
 
 
