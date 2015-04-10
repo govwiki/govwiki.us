@@ -80,7 +80,7 @@ render_tabs = (initial_layout, data) ->
   for tab,i in layout
     active = if i>0 then '' else 'active'
     h +="""
-      <li role="presentation" class="#{active}" style="text-transform:capitalize" onclick="remember_tab('#{under(tab.name)}')">
+      <li role="presentation" class="#{active}"  onclick="remember_tab('#{under(tab.name)}')">
         <a href="#tab#{under(tab.name)}" aria-controls="home" role="tab" data-toggle="tab">
         #{tab.name}
         </a>
@@ -95,7 +95,7 @@ render_tabs = (initial_layout, data) ->
     active = if i>0 then '' else 'active'
     h +="""
     <div role="tabpanel" class="tab-pane #{active} one-tab" id="tab#{under(tab.name)}" style="padding-top: 20px;">
-        <h3 style="text-transform:capitalize">#{tab.name}</h3>
+        <h3>#{tab.name}</h3>
         <br>
         #{render_fields tab.fields, data}
     </div>
