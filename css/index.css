@@ -159,3 +159,12 @@
   font-size: 55%;
   font-weight: normal;
 }
+#searchContainer {
+  display: block;
+}
+#searchIcon {
+  display: none;
+}
+#dataContainer {
+  display: none;
+}

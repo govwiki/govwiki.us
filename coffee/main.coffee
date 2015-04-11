@@ -17,6 +17,19 @@ window.GOVWIKI =
   state_filter : ''
   gov_type_filter : ''
 
+  show_search_page: () ->
+    $(window).scrollTo('0px',10)
+    $('#dataContainer').hide()
+    $('#searchIcon').hide()
+    $('#searchContainer').fadeIn(300)
+    focus_search_field 500
+    
+  show_data_page: () ->
+    $(window).scrollTo('0px',10)
+    $('#searchIcon').show()
+    $('#dataContainer').fadeIn(300)
+    $('#searchContainer').hide()
+    #$(window).scrollTo('#pBackToSearch',600)
 
 
 
@@ -38,7 +51,7 @@ gov_selector.on_selected = (evt, data, name) ->
   $('#details').html templates.get_html(0, data)
   activate_tab()
   get_record "inc_id:#{data["inc_id"]}"
-  $(window).scrollTo('#pBackToSearch',600)
+  GOVWIKI.show_data_page()
   return
 
 
@@ -60,8 +73,7 @@ get_record = (query) ->
 window.GOVWIKI.show_record =(rec)=>
   $('#details').html templates.get_html(0, rec)
   activate_tab()
-  $(window).scrollTo('#pBackToSearch',600)
-
+  GOVWIKI.show_data_page()
       
 ###
 window.show_rec = (rec)->
@@ -132,6 +144,8 @@ focus_search_field = (msec) ->
   setTimeout (-> $('#myinput').focus()) ,msec
 
 
+  
+
 
 # =====================================================================
 
@@ -146,9 +160,7 @@ start_adjusting_typeahead_width()
 
 $('#btnBackToSearch').click (e)->
   e.preventDefault()
-  $(window).scrollTo('0px',500)
-  focus_search_field 500
-
+  GOVWIKI.show_search_page()
 
 #focus_search_field 500
 

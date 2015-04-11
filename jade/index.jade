@@ -30,8 +30,8 @@ html(lang='en')
     include navbar.jade
 
     // Search & Filters 
-    .container(style="padding-top:40px;margin-bottom:10px;")
-      .row.search-form
+    #searchContainer.container
+      .row.search-form(style="padding-top:40px;margin-bottom:10px;")
         #typeahed-container.col-sm-5(style='border:0px solid red')
           input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
           p.text-center.text-nowrap.hidden-xs.hidden-sm
@@ -59,9 +59,8 @@ html(lang='en')
 
 
 
-    // MAP      
-    .container(style="margin-bottom:150px;")
-      .row
+      // MAP      
+      .row(style="margin-bottom:150px;")
         .col-lg-12(style="border:0px solid silver;")
           #maparea
             #govmap
@@ -77,8 +76,8 @@ html(lang='en')
     
     
     // DATA
-    .container(style="margin-bottom:150px;")
-      p#pBackToSearch.text-center
+    #dataContainer.container(style="margin-bottom:150px;")
+      //p#pBackToSearch.text-center
         a#btnBackToSearch.btn.btn-default(href='', role='button') back to search&nbsp;&nbsp;
           span.glyphicon.glyphicon-search
       .row
@@ -97,7 +96,7 @@ html(lang='en')
             | developed by Public Sector Credit Solutions and now maintained by CivicPartner LLC.
         .col-sm-4.text-right
           p
-            a.btn.btn-lg.btn-primary(href='https://github.com/govwiki/govwiki.us', role='button') Github project
+            a.btn.btn-sm.btn-default(href='https://github.com/govwiki/govwiki.us', role='button') Github project
 
 
 

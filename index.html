@@ -40,6 +40,7 @@
             -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li id="searchIcon"><a href="#" onclick="GOVWIKI.show_search_page()">Search &nbsp;&nbsp;&nbsp;<span style="font-size:200%;vertical-align:middle;" class="glyphicon glyphicon-search"></span></a></li>
             <!--lia(href='#') About
             -->
             <!--lia(href='#') Contact
@@ -69,8 +70,8 @@
       </div>
     </nav>
     <!-- Search & Filters -->
-    <div style="padding-top:40px;margin-bottom:10px;" class="container">
-      <div class="row search-form">
+    <div id="searchContainer" class="container">
+      <div style="padding-top:40px;margin-bottom:10px;" class="row search-form">
         <div id="typeahed-container" style="border:0px solid red" class="col-sm-5">
           <input id="myinput" type="text" placeholder="Loading the list of 91,000 US governments..." style="width:412px" class="text-uppercase typeahead form-control">
           <p class="text-center text-nowrap hidden-xs hidden-sm">Type part of the agency's name  &nbsp;&nbsp;<img src="img/FullSizeRender.gif" style="width:40px">
@@ -93,10 +94,8 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- MAP      -->
-    <div style="margin-bottom:150px;" class="container">
-      <div class="row">
+      <!-- MAP      -->
+      <div style="margin-bottom:150px;" class="row">
         <div style="border:0px solid silver;" class="col-lg-12">
           <div id="maparea">
             <div id="govmap"></div>
@@ -117,8 +116,11 @@
       </div>
     </div>
     <!-- DATA-->
-    <div style="margin-bottom:150px;" class="container">
-      <p id="pBackToSearch" class="text-center"><a id="btnBackToSearch" href="" role="button" class="btn btn-default">back to search&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></a></p>
+    <div id="dataContainer" style="margin-bottom:150px;" class="container">
+      <!--p#pBackToSearch.text-center
+      a#btnBackToSearch.btn.btn-default(href='', role='button') back to search&nbsp;&nbsp;
+        span.glyphicon.glyphicon-search
+      -->
       <div class="row">
         <div class="col-lg-12">
           <div id="details"></div>
@@ -135,7 +137,7 @@
           </p>
         </div>
         <div class="col-sm-4 text-right">
-          <p><a href="https://github.com/govwiki/govwiki.us" role="button" class="btn btn-lg btn-primary">Github project</a></p>
+          <p><a href="https://github.com/govwiki/govwiki.us" role="button" class="btn btn-sm btn-default">Github project</a></p>
         </div>
       </div>
     </div>
