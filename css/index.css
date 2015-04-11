@@ -51,10 +51,6 @@
 .tt-suggestion p {
   margin: 0;
 }
-/*
-#myinput {
-}
-*/
 .sugg-box {
   position: relative;
   border-bottom: 0px solid #eee;
@@ -134,8 +130,6 @@
 }
 #details {
   margin-top: 30px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   margin-bottom: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -151,7 +145,7 @@
   padding-top: 10px;
 }
 #govmap {
-  height: 600px;
+  height: 550px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;

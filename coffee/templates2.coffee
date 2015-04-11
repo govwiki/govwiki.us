@@ -55,8 +55,12 @@ under = (s) -> s.replace(/ /g, '_')
 
 render_tabs = (initial_layout, data) ->
   layout = add_other_tab_to_layout initial_layout, data
+  
+  # Title
+  h = "<h3>#{data.gov_name}</h3>"
+  
   #render header
-  h = '<div role="tabpanel" >'
+  h += '<div role="tabpanel" >'
 
   #render tabs
   h +='<ul id="fieldTabs" class="nav nav-pills" role="tablist">'
@@ -79,7 +83,7 @@ render_tabs = (initial_layout, data) ->
     active = if i>0 then '' else 'active'
     h +="""
     <div role="tabpanel" class="tab-pane #{active} one-tab" id="tab#{under(tab.name)}" style="padding-top: 20px;">
-        <h3>#{tab.name}</h3>
+        <h4>#{tab.name}</h4>
         <br>
         #{render_fields tab.fields, data}
     </div>
