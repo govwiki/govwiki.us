@@ -1,14 +1,17 @@
 nav.navbar.navbar-inverse.navbar-static-top(style="margin-bottom:0")
-  .container.container-fluid(style="width:100%")
+  #header.container.container-fluid(style="width:100%")
+    
     .navbar-header
       button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a#brand.navbar-brand(href='#') Civic Performance Profiles
-        br
-        span#brand-second-line A free public directory of government officials, finances and performance metrics
+          
+      a#brand.navbar-brand(href='#', onclick="GOVWIKI.show_search_page()")
+        #brand-first-line Civic Performance Profiles
+        #brand-second-line A free public directory of government officials, finances and performance metrics
+    
     #navbar.navbar-collapse.collapse
       ul.nav.navbar-nav
         li 
@@ -19,6 +22,8 @@ nav.navbar.navbar-inverse.navbar-static-top(style="margin-bottom:0")
         li#searchIcon
           a(href='#', onclick="GOVWIKI.show_search_page()") Search &nbsp;&nbsp;&nbsp;
             span.glyphicon.glyphicon-search(style="font-size:200%;vertical-align:middle;")
+        li
+          img#logo(src='img/cpc-logo-homepage.gif')
         //li
           a(href='#') About
         //li

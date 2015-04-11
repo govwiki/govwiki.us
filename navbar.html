@@ -1,16 +1,22 @@
 
 <nav style="margin-bottom:0" class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
+  <div style="width:100%" class="container container-fluid">
     <div class="navbar-header">
-      <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Govwiki.us</a>
+      <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="brand" href="#" class="navbar-brand">Civic Performance Profiles<br/><span id="brand-second-line">
+          A free public directory of government officials, 
+          finances and performance metrics</span></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li> <a href="#">a comprehensive directory of US local governments</a></li>
+        <li> 
+          <!--a(href='#') A free public directory of government officials, finances and performance metrics-->
+        </li>
         <!--li.activea(href='#') Home
         -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><img id="logo" src="img/cpc-logo-homepage.gif"/></li>
+        <li id="searchIcon"><a href="#" onclick="GOVWIKI.show_search_page()">Search &nbsp;&nbsp;&nbsp;<span style="font-size:200%;vertical-align:middle;" class="glyphicon glyphicon-search"></span></a></li>
         <!--lia(href='#') About
         -->
         <!--lia(href='#') Contact

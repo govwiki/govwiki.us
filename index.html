@@ -27,9 +27,11 @@
   </head>
   <body>
     <nav style="margin-bottom:0" class="navbar navbar-inverse navbar-static-top">
-      <div style="width:100%" class="container container-fluid">
+      <div id="header" style="width:100%" class="container container-fluid">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="brand" href="#" class="navbar-brand">Civic Performance Profiles<br><span id="brand-second-line">A free public directory of government officials, finances and performance metrics</span></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="brand" href="#" onclick="GOVWIKI.show_search_page()" class="navbar-brand">
+            <div id="brand-first-line">Civic Performance Profiles</div>
+            <div id="brand-second-line">A free public directory of government officials, finances and performance metrics</div></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -41,6 +43,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li id="searchIcon"><a href="#" onclick="GOVWIKI.show_search_page()">Search &nbsp;&nbsp;&nbsp;<span style="font-size:200%;vertical-align:middle;" class="glyphicon glyphicon-search"></span></a></li>
+            <li><img id="logo" src="img/cpc-logo-homepage.gif"></li>
             <!--lia(href='#') About
             -->
             <!--lia(href='#') Contact
