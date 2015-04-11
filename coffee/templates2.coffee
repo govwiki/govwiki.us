@@ -13,22 +13,6 @@
 # LOAD FIELD NAMES 
 fieldNames = {}
 
-###
-load_field_names = (url) ->
-  $.ajax
-    url: url
-    dataType: 'json'
-    cache: true
-    success: (fieldnames_json) =>
-      fieldNames = fieldnames_json
-      return
-    error:(e)->
-      console.log e
-
-
-load_field_names("config/fieldnames.json")
-###
-
 
 render_field_value =(n,data) ->
   v=data[n]

@@ -3,14 +3,18 @@ bounds_timeout=undefined
 
 map = new GMaps
   el: '#govmap'
-  lat: 38.1355146
-  lng: -111.2349786
-  zoom:5
+  lat: 37.3789008
+  lng: -117.1916283
+  zoom:6
   bounds_changed: ->
-    clearTimeout bounds_timeout
-    bounds_timeout = setTimeout on_bounds_changed, 300
+    on_bounds_changed_later 200
 
 
+on_bounds_changed_later  = (msec)  ->
+  clearTimeout bounds_timeout
+  bounds_timeout = setTimeout on_bounds_changed, msec
+
+    
 on_bounds_changed =(e) ->
   console.log "bounds_changed"
   b=map.getBounds()
@@ -21,10 +25,19 @@ on_bounds_changed =(e) ->
   ne_lng=ne.lng()
   sw_lat=sw.lat()
   sw_lng=sw.lng()
+  st = GOVWIKI.state_filter
+  ty = GOVWIKI.gov_type_filter
+  
+  # Build the query.
   q=""" "latitude":{"$lt":#{ne_lat},"$gt":#{sw_lat}},"longitude":{"$lt":#{ne_lng},"$gt":#{sw_lng}}"""
+  # Add filters if they exist
+  q+=""","state":"#{st}" """ if st
+  q+=""","gov_type":"#{ty}" """ if ty
+
+
   get_records q, 200,  (data) ->
-    console.log "length=#{data.length}"
-    console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
+    #console.log "length=#{data.length}"
+    #console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
     map.removeMarkers()
     add_marker(rec) for rec in data
     return
@@ -143,4 +156,6 @@ geocode = (data) ->
 module.exports =
   geocode: geocode
   gocode_addr: geocode_addr
+  on_bounds_changed: on_bounds_changed
+  on_bounds_changed_later: on_bounds_changed_later
 

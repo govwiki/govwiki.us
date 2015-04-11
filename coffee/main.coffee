@@ -92,10 +92,18 @@ build_select_element = (container, text, arr, where_to_store_value ) ->
   s += "</select>"
   select = $(s)
   $(container).append(select)
+  
+  # set default 'CA'
+  if text is 'State..'
+    select.val 'CA'
+    window.GOVWIKI.state_filter='CA'
+    govmap.on_bounds_changed_later()
+
   select.change (e) ->
     el = $(e.target)
     window.GOVWIKI[where_to_store_value] = el.val()
     $('.gov-counter').text gov_selector.count_govs()
+    govmap.on_bounds_changed()
 
 
 adjust_typeahead_width =() ->
@@ -124,9 +132,6 @@ livereload = (port) ->
     
 #templates.load_template "tabs", "config/tablayout.json"
 templates.load_fusion_template "tabs", "https://www.googleapis.com/fusiontables/v2/query?sql=SELECT%20*%20FROM%201z2oXQEYQ3p2OoMI8V5gKgHWB5Tz990BrQ1xc1tVo&key=AIzaSyCXDQyMDpGA2g3Qjuv4CDv7zRj-ix4IQJA"
-
-#build_selector('.state-container' , 'State..' , 'data/state.json' , 'state_filter')
-#build_selector('.gov-type-container' , 'type of government..' , 'data/gov_type.json' , 'gov_type_filter')
 
 build_selector('.state-container' , 'State..' , '{"distinct": "govs","key":"state"}' , 'state_filter')
 build_selector('.gov-type-container' , 'type of government..' , '{"distinct": "govs","key":"gov_type"}' , 'gov_type_filter')

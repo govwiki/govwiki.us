@@ -150,3 +150,18 @@
 #pBackToSearch {
   padding-top: 10px;
 }
+#govmap {
+  height: 600px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#brand {
+  line-height: 0.8;
+  padding-top: 15px;
+  font-weight: bold;
+}
+#brand-second-line {
+  font-size: 55%;
+  font-weight: normal;
+}
