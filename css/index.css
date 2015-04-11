@@ -128,9 +128,6 @@
 .one-tab {
   min-height: 400px;
 }
-.navbar-inverse {
-  background-color: #074d71;
-}
 #details {
   margin-top: 30px;
   margin-bottom: 60px;
@@ -170,13 +167,18 @@
   font-weight: normal;
 }
 #searchContainer {
+  background-color: #fff;
   display: block;
 }
 #searchIcon {
   display: none;
 }
 #dataContainer {
+  background-color: #fff;
   display: none;
+}
+body {
+  background-color: #eee;
 }
 #logo {
   width: 176px;
@@ -184,4 +186,16 @@
   vertical-align: middle;
   margin: 10px;
   margin-top: 12px;
+}
+.navbar-inverse {
+  background-color: #074d71;
+}
+h3,
+a {
+  color: #074d71;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+  background-color: #074d71;
 }

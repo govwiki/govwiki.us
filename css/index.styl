@@ -1,5 +1,4 @@
 LGR = #DDD
-CPC_COLOR = #074d71
 
 
 .typeahead,
@@ -138,9 +137,6 @@ CPC_COLOR = #074d71
 .one-tab
   min-height: 400px
 
-.navbar-inverse
-  background-color:CPC_COLOR
-
 
 #details
   margin-top: 30px
@@ -189,18 +185,37 @@ CPC_COLOR = #074d71
   font-weight:normal
 
 #searchContainer
+  background-color:white
   display: block
   
-#searchIcon
+#searchIcon 
   display: none
 
 #dataContainer
+  background-color:white
   display: none
 
-// CALIFORNIA POLICI CENTER LOGO
+body
+  background-color:#EEE
+
+// CALIFORNIA POLICI CENTER LOGO ==================================
+CPC_COLOR = #074d71
+
 #logo
   width:176px
   border: 1px solid white
   vertical-align: middle
   margin:10px;
   margin-top: 12px
+  //display: none
+
+.navbar-inverse
+  background-color:CPC_COLOR
+
+h3,a
+  color:CPC_COLOR
+
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus
+  background-color:CPC_COLOR
