@@ -76,7 +76,7 @@ html(lang='en')
     
     
     // DATA
-    #dataContainer.container(style="margin-bottom:150px;")
+    #dataContainer.container
       //p#pBackToSearch.text-center
         a#btnBackToSearch.btn.btn-default(href='', role='button') back to search&nbsp;&nbsp;
           span.glyphicon.glyphicon-search
@@ -86,17 +86,18 @@ html(lang='en')
 
 
 
-
-    .container(style="margin-bottom:50px;")
-      .row
-        .col-sm-8
-          p
-            | California local government civic profile system for CPC.  
-            | The application will be based on the California Credit Scoring System originally 
-            | developed by Public Sector Credit Solutions and now maintained by CivicPartner LLC.
-        .col-sm-4.text-right
-          p
-            a.btn.btn-sm.btn-default(href='https://github.com/govwiki/govwiki.us', role='button') Github project
+    nav.navbar.navbar-inverse(style="margin-bottom:0;margin-top:100px; padding:20px;padding-top:0;")
+      .container(style="margin-bottom:20px;margin-top:30px;width:100%")
+        .row
+          .col-sm-8.text-left
+            .navbar-text
+              | California local government civic profile system for CPC.  
+              | The application will be based on the California Credit Scoring System originally 
+              | developed by Public Sector Credit Solutions and now maintained by CivicPartner LLC.
+          
+          .col-sm-4.text-right
+            .navbar-text(style="width:100%;padding-right: 20px;")
+              a.navbar-link(href='https://github.com/govwiki/govwiki.us') Github project
 
 
 
