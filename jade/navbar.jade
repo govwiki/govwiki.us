@@ -13,8 +13,8 @@ nav.navbar.navbar-inverse.navbar-static-top(style="margin-bottom:0")
         #brand-second-line A free public directory of government officials, finances and performance metrics
     
     #navbar.navbar-collapse.collapse
-      //ul.nav.navbar-nav
-        li 
+      ul.nav.navbar-nav
+        //li 
           //a(href='#') A free public directory of government officials, finances and performance metrics
         //li.active
           a(href='#') Home
@@ -22,13 +22,6 @@ nav.navbar.navbar-inverse.navbar-static-top(style="margin-bottom:0")
         li#searchIcon
           a(href='#', onclick="GOVWIKI.show_search_page()") Search &nbsp;&nbsp;&nbsp;
             span.glyphicon.glyphicon-search(style="font-size:200%;vertical-align:middle;")
-        //li
-          #text-logo(style="font-family:sans-serif;border:2px solid white;line-height:0.9;margin:10px;")
-            .line1(style="padding-top:3px;color:#2196f3;background-color:white;font-size:26px;") CALIFORNIA
-            .line2(style="padding-top:2px;font-size:14px;color:white;text-align:right;") POLICI CENTER
-
-        li
-          img#logo(src='img/cpc-logo-homepage.gif')
         //li
           a(href='#') About
         //li
@@ -50,5 +43,13 @@ nav.navbar.navbar-inverse.navbar-static-top(style="margin-bottom:0")
               a(href='http://getbootstrap.com/examples/navbar-static-top/#') Separated link
             li
               a(href='http://getbootstrap.com/examples/navbar-static-top/#') One more separated link
+
+        //li
+          #text-logo(style="font-family:sans-serif;border:2px solid white;line-height:0.9;margin:10px;")
+            .line1(style="padding-top:3px;color:#2196f3;background-color:white;font-size:26px;") CALIFORNIA
+            .line2(style="padding-top:2px;font-size:14px;color:white;text-align:right;") POLICI CENTER
+
+        li
+          img#logo(src='img/cpc-logo-homepage.gif')
         //li
           a(href='#') Login

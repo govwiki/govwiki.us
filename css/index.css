@@ -199,3 +199,6 @@ a {
 .nav-pills>li.active>a:focus {
   background-color: #074d71;
 }
+.container {
+  box-shadow: 0px 100px 400px -50px #bbb;
+}
