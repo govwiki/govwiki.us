@@ -43,14 +43,14 @@ window.remember_tab =(name)-> active_tab = name
 #window.geocode_addr = (input_selector)-> govmap.gocode_addr $(input_selector).val()
 
 activate_tab =() ->
-  $("#fieldTabs a[href='##{active_tab}']").tab('show')
+  $("#fieldTabs a[href='#tab#{active_tab}']").tab('show')
 
 
 gov_selector.on_selected = (evt, data, name) ->
   #renderData '#details', data
   $('#details').html templates.get_html(0, data)
-  activate_tab()
   get_record "inc_id:#{data["inc_id"]}"
+  activate_tab()
   GOVWIKI.show_data_page()
   return
 
