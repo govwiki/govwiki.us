@@ -1,21 +1,19 @@
 
 <nav style="margin-bottom:0" class="navbar navbar-inverse navbar-static-top">
-  <div style="width:100%" class="container container-fluid">
+  <div id="header" style="width:100%" class="container container-fluid">
     <div class="navbar-header">
-      <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="brand" href="#" class="navbar-brand">Civic Performance Profiles<br/><span id="brand-second-line">
-          A free public directory of government officials, 
-          finances and performance metrics</span></a>
+      <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="brand" href="#" onclick="GOVWIKI.show_search_page()" class="navbar-brand">
+        <div id="brand-first-line">Civic Performance Profiles</div>
+        <div id="brand-second-line">A free public directory of government officials, finances and performance metrics</div></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li> 
-          <!--a(href='#') A free public directory of government officials, finances and performance metrics-->
-        </li>
+        <!--li //a(href='#') A free public directory of government officials, finances and performance metrics
+        -->
         <!--li.activea(href='#') Home
         -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><img id="logo" src="img/cpc-logo-homepage.gif"/></li>
         <li id="searchIcon"><a href="#" onclick="GOVWIKI.show_search_page()">Search &nbsp;&nbsp;&nbsp;<span style="font-size:200%;vertical-align:middle;" class="glyphicon glyphicon-search"></span></a></li>
         <!--lia(href='#') About
         -->
@@ -38,7 +36,15 @@
             a(href='http://getbootstrap.com/examples/navbar-static-top/#') Separated link
           li
             a(href='http://getbootstrap.com/examples/navbar-static-top/#') One more separated link
+        
         -->
+        <!--li
+        #text-logo(style="font-family:sans-serif;border:2px solid white;line-height:0.9;margin:10px;")
+          .line1(style="padding-top:3px;color:#2196f3;background-color:white;font-size:26px;") CALIFORNIA
+          .line2(style="padding-top:2px;font-size:14px;color:white;text-align:right;") POLICI CENTER
+        
+        -->
+        <li><img id="logo" src="img/cpc-logo-homepage.gif"/></li>
         <!--lia(href='#') Login
         -->
       </ul>
