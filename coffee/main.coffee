@@ -50,6 +50,7 @@ gov_selector.on_selected = (evt, data, name) ->
   #renderData '#details', data
   $('#details').html templates.get_html(0, data)
   get_record "inc_id:#{data["inc_id"]}"
+  #get_record2 data["inc_id"]
   activate_tab()
   GOVWIKI.show_data_page()
   return
@@ -63,6 +64,22 @@ get_record = (query) ->
     success: (data) ->
       if data.length
         $('#details').html templates.get_html(0, data[0])
+        activate_tab()
+        #govmap.geocode data[0]
+      return
+    error:(e) ->
+      console.log e
+
+
+get_record2 = (recid) ->
+  $.ajax
+    url: "https://dsp-govwiki.cloud.dreamfactory.com:443/rest/govwiki_api/govs/#{recid}"
+    dataType: 'json'
+    headers: {"X-DreamFactory-Application-Name":"govwiki"}
+    cache: true
+    success: (data) ->
+      if data
+        $('#details').html templates.get_html(0, data)
         activate_tab()
         #govmap.geocode data[0]
       return
