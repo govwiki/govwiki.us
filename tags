@@ -560,7 +560,7 @@ buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modul
 buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    char *buf;$/;"	m	class:NanUtf8String
 buf	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    uint16_t *buf;$/;"	m	class:NanUcs2String
 build_select_element	coffee/main.coffee	/^build_select_element = (container, text, arr, where_to_store_value ) ->$/;"	f
-build_selector	coffee/main.coffee	/^build_selector = (container, text, url, where_to_store_value ) ->$/;"	f
+build_selector	coffee/main.coffee	/^build_selector = (container, text, command, where_to_store_value ) ->$/;"	f
 builddir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^builddir ?= $(builddir_name)\/$(BUILDTYPE)$/;"	m
 builddir_name	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^builddir_name ?= .$/;"	m
 bundled_path	bower_components/handlebars/lib/handlebars/source.rb	/^    def self.bundled_path$/;"	F	class:Handlebars.Source
@@ -636,6 +636,7 @@ filterTokenLocation	node_modules/browserify/node_modules/insert-module-globals/n
 fixup_dep	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^define fixup_dep$/;"	m
 flags	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/storage.cc	/^  UInt32 flags;$/;"	m	struct:fse_event	file:
 fnmatch	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import fnmatch$/;"	i
+focus_search_field	coffee/main.coffee	/^focus_search_field = (msec) ->$/;"	f
 foo	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/index.coffee	/^foo = require '.\/foo.coffee'$/;"	v
 foo	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/test/coffee/nested/nested.coffee	/^foo = require '..\/foo.coffee'$/;"	v
 fs	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^fs = require('fs')$/;"	v
@@ -683,6 +684,7 @@ get_col_hash	coffee/templates2.coffee	/^  get_col_hash = (columns) ->$/;"	f
 get_icon	coffee/govmap.coffee	/^get_icon =(gov_type) ->$/;"	f
 get_layout_fields	coffee/templates2.coffee	/^get_layout_fields = (la) ->$/;"	f
 get_record	coffee/main.coffee	/^get_record = (query) ->$/;"	f
+get_record2	coffee/main.coffee	/^get_record2 = (recid) ->$/;"	f
 get_record_fields	coffee/templates2.coffee	/^get_record_fields = (r) ->$/;"	f
 get_records	coffee/govmap.coffee	/^get_records = (query, limit, onsuccess) ->$/;"	f
 get_unmentioned_fields	coffee/templates2.coffee	/^get_unmentioned_fields = (la, r) ->$/;"	f
@@ -777,7 +779,6 @@ length	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_mo
 length	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE int length() const {$/;"	f	class:NanUtf8String
 lex	node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function lex() {$/;"	f
 livereload	coffee/main.coffee	/^livereload = (port) ->$/;"	f
-load_field_names	coffee/templates2.coffee	/^load_field_names = (url) ->$/;"	f
 lock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::lock() {$/;"	f	class:FSEvents
 lockStarted	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/fsevents.cc	/^    bool lockStarted;$/;"	m	class:fse::FSEvents	file:
 lockingStart	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::lockingStart() {$/;"	f	class:FSEvents
@@ -808,6 +809,7 @@ next	node_modules/browserify/node_modules/syntax-error/node_modules/acorn/test/b
 obj	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^obj := $(builddir)\/obj$/;"	m
 ok	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^  inline void ok(bool isOk, const char * msg = NULL) {$/;"	f	struct:NanTap
 on_bounds_changed	coffee/govmap.coffee	/^on_bounds_changed =(e) ->$/;"	f
+on_bounds_changed_later	coffee/govmap.coffee	/^on_bounds_changed_later  = (msec)  ->$/;"	f
 onkeyup	coffee/jquery.govselector.coffee	/^    onkeyup = (event) ->$/;"	f
 operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE char* operator*() { return buf; }$/;"	f	class:NanAsciiString
 operator *	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan.h	/^    NAN_INLINE char* operator*() { return buf; }$/;"	f	class:NanUtf8String
@@ -975,6 +977,7 @@ space	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Ma
 srcdir	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/Makefile	/^srcdir := ..$/;"	m
 ss	coffee/querymatcher.coffee	/^  ss=s.trim(''+s)$/;"	v
 ss	coffee/querymatcher.coffee	/^  ss=ss.replace(\/ +\/g,' ')$/;"	v
+st	coffee/govmap.coffee	/^  st = GOVWIKI.state_filter$/;"	v
 start_adjusting_typeahead_width	coffee/main.coffee	/^start_adjusting_typeahead_width =() ->$/;"	f
 str	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\u0100-\\uffff]\/g, (ch) ->$/;"	f
 str	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    str = str.replace \/[\\x00-\\x08\\x0b-\\x1f\\x7f-\\xff]\/g, (ch) ->$/;"	f
@@ -1004,6 +1007,7 @@ tab.fields	coffee/templates2.coffee	/^      tab.fields=hash[k]$/;"	v
 tab.name	coffee/templates2.coffee	/^      tab.name=k$/;"	v
 tab_hash	coffee/templates2.coffee	/^  tab_hash={}$/;"	v
 tabs	coffee/templates2.coffee	/^  tabs = hash_to_array(tab_hash)$/;"	v
+tabs	coffee/templates2.coffee	/^  tabs=[]$/;"	v
 tags	node_modules/live-reload/node_modules/reconnect/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    tags =$/;"	v
 tags	node_modules/live-reload/node_modules/shoe/node_modules/sockjs-client/bin/render.coffee	/^    tags =$/;"	v
 tempfile	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/build/gyp-mac-tool	/^import tempfile$/;"	i
@@ -1024,6 +1028,7 @@ timer	coffee/jquery.govselector.coffee	/^      timer = 0$/;"	v
 trackGroupExpression	node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackGroupExpression() {$/;"	f
 trackLeftHandSideExpression	node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackLeftHandSideExpression() {$/;"	f
 trackLeftHandSideExpressionAllowCall	node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^    function trackLeftHandSideExpressionAllowCall() {$/;"	f
+ty	coffee/govmap.coffee	/^  ty = GOVWIKI.gov_type_filter$/;"	v
 under	coffee/templates2.coffee	/^under = (s) -> s.replace(\/ \/g, '_')$/;"	f
 unlock	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/src/locking.cc	/^void FSEvents::unlock() {$/;"	f	class:FSEvents
 unmentioned_fields	coffee/templates2.coffee	/^  unmentioned_fields = []$/;"	v
@@ -1034,10 +1039,12 @@ updateTree	node_modules/live-reload/node_modules/browserify-server/node_modules/
 url_value	coffee/govmap.coffee	/^  url_value=b.toUrlValue()$/;"	v
 util	node_modules/live-reload/node_modules/browserify-server/node_modules/browserify/testling/test.sh	/^function util () {$/;"	f
 val	coffee/templates2.coffee	/^  val = (field_name, fields, col_hush) ->$/;"	f
+values	coffee/main.coffee	/^      values=data.values$/;"	v
 visit	node_modules/browserify/node_modules/insert-module-globals/node_modules/lexical-scope/node_modules/astw/node_modules/esprima-fb/test/esprima.js.html	/^            function visit(node) {$/;"	f
 widenString	node_modules/watchify/node_modules/chokidar/node_modules/fsevents/node_modules/nan/nan_implementation_pre_12_inl.h	/^widenString(std::vector<uint16_t> *ws, const uint8_t *s, int l = -1) {$/;"	f	namespace:NanIntern
 window.GOVWIKI	coffee/main.coffee	/^window.GOVWIKI =$/;"	v
 window.GOVWIKI.show_record	coffee/main.coffee	/^window.GOVWIKI.show_record =(rec)=>$/;"	f
+window.GOVWIKI.state_filter	coffee/main.coffee	/^    window.GOVWIKI.state_filter='CA'$/;"	v
 window.remember_tab	coffee/main.coffee	/^window.remember_tab =(name)-> active_tab = name$/;"	f
 window.show_rec	coffee/main.coffee	/^window.show_rec = (rec)->$/;"	f
 words	coffee/querymatcher.coffee	/^  words = get_words str$/;"	v

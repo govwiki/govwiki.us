@@ -6,6 +6,11 @@ map = new GMaps
   lat: 37.3789008
   lng: -117.1916283
   zoom:6
+  scrollwheel: false
+  panControl: false
+  zoomControl: true
+  zoomControlOptions:
+    style: google.maps.ZoomControlStyle.SMALL
   bounds_changed: ->
     on_bounds_changed_later 200
 
@@ -27,7 +32,8 @@ on_bounds_changed =(e) ->
   sw_lng=sw.lng()
   st = GOVWIKI.state_filter
   ty = GOVWIKI.gov_type_filter
-  
+
+  ###
   # Build the query.
   q=""" "latitude":{"$lt":#{ne_lat},"$gt":#{sw_lat}},"longitude":{"$lt":#{ne_lng},"$gt":#{sw_lng}}"""
   # Add filters if they exist
@@ -40,6 +46,21 @@ on_bounds_changed =(e) ->
     #console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
     map.removeMarkers()
     add_marker(rec) for rec in data
+    return
+  ###
+
+  # Build the query 2.
+  q2=""" latitude<#{ne_lat} AND latitude>#{sw_lat} AND longitude<#{ne_lng} AND longitude>#{sw_lng} """
+  # Add filters if they exist
+  q2+=""" AND state="#{st}" """ if st
+  q2+=""" AND gov_type="#{ty}" """ if ty
+
+
+  get_records2 q2, 200,  (data) ->
+    #console.log "length=#{data.length}"
+    #console.log "lat: #{ne_lat},#{sw_lat} lng: #{ne_lng}, #{sw_lng}"
+    map.removeMarkers()
+    add_marker(rec) for rec in data.record
     return
 
 
@@ -74,7 +95,8 @@ add_marker =(rec)->
     infoWindow:
       content: create_info_window rec
     click: (e)->
-      window.GOVWIKI.show_record rec
+      #window.GOVWIKI.show_record rec
+      window.GOVWIKI.show_record2 rec
   
   return
 
@@ -84,7 +106,8 @@ create_info_window =(r) ->
   .append $("<a href='#'><strong>#{r.gov_name}</strong></a>").click (e)->
     e.preventDefault()
     console.log r
-    window.GOVWIKI.show_record r
+    #window.GOVWIKI.show_record r
+    window.GOVWIKI.show_record2 r
 
   .append $("<div> #{r.gov_type}  #{r.city} #{r.zip} #{r.state}</div>")
   return w[0]
@@ -102,6 +125,22 @@ get_records = (query, limit, onsuccess) ->
       console.log e
 
 
+get_records2 = (query, limit, onsuccess) ->
+  $.ajax
+    url:"http://46.101.3.79:80/rest/db/govs"
+    data:
+      #filter:"latitude>32 AND latitude<34 AND longitude>-87 AND longitude<-86"
+      filter:query
+      fields:"_id,inc_id,gov_name,gov_type,city,zip,state,latitude,longitude"
+      app_name:"govwiki"
+      order:"rand"
+      limit:limit
+
+    dataType: 'json'
+    cache: true
+    success: onsuccess
+    error:(e) ->
+      console.log e
 
 
 # GEOCODING ========================================

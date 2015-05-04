@@ -34,7 +34,9 @@ window.GOVWIKI =
 
 
 
-gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
+#gov_selector = new GovSelector '.typeahead', 'data/h_types.json', 7
+gov_selector = new GovSelector '.typeahead', 'data/h_types_ca.json', 7
+#gov_selector = new GovSelector '.typeahead', 'http://46.101.3.79/rest/db/govs?filter=state=%22CA%22&app_name=govwiki&fields=_id,gov_name,gov_type,state', 7
 templates = new Templates2
 active_tab=""
 
@@ -49,8 +51,8 @@ activate_tab =() ->
 gov_selector.on_selected = (evt, data, name) ->
   #renderData '#details', data
   $('#details').html templates.get_html(0, data)
-  get_record "inc_id:#{data["inc_id"]}"
-  #get_record2 data["inc_id"]
+  #get_record "inc_id:#{data["inc_id"]}"
+  get_record2 data["_id"]
   activate_tab()
   GOVWIKI.show_data_page()
   return
@@ -73,7 +75,8 @@ get_record = (query) ->
 
 get_record2 = (recid) ->
   $.ajax
-    url: "https://dsp-govwiki.cloud.dreamfactory.com:443/rest/govwiki_api/govs/#{recid}"
+    #url: "https://dsp-govwiki.cloud.dreamfactory.com:443/rest/govwiki_api/govs/#{recid}"
+    url: "http://46.101.3.79:80/rest/db/govs/#{recid}"
     dataType: 'json'
     headers: {"X-DreamFactory-Application-Name":"govwiki"}
     cache: true
@@ -92,6 +95,14 @@ window.GOVWIKI.show_record =(rec)=>
   activate_tab()
   GOVWIKI.show_data_page()
       
+window.GOVWIKI.show_record2 =(rec)=>
+  $('#details').html templates.get_html(0, rec)
+  get_record2 rec._id
+  activate_tab()
+  GOVWIKI.show_data_page()
+
+
+
 ###
 window.show_rec = (rec)->
   $('#details').html templates.get_html(0, rec)

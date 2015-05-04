@@ -40,7 +40,8 @@ class GovSelector
 
 
   startSuggestion : (govs) =>
-    @govs_array = govs
+    #@govs_array = govs
+    @govs_array = govs.record
     $('.typeahead').keyup (event) =>
       @entered_value = $(event.target).val()
     
@@ -52,7 +53,7 @@ class GovSelector
       ,
         name: 'gov_name'
         displayKey: 'gov_name'
-        source: query_matcher(govs, @num_items)
+        source: query_matcher(@govs_array, @num_items)
         #source: bloodhound.ttAdapter()
         templates: suggestion: @suggestionTemplate
     )
