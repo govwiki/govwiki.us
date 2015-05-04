@@ -30,7 +30,7 @@ html(lang='en')
     include navbar.jade
 
     // Search & Filters 
-    #searchContainer.container
+    #searchContainer.container.container-fluid(style="width0:100%")
       .row.search-form(style="padding-top:40px;margin-bottom:10px;")
         #typeahed-container.col-sm-5(style='border:0px solid red')
           input#myinput.text-uppercase.typeahead.form-control(type='text', placeholder='Loading the list of 91,000 US governments...' style="width:412px")
@@ -61,7 +61,7 @@ html(lang='en')
 
       // MAP      
       .row(style="margin-bottom:150px;")
-        .col-lg-12(style="border:0px solid silver;")
+        .col-lg-12(style="border:0px solid silver;padding:0")
           #maparea
             #govmap
             // Controls to show results of geocoding
@@ -86,7 +86,7 @@ html(lang='en')
 
 
 
-    nav.navbar.navbar-inverse(style="margin-bottom:0;margin-top:100px; padding:20px;padding-top:0;")
+    nav.navbar.navbar-inverse(style="margin-bottom:0;margin-top:0; padding:20px;padding-top:0;")
       .container(style="margin-bottom:20px;margin-top:30px;width:100%")
         .row
           .col-sm-8.text-left
