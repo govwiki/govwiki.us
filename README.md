@@ -27,7 +27,7 @@ Install git, nodejs, coffeescript
 Open console.
 
 
-** Setup **
+**Setup**
 
 Clone the project
 
@@ -42,7 +42,7 @@ install dependencies
 `npm install`
 
 
-** Development **
+**Development**
 
 Run the development environment
 
