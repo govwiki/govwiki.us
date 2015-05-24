@@ -27,6 +27,7 @@ Install git, nodejs, coffeescript
 Open console.
 
 
+
 **Setup**
 
 Clone the project
@@ -40,6 +41,7 @@ Change directory to govwiki.us/
 install dependencies
 
 `npm install`
+
 
 
 **Development**
@@ -61,6 +63,21 @@ the page in the browser window. So you should see changes in your files on the p
 
 To keep things simple, the project does not use any framework (such as AngularJS, Backbone etc).
 We can begin to use frameworks, later when the technology stack is settled.
+
+
+**Saving changes to github**
+
+`npm run push`
+
+
+**note**
+
+Before you editing files and before pushing your changes, please make sure you 
+have the most recent version of the code, which could be changed by other developers.
+
+To do so run
+
+`git pull`
 
 
 
